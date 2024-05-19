@@ -665,7 +665,6 @@ html{
 body{
   overflow-x: hidden;
   font-family: var(--body-font);
-  line-height: 1.5;
   -webkit-touch-callout: none;
   /* iOS Safari */
   -webkit-user-select: none;
@@ -678,7 +677,7 @@ body{
   /* Non-prefixed version, currently supported by Chrome and Opera */
 }
 
-/* Default styles*/
+/*------ Default styles ------*/
 
 h1, h2, h3, h4{
   color: var(--title-color);
@@ -720,7 +719,7 @@ button{
 
 .stroke-text-1{
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-width: 0.05rem;
 }
 
 .stroke-text-2{
@@ -803,20 +802,29 @@ button{
 
 .header{
   position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   top: 0;
   left: 0;
   background-color: var(--body-color);
+  /* background-color: blue; */
   z-index: var(--z-fixed);
   transition: box-shadow .4s;
 }
 
 .nav{
+  /* background-color: red; */
   position: relative;
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.nav__menu{
+  top: -100%;
 }
 
 .nav__logo{
@@ -852,7 +860,7 @@ button{
 @media screen and (max-width: 1150px) {
   .nav__menu{
     position: fixed;
-    top: 0;
+    top: -100%;
     left: 0;
     background-color: hsla(0, 0%, 0%, .75);
     width: 100%;
@@ -860,7 +868,7 @@ button{
     text-align: center;
     -webkit-backdrop-filter: blur(8px);
             backdrop-filter: blur(8px);
-    transition: top .4;
+    transition: top .4s;
   }
 }
 
@@ -944,6 +952,9 @@ button{
 
 /* ---- show menu ---- */
 
+.show-menu{
+  top: 0;
+}
 
 
 

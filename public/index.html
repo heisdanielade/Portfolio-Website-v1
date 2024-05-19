@@ -27,7 +27,7 @@
         <nav class="nav container">
             <a href="#" class="nav__logo">
                 <span class="nav__logo-circle">H</span>
-                <span class="nav__logo-name">eisdanielade</span>
+                <span class="nav__logo-name stroke-text-1">eisdanielade.</span>
             </a>
 
             <div class="nav__menu" id="nav-menu">
@@ -40,13 +40,13 @@
                         <a href="#home" class="nav__link">Home</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#about" class="nav__link">About Me</a>
+                        <a href="#about" class="nav__link">About</a>
                     </li>
                     <li class="nav__item">
                         <a href="#projects" class="nav__link">Projects</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#contact" class="nav__link">Contact Me</a>
+                        <a href="#contact" class="nav__link">Contact</a>
                     </li>
                 </ul>
 
@@ -78,6 +78,28 @@
 
 
     <!-- JS files -->  
+    <script>
+        
+// ================== SHOW MENU=====================
+const navMenu = document.getElementById('nav-menu'),
+    navToggle = document.getElementById('nav-toggle'),
+    navClose = document.getElementById('nav-close')
+
+// ======---- Menu Show ----======
+// validate if constants exists
+if (navToggle){
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.add('show-menu')
+    })
+}
+// ======---- Menu Hidden ----======
+// validate if contants exists
+if (navClose){
+    navClose.addEventListener('click', () => {
+        navMenu.classList.remove('show-menu')
+    })
+}
+    </script>
     <script src="./assets/js/main.js"></script>
 
 </body>
