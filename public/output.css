@@ -580,6 +580,10 @@ video {
   }
 }
 
+.grid{
+  display: grid;
+}
+
 /* -------- Font Type------- */
 
 /* ========= VARIABLES ========== */
@@ -715,18 +719,6 @@ button{
   text-align: center;
 }
 
-/* others */
-
-.stroke-text-1{
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 0.05rem;
-}
-
-.stroke-text-2{
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 2px;
-}
-
 /* ========== REUSABLE CSS CLASSES ========== */
 
 .container{
@@ -796,6 +788,15 @@ button{
 .main{
   overflow: hidden;
   /* for animation ScrollReveal*/
+}
+
+.stroke-text{
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 0.04rem;
+}
+
+.none{
+  display: none;
 }
 
 /* ============== HEADER & NAVBAR ============== */

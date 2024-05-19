@@ -26,14 +26,14 @@
     <header class="header" id="header">
         <nav class="nav container">
             <a href="#" class="nav__logo">
-                <span class="nav__logo-circle">H</span>
-                <span class="nav__logo-name stroke-text-1">eisdanielade.</span>
+                <span class="nav__logo-circle"><i class="ri-terminal-line"></i></span>
+                <span class="nav__logo-name stroke-text">heisdanielade.</span>
             </a>
 
             <div class="nav__menu" id="nav-menu">
                 <span class="nav__title">Menu</span>
  
-                <h3 class="nav__name">Daniel</h3>
+                <h4 class="nav__name">Daniel</h4>
 
                 <ul class="nav__list">
                     <li class="nav__item">
@@ -68,7 +68,61 @@
 
     <!--====== MAIN ======-->
     <main class="main">
+        <!--====== HOME ======-->
+        <section class="home section none" id="home">
+            <div class="home__container container grid">
+                <h1 class="home__name">
+                    Daniel Adediran
+                </h1>
 
+                <div class="home__perfil">
+                    <div class="home__image">
+                        <img src="./assets/images/home-perfil.jpg" alt="img" class="home__img">
+                        <div class="home__shadow"></div>
+                        <img src="./assets/svg/curved-arrow.svg" alt="" class="home__arrow">
+                        <img src="./assets/svg/random-lines.svg" alt="" class="home__line">
+                        
+                        <div class="geometric-box"></div>
+                    </div>
+
+                    <div class="home__social">
+                        <a href="" target="_blank" class="home__social-link">
+                            <i class="ri-github-line"></i>
+                        </a>
+                        <a href="" target="_blank" class="home__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="" target="_blank" class="home__social-link">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="home__info">
+
+                </div>
+            </div>
+        </section>
+
+        <!--====== ABOUT ======-->
+        <section class="about section" id="about">
+
+        </section>
+
+        <!--====== SERVICES ======-->
+        <section class="services section">
+
+        </section>
+
+        <!--====== PROJECTS ======-->
+        <section class="projects section" id="projects">
+
+        </section>
+
+        <!--====== CONTACT ======-->
+        <section class="contact section" id="contact">
+
+        </section>
     </main>
 
 
@@ -78,9 +132,9 @@
 
 
     <!-- JS files -->  
-    <script>
+<script>
         
-// ================== SHOW MENU=====================
+// ================== SHOW MENU =====================
 const navMenu = document.getElementById('nav-menu'),
     navToggle = document.getElementById('nav-toggle'),
     navClose = document.getElementById('nav-close')
@@ -99,7 +153,19 @@ if (navClose){
         navMenu.classList.remove('show-menu')
     })
 }
-    </script>
+
+// ================== REMOVE MENU MOBILE=====================
+const navLink = document.querySelectorAll('.nav__link')
+
+const linkAction = () => {
+    const navMenu = document.getElementById('nav-menu')
+    // when we click on each nav__link, we remove the show-menu class
+    navMenu.classList.remove('show-menu')
+}
+navLink.forEach(n => n.addEventListener('click', linkAction))
+
+</script>
+
     <script src="./assets/js/main.js"></script>
 
 </body>
