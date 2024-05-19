@@ -19,106 +19,62 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-brands/css/uicons-brands.css'>
     <!-- Page details -->
-    <title>Home | heisdanielade</title>
+    <title>Portfolio | heisdanielade</title>
 </head>
-<body class="bg-bg-light">
+<body>
 
+    <!--====== HEADER ======-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <span class="nav__logo-circle">H</span>
+                <span class="nav__logo-name">eisdanielade</span>
+            </a>
 
-    
-    <!-- INTRO -->
-    <section id="intro" class="intro bg-bg-light relative">
-        <!-- Navigation bar -->
-        <div id="navBar" class="navbar relative z-20 flex items-center justify-between bg-transparent w-full text-sm ">
-            <!-- Left -->
-            <div class="navbar-left flex-1">
-                <div class="brand font-bold">
-                    <span class="text-xl tracking-wider">heisdanielade</span>
-                </div>
-            </div>
-            <!-- Right -->
-            <div class="navbar-right flex-initial">
-                <div class="navbar-links flex items-center justify-between font-bold after:absolute after:w-0 after:h-1">
-                    <a href="" class="clr-dark hover:text-nav-link-hover relative tracking-wider pr-8 transition duration-300 ease">Gallery</a>
-                    <a href="" class="clr-dark hover:text-nav-link-hover relative tracking-wider pr-8 transition duration-300 ease">Services</a>
-                    <a href="" class="clr-dark hover:text-nav-link-hover relative tracking-wider transition duration-300 ease">Contact</a>
-                </div>
-            </div>
-        </div>
-        <!-- My info content -->
-        <div class="content clr-dark flex justify-between h-full">
-            <div class="left relative z-20 flex-1 mt-40 w-40rem">
-                <div id="myName" class="names font-bold leading-none whitespace-nowrap">
-                    <span class="first-name stroke-text-1 text-clr-dark">Daniel</span>
-                    <span class="last-name block mb-4 text-clr-dark">Adediran.</span>
-                </div>
-                <div class="description font-medium text-base mb-10">
-                    Based in <span class="city font-bold">Zielona Góra</span>, I translate the city's vibrant narratives into captivating web experiences. Join me as we journey through the digital landscapes I craft, where innovation meets artistry.
-                </div>
-                <div class="action">
-                    <button class="bg-bg-dark-1 font-normal text-clr-light p-3 w-36 border-2 border-solid border-transparent cursor-pointer text-xs transition duration-400 ease-in-out hover:text-clr-dark hover:bg-transparent hover:border-clr-dark">Meet my Lens</button>
-                </div>
-            </div>
-            <div class="right  h-full flex  items-center justify-end flex-1">
-                <div class="social bg-bg-dark-1 p-4 rounded-2xl flex flex-col items-center justify-evenly h-80 w-16">
-                    <a class="text-clr-light text-2xl" href="https://www.instagram.com/heisdanielade/" target="_blank"><i class="fi fi-brands-instagram"></i></a>
-                    <a class="text-clr-light text-2xl" href="https://www.github.com/heisdanielade/" target="_blank"><i class="fi fi-brands-github"></i></a>
-                    <a class="text-clr-light text-2xl" href=""><i class="fi fi-brands-facebook" target="_blank"></i></a>
-                </div>
-            </div>
-        </div>
-        <!-- Vertical lines -->
-        <div class="vert-container top-0 absolute z-10 flex items-center justify-between">
-            <div class="left flex-1">
-                <div class="line fixed h-full mr-4"></div>
-                <div class="line fixed h-full mr-4"></div>
-                <div class="line fixed h-full mr-4"></div>
-                <div class="line fixed h-full mr-4"></div>
-                <div class="line fixed h-full mr-4"></div>
-                <div class="line fixed h-full mr-4"></div>
-                <div class="line fixed h-full mr-4"></div>
-                <div class="line fixed h-full mr-4"></div>
-                <div class="line fixed h-full mr-4"></div>
-                <div class="line fixed h-full mr-4"></div>
-                <div class="line fixed h-full mr-4"></div>
-                <div class="line fixed h-full mr-4"></div>
-                <div class="line fixed h-full mr-4"></div>
-                <div class="line fixed h-full mr-4"></div>
-                <div class="line fixed h-full mr-4"></div>
-            </div>
-            <div class="right flex-initial"></div>
-        </div>
-    </section>
+            <div class="nav__menu" id="nav-menu">
+                <span class="nav__title">Menu</span>
+ 
+                <h3 class="nav__name">Daniel</h3>
 
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About Me</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact Me</a>
+                    </li>
+                </ul>
 
-    <!-- ABOUT ME -->
-    <section id="aboutMe" class="about-me bg-bg-dark-3 relative z-20 rounded-t-3xl rounded-tr-3xl">
-        <!-- Header text -->
-        <div id="aboutHeader" class="header relative font-bold">
-            <span class="abm-h-text text-clr-light stroke-text-2 text-9xl">about me</span>
-        </div>
-        <!-- content -->
-        <div class="hidden container relative justify-between w-full h-full">
-            <div class="box flex flex-col justify-evenly flex-1">
-                <div class="text clr-light flex flex-col items-start tracking-wide">
-                    <span class="font-semibold text-lg">Enter my Gallery, captured moments awaits.</span>
-                    <span class="font-light text-sm">
-                        Bathed in soft, natural light, the subject's graceful pose and delicate features are accentuated, creating a timeless portrait that transcends the ordinary. Through meticulous composition and an innate understanding.
-                    </span>
+                <!-- Close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
                 </div>
             </div>
-            <div class="box flex flex-col justify-evenly flex-1 h-full">
-                <img src="./assets/images/me/me-final.png" alt="heisdanielade" class="me m-16">
+
+            <div class="nav__buttons">
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-4-line"></i>
+                </div>
             </div>
-        </div>
-    </section>
+        </nav>
+    </header>
 
-    <!-- WORKS -->
-    <section id="works" class="works bg-dark-3 relative z-20"></section>
+    <!--====== MAIN ======-->
+    <main class="main">
 
-    
-    <!-- FOOTER -->
+    </main>
+
+    <!--====== FOOTER ======-->
     <footer id="footer" class="footer"></footer>
 
 
@@ -126,13 +82,138 @@
 
 
 
+    <!-- TEMPORARY CSS -->
+    <style>
+
+        /* ============== HEADER & NAVBAR ============== */
+        .header{
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: var(--body-color);
+            z-index: var(--z-fixed);
+            transition: box-shadow .4s;
+        }
+        .nav{
+            position: relative;
+            height: var(--header-height);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav__logo{
+            display: flex;
+            column-gap: .5rem;
+            align-items: center;
+            font-weight: var(--font-semi-bold);
+            color: var(--title-color);
+        }
+        .nav__logo-circle,
+        .nav__toggle{
+            width: 32px;
+            height: 32px;
+            background-color: var(--black-color);
+            color: var(--white-color);
+            display: grid;
+            place-items: center;
+        }
+        .nav__logo-circle{
+            border-radius: 50%;
+        }
+        .nav__toggle{
+            font-size: 1.25rem;
+            cursor: pointer;
+        }
+        /* ---- nav for mobile ---- */
+        @media screen and (max-width: 1150px) {
+            .nav__menu{
+                position: fixed;
+                top: 0;
+                left: 0;
+                background-color: hsla(0, 0%, 0%, .75);
+                width: 100%;
+                padding-block: 1.8rem 5rem;
+                text-align: center;
+                backdrop-filter: blur(8px);
+                transition: top .4;
+            }
+        }
+        .nav__title,
+        .nav__name,
+        .nav__close{
+            color: var(--white-color);
+        }
+        .nav__title{
+            display: block;
+            font-size: var(--smaller-font-size);
+            font-weight: var(--font-semi-bold);
+            margin-bottom: 3.5rem;
+        }
+        .nav__name{
+            position: relative;
+            width: max-content;
+            margin: 0 auto 3rem;
+            font-size: var(--h2-font-size);
+        }
+        .nav__name::after,
+        .nav__name::before{
+            content: '';
+            width: 40px;
+            height: 1px;
+            background-color: var(--text-color-light);
+            position: absolute;
+            top: 50%;
+            left: -4rem;
+        }
+        .nav__name::before{
+            left: initial;
+            right: -4rem;
+        }
+        .nav__list{
+            display: flex;
+            flex-direction: column;
+            row-gap: 2.5rem;
+        }
+        .nav__link{
+            position: relative;
+            color: var(--text-color-light);
+            font-size: var(--h3-font-size);
+            font-weight: var(--font-semi-bold);
+            transition: color .3s;
+        }
+        .nav__link::after{
+            content: '';
+            width: 25%;
+            height: 2px;
+            background-color: var(--white-color);
+            position: absolute;
+            left: 0;
+            bottom: -.5rem;
+            transition: width .3s;
+        }
+        .nav__link:hover{
+            color: var(--white-color);
+        }
+        .nav__link:hover::after{
+            width: 25%;
+        }
+        .nav__close{
+            position: absolute;
+            font-size: 1.5rem;
+            top: 1rem;
+            right: 1.5rem;
+            cursor: pointer;
+        }
 
 
+        /* ---- show menu ---- */
 
 
+    </style>
 
-    <!-- JS files -->
-<script src="./assets/js/main.js"></script>
+    <!-- JS files -->  
+    <script src="./assets/js/main.js"></script>
 
 </body>
 </html>
