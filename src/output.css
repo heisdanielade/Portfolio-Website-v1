@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-
 /*
 ! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
 */
@@ -446,7 +444,7 @@ video {
   display: none;
 }
 
-*, ::before, ::after{
+*, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -496,7 +494,7 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-::backdrop{
+::backdrop {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -546,41 +544,39 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.container{
+.container {
   width: 100%;
 }
 
-@media (min-width: 640px){
-  .container{
+@media (min-width: 640px) {
+  .container {
     max-width: 640px;
   }
 }
 
-@media (min-width: 768px){
-  .container{
+@media (min-width: 768px) {
+  .container {
     max-width: 768px;
   }
 }
 
-@media (min-width: 1024px){
-  .container{
+@media (min-width: 1024px) {
+  .container {
     max-width: 1024px;
   }
 }
 
-@media (min-width: 1280px){
-  .container{
+@media (min-width: 1280px) {
+  .container {
     max-width: 1280px;
   }
 }
 
-@media (min-width: 1536px){
-  .container{
+@media (min-width: 1536px) {
+  .container {
     max-width: 1536px;
   }
 }
-
-/* -------- Font Type------- */
 
 /* ========= VARIABLES ========== */
 
@@ -597,7 +593,7 @@ video {
   --body-color: hsl(0, 0%, 87%);
   --container-color: hsl(0, 0%, 83%);
   /* ---- fonts ---- */
-  --body-font: "Bai Jamjuree", sans-serif;
+  --body-font: "Baj Jamjuree", sans-serif;
   --biggest-font-size: 2.5rem;
   --h1-font-size: 1.75rem;
   --h2-font-size: 1.25rem;
@@ -852,7 +848,7 @@ button{
 @media screen and (max-width: 1150px) {
   .nav__menu{
     position: fixed;
-    top: 0;
+    top: -100%;
     left: 0;
     background-color: hsla(0, 0%, 0%, .75);
     width: 100%;
@@ -941,8 +937,6 @@ button{
   right: 1.5rem;
   cursor: pointer;
 }
-
-/* ---- show menu ---- */
 
 
 

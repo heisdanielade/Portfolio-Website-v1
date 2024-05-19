@@ -4,6 +4,8 @@
 
 @import "tailwindcss/utilities";
 
+/* -------- Font Type------- */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 /* ========= VARIABLES ========== */
 :root{
@@ -19,7 +21,7 @@
     --body-color: hsl(0, 0%, 87%);
     --container-color: hsl(0, 0%, 83%);
     /* ---- fonts ---- */
-    --body-font: "Baj Jamjuree", sans-serif;
+    --body-font: "Bai Jamjuree", sans-serif;
     --biggest-font-size: 2.5rem;
     --h1-font-size: 1.75rem;
     --h2-font-size: 1.25rem;
@@ -38,13 +40,13 @@
 /* ====----- Responsive typography -----==== */
 @media screen and (min-width: 1150px){
     :root{
-        --biggest-font-size: 4.5rem;
-        --h1-font-size: 3rem;
-        --h2-font-size: 1.5rem;
-        --h3-font-size: 1.25rem;
-        --normal-font-size: 1rem;
-        --small-font-size: .875rem;
-        --smaller-font-size: .813rem;}}
+--biggest-font-size: 4.5rem;
+--h1-font-size: 3rem;
+--h2-font-size: 1.5rem;
+--h3-font-size: 1.25rem;
+--normal-font-size: 1rem;
+--small-font-size: .875rem;
+--smaller-font-size: .813rem;}}
 /* Resetting default browser styles */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -74,8 +76,8 @@ body{
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */
        -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */}
+-ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */}
 /* Default styles*/
 h1, h2, h3, h4{
     color: var(--title-color);
@@ -165,159 +167,141 @@ button{text-align: center;}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ---CUSTOM STYLING--- */
-#myName{
-    font-size: 8.25rem;
-}
-.navbar .nav-bar-right .navbar-links a::after{
-    content: "";
-    position: absolute;
-    background-color: #8e8a86;
-    height: 3px;
-    width: 0;
+/* ============== HEADER & NAVBAR ============== */
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
     left: 0;
-    bottom: -7px;
-    transition: 0.3s;
+    background-color: var(--body-color);
+    z-index: var(--z-fixed);
+    transition: box-shadow .4s;
 }
-.navbar .nav-bar-right .navbar-links a:hover::after{
-    width: 4rem;
+.nav{
+    position: relative;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-/* --middle navbar link-- */
-.navbar .nav-bar-right .navbar-links a:nth-child(2){
-    color: #8e8a86;
+.nav__logo{
+    display: flex;
+    column-gap: .5rem;
+    align-items: center;
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
 }
-.navbar .nav-bar-right .navbar-links a:nth-child(2)::after{
-    content: "";
+.nav__logo-circle,
+.nav__toggle{
+    width: 32px;
+    height: 32px;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    display: grid;
+    place-items: center;
+}
+.nav__logo-circle{
+    border-radius: 50%;
+}
+.nav__toggle{
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+/* ---- nav for mobile ---- */
+@media screen and (max-width: 1150px) {
+    .nav__menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: hsla(0, 0%, 0%, .75);
+        width: 100%;
+        padding-block: 1.8rem 5rem;
+        text-align: center;
+        backdrop-filter: blur(8px);
+        transition: top .4;
+    }
+}
+.nav__title,
+.nav__name,
+.nav__close{
+    color: var(--white-color);
+}
+.nav__title{
+    display: block;
+    font-size: var(--smaller-font-size);
+    font-weight: var(--font-semi-bold);
+    margin-bottom: 3.5rem;
+}
+.nav__name{
+    position: relative;
+    width: max-content;
+    margin: 0 auto 3rem;
+    font-size: var(--h2-font-size);
+}
+.nav__name::after,
+.nav__name::before{
+    content: '';
+    width: 40px;
+    height: 1px;
+    background-color: var(--text-color-light);
     position: absolute;
-    background-color: #8e8a86;
-    height: 3px;
-    width: 4rem;
+    top: 50%;
+    left: -4rem;
+}
+.nav__name::before{
+    left: initial;
+    right: -4rem;
+}
+.nav__list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+}
+.nav__link{
+    position: relative;
+    color: var(--text-color-light);
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-semi-bold);
+    transition: color .3s;
+}
+.nav__link::after{
+    content: '';
+    width: 25%;
+    height: 2px;
+    background-color: var(--white-color);
+    position: absolute;
     left: 0;
-    bottom: -7px;
-    transition: 0.3s;
+    bottom: -.5rem;
+    transition: width .3s;
 }
-.navbar .nav-bar-right .navbar-links a:nth-child(2):hover{
-    color: #222222;
+.nav__link:hover{
+    color: var(--white-color);
 }
-.navbar .nav-bar-right .navbar-links a:nth-child(2):hover::after{
-    width: 0;
+.nav__link:hover::after{
+    width: 25%;
 }
-.intro .content .left .names .first-name::after {
-    content: "\A"; /* Insert a line break after "James" */
-    white-space: pre; /* Preserve white space */
-}
-.intro .content .right .social a{
-    transition: 0.3s ease;
-}
-.intro .vert-container{
-    top: 0%; /* Position the top of the div at the vertical center of the section */
-    left: 3%; /* Position the left of the div at the horizontal center of the section */
-}
-.intro .vert-container .line{
-    background-color: #b7b7b7;
-    width: 0.0225rem;
-}
-.intro .vert-container .line:nth-child(2){
-    margin-left: 3rem;
-}
- .intro .vert-container .line:nth-child(3){
-    margin-left: 6rem;
-}
-.intro .vert-container .line:nth-child(4){
-    margin-left: 9rem;
+.nav__close{
+    position: absolute;
+    font-size: 1.5rem;
+    top: 1rem;
+    right: 1.5rem;
+    cursor: pointer;
 }
 
-.intro .vert-container .line:nth-child(5){
-    margin-left: 12rem;
-}
-.intro .vert-container .line:nth-child(6){
-    margin-left: 15rem;
-}
-.intro .vert-container .line:nth-child(7){
-    margin-left: 18rem;
-}
-.intro .vert-container .line:nth-child(8){
-    margin-left: 21rem;
-}
-.intro .vert-container .line:nth-child(9){
-    margin-left: 24rem;
-}
-.intro .vert-container .line:nth-child(10){
-    margin-left: 27rem;
-}
-.intro .vert-container .line:nth-child(11){
-    margin-left: 30rem;
-}
-.intro .vert-container .line:nth-child(12){
-    margin-left: 33rem;
-}
-.intro .vert-container .line:nth-child(13){
-    margin-left: 36rem;
-}
-.intro .vert-container .line:nth-child(14){
-    margin-left: 39rem;
-}
-.intro .vert-container .line:nth-child(15){
-    margin-left: 42rem;
-}
-.about-me .container .right .me{
-    width: 17rem;
-    height: 28rem;
-    transform: rotate(-5deg);
-}
+
+/* ---- show menu ---- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
