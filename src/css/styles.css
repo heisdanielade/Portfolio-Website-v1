@@ -11,14 +11,16 @@
 :root{
     --header-height: 3.5rem;
     /* ---- colors ---- */
-    --first-color: hsl(14, 98%, 50%);
+    --first-color: hsla(202, 98%, 50%, 0.542);
+    /* --first-color: hsl(14, 98%, 50%); */
     --black-color: hsl(0, 0%, 0%);
     --black-color-light: hsl(0, 0%, 40%);
     --white-color: hsl(0, 0%, 95%);
     --title-color: hsl(0, 0%, 0%);
     --text-color: hsl(0, 0%, 35%);
     --text-color-light: hsl(0, 0%, 64%);
-    --body-color: hsl(0, 0%, 74%);
+    --body-color: #DCDCDC;
+    /* --body-color: hsl(0, 0%, 80%); */
     /* --body-color: hsl(0, 0%, 87%); */
     --container-color: hsl(0, 0%, 83%);
     /* ---- fonts ---- */
@@ -184,6 +186,7 @@ button{text-align: center;}
     background-color: var(--body-color);
     z-index: var(--z-fixed);
     transition: box-shadow .4s;
+    border-bottom: 1px solid rgb(212, 212, 212);
 }
 .nav{
     position: relative;
@@ -353,7 +356,6 @@ button{text-align: center;}
     width: 50px;
     transition: filter .4s;
 }
-
 .home__arrow{
     left: 40%;
     bottom: -4rem;
@@ -400,16 +402,9 @@ button{text-align: center;}
 }
 .home__description b{
     background: linear-gradient(90deg, 
-                                hsla(14, 98%, 50%, .3),
+                                hsla(202, 98%, 50%, 0.3),
                                 hsla(14, 98%, 50%, 0));
 }
-/* ---- home section: mobile ---- */
-@media screen and (max-width: 1150px) {
-    .home__description{
-        
-    }
-}
-
 .home__scroll{
     display: block;
     width: max-content;
