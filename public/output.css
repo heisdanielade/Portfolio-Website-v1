@@ -716,6 +716,10 @@ img{
   display: block;
   max-width: 100%;
   height: auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: none;
 }
 
 button{
@@ -734,9 +738,6 @@ button{
 }
 
 .container{
-  /* width: 100%; */
-  /* max-width: 1120px; */
-  /* margin-inline: 1.5rem; */
   padding: 1rem;
 }
 
@@ -804,7 +805,7 @@ button{
 
 .stroke-text{
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 0.079rem;
+  -webkit-text-stroke-width: 0.075rem;
 }
 
 .none{
@@ -814,6 +815,8 @@ button{
 /* ============== HEADER & NAVBAR ============== */
 
 .header{
+  /* background-color: blue; */
+  /* -- for debugging --*/
   position: fixed;
   display: flex;
   align-items: center;
@@ -828,11 +831,15 @@ button{
 }
 
 .nav{
+  /* background-color: red; -- for debugging -- */
   position: relative;
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 1150px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .nav__menu{
@@ -870,11 +877,42 @@ button{
 
 /* ---- nav for mobile ---- */
 
+@media screen and (min-width: 1750px) {
+  .header{
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .nav{
+    /* width: 100%; */
+    width: -moz-max-content;
+    width: max-content;
+    left: 0;
+    transform: translateX(0);
+  }
+
+  .nav__menu{
+    top: -1000%;
+    /* was -100% before */
+    left: 0;
+    background-color: hsla(0, 0%, 0%, .75);
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 1150px) {
+  .nav{
+    width: 100%;
+    left: 0;
+    transform: translateX(0);
+  }
+
   .nav__menu{
     display: block;
     position: fixed;
-    top: -100%;
+    top: -1000%;
+    /* was -100% before */
     left: 0;
     background-color: hsla(0, 0%, 0%, .75);
     width: 100%;
