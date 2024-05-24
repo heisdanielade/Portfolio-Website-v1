@@ -831,7 +831,6 @@ button{
 }
 
 .nav{
-  background-color: red;
   position: relative;
   height: var(--header-height);
   display: flex;
@@ -1091,7 +1090,6 @@ button{
   background-color: var(--black-color-light);
   color: var(--white-color);
   font-size: 1.25rem;
-  /* padding: 6px; */
   width: 2.3rem;
   height: 2.3rem;
   /*========EDITING=========*/
