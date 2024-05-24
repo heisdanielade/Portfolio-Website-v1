@@ -1077,8 +1077,7 @@ button{
 }
 
 .home__social{
-  height: -moz-max-content;
-  height: max-content;
+  height: 10rem;
   position: absolute;
   left: -3rem;
   top: 0;
