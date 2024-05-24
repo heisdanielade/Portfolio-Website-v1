@@ -1035,6 +1035,8 @@ button{
 .home__img{
   position: relative;
   z-index: 10;
+  max-height: -moz-max-content;
+  max-height: max-content;
 }
 
 .home__shadow{

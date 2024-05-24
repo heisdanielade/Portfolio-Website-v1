@@ -167,10 +167,12 @@ button{text-align: center;}
 }
 .stroke-text{
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 0.075rem;}
+    -webkit-text-stroke-width: 0.075rem;
+}
 .none{
     display: none;
 }
+
 
 
 
@@ -366,6 +368,7 @@ button{text-align: center;}
 .home__img{
     position: relative;
     z-index: 10;
+    max-height: max-content;
 }
 .home__shadow{
     width: 100%;
