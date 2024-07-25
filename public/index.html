@@ -28,7 +28,7 @@
         <nav class="nav container">
             <a href="" class="nav__logo">
                 <span class="nav__logo-circle"><i class="ri-terminal-line"></i></span>
-                <span class="nav__logo-name">heisdanielade.</span>
+                <span class="nav__logo-name">heisdanielade</span>
             </a>
 
             <div class="nav__menu" id="nav-menu">
@@ -78,7 +78,7 @@
 
                 <div class="home__perfil">
                     <div class="home__image">
-                        <img src="./assets/images/me/me.jpg" alt="img" class="home__img">
+                        <img src="./assets/images/me/me-4.jpg" alt="img" class="home__img">
                         <div class="home__shadow"></div>
                         <img src="./assets/svg/curved-arrow.svg" alt="" class="home__arrow">
                         <img src="./assets/svg/random-lines.svg" alt="" class="home__line">
@@ -118,7 +118,7 @@
 
         <!--====== ABOUT ======-->
         <section class="about section" id="about">
-
+        
         </section>
 
         <!--====== SERVICES ======-->
@@ -167,7 +167,7 @@ if (navClose){
     })
 }
 
-// ================== REMOVE MENU MOBILE=====================
+// ======---- Remove mobile menu ----======
 const navLink = document.querySelectorAll('.nav__link')
 
 const linkAction = () => {
@@ -176,6 +176,16 @@ const linkAction = () => {
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
+// ======---- Shadow Header ----======
+const shadowHeader = () => {
+    const header = document.getElementById('header')
+    // when the scroll is greater than 50 viewport, add the shadow-header class to the tag
+    this.scrollY >= 50 ? header.classList.add('shadow-header')
+                       : header.classList.remove('shadow-header')
+}
+
+window.addEventListener('scroll', shadowHeader)
 
 </script>
 
