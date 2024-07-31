@@ -12,7 +12,7 @@
 :root{
     --header-height: 3.5rem;
     /* ---- colors ---- */
-    --first-color: hsla(32, 55%, 45%, 0.438);
+    --first-color: hsla(178, 72%, 54%, 0.659);
     /* --first-color: hsla(202, 98%, 50%, 0.542); */
     --black-color: hsl(0, 0%, 0%);
     --black-color-light: hsl(0, 0%, 40%);
@@ -188,8 +188,8 @@ button{text-align: center;}
     justify-content: center;
     column-gap: .5rem;
     border-radius: 50px;
-    border: 1px solid hsla(32, 55%, 45%, 0.678);
-    background-color: hsla(32, 55%, 45%, 0.727);
+    border: 1px solid var(--first-color);
+    background-color: var(--first-color);
     color: var(--white-color);
     width: 45px;
     height: 45px;
@@ -200,10 +200,17 @@ button{text-align: center;}
     font-size: 1.25rem;
 }
 .button__surprise:hover{
-    border: 3px solid var(--first-color);
+    border: 1px solid var(--white-color);
+    background-color: var(--white-color);
+    color: var(--first-color);
 }
-
-
+.button__surprise:focus{
+    border: 1px solid var(--white-color);
+    background-color: var(--white-color);
+    color: var(--first-color);
+    width: 4px;
+    height: 40px;
+}
 
 
 
