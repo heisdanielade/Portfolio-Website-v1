@@ -237,23 +237,67 @@
 
         <!--====== CONTACT ======-->
         <section class="contact section" id="contact">
+            <div class="contact__container grid">
+                <div class="contact__data">
+                    <h2 class="section__title-2">
+                        <span class="stroke-text">Contact Me.</span>
+                    </h2>
 
+                    <p class="contact__description-1">
+                        I will read all emails. Send me any message you want and I'll get back to you :)
+                    </p>
+
+                    <div class="geometric-box"></div>
+                </div>
+
+                <div class="contact__mail">
+                    <h2 class="contact__title">
+                        Send Me A Message
+                    </h2>
+
+                    <form action="" class="contact__form" id="contact-form">
+                        <div class="contact__group">
+                            <div class="contact__box">
+                                <input type="text" name="user_name" class="contact__input" id="name" required placeholder="First Name">
+                                <label for="name" class="contact__label">Name</label>
+                            </div>
+                            <div class="contact__box">
+                                <input type="text" name="user_email" class="contact__input" id="name" required placeholder="Email Address">
+                                <label for="name" class="contact__label">Email Address</label>
+                            </div>
+                            <div class="contact__box contact__area">
+                                <textarea name="user_message" id="message" class="contact__input" required placeholder="Message.."></textarea>
+                                <label for="name" class="contact__label">Message</label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="contact__button">
+                            <i class="ri-send-plane-fill"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <div class="contact__social">
+                    <img src="assets/svg/curved-arrow.svg" alt="" class="contact__social-arrow">
+                    
+                    <div class="contact__social-data">
+                        <div>
+                            <p class="contact__social-description-1">
+                                Does not send emails.
+                            </p>
+                            <p class="contact__social-description-1">
+                                Write me on my social networks
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </section>
 
         <!--====== FOOTER ======-->
         <footer id="footer" class="footer">
             <div class="footer__container container grid">
-                <ul class="footer__links">
-                    <li>
-                        <a href="#about" class="footer__link">About</a>
-                    </li>
-                    <li>
-                        <a href="#services" class="footer__link">Services</a>
-                    </li>
-                    <li>
-                        <a href="#projects" class="footer__link">Projects</a>
-                    </li>
-                </ul>
  
                 <ul class="footer__socials">
                     <li>
@@ -273,6 +317,18 @@
                     </li>
                 </ul>
                 
+                <ul class="footer__links">
+                    <li>
+                        <a href="#about" class="footer__link">About</a>
+                    </li>
+                    <li>
+                        <a href="#services" class="footer__link">Services</a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="footer__link">Projects</a>
+                    </li>
+                </ul>
+
                 <span class="footer__name">
                     <a href="">heisdanielade</a>
                 </span>
