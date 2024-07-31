@@ -12,8 +12,8 @@
 :root{
     --header-height: 3.5rem;
     /* ---- colors ---- */
-    --first-color: hsla(202, 98%, 50%, 0.542);
-    /* --first-color: hsl(14, 98%, 50%); */
+    --first-color: hsla(32, 55%, 45%, 0.438);
+    /* --first-color: hsla(202, 98%, 50%, 0.542); */
     --black-color: hsl(0, 0%, 0%);
     --black-color-light: hsl(0, 0%, 40%);
     --white-color: hsl(0, 0%, 95%);
@@ -21,8 +21,6 @@
     --text-color: hsl(0, 0%, 35%);
     --text-color-light: hsl(0, 0%, 64%);
     --body-color: #DCDCDC;
-    /* --body-color: hsl(0, 0%, 80%); */
-    /* --body-color: hsl(0, 0%, 87%); */
     --container-color: hsl(0, 0%, 83%);
     /* ---- fonts ---- */
     --body-font: "Bai Jamjuree", sans-serif;
@@ -140,7 +138,7 @@ button{text-align: center;}
     content: "";
     width: 48px;
     height: 28px;
-    background-color: hsla(202, 98%, 50%, 0.3);
+    background-color: var(--first-color);
     position: absolute;
     top: -4px;
     right: -8px;
@@ -379,7 +377,6 @@ button{text-align: center;}
 .home__shadow{
     width: 100%;
     height: 100%;
-    /* background-color: aliceblue; */
     background-color: var(--container-color);
     position: absolute;
     bottom: -.75rem;
@@ -443,7 +440,8 @@ button{text-align: center;}
 }
 .home__description b{
     background: linear-gradient(90deg, 
-                                hsla(202, 98%, 50%, 0.3),
+                                var(--first-color),
+                                /* hsla(202, 98%, 50%, 0.3), */
                                 hsla(14, 98%, 50%, 0));
 }
 .home__scroll{
@@ -572,12 +570,19 @@ button{text-align: center;}
 
 /* ============== BUTTON ============== */
 .button,
-.button__ghost{
+.button__surprise{
     display: flex;
     align-items: center;
     justify-content: center;
     column-gap: .5rem;
 }
+
+/* -- temporary -- */
+/* .button__ghost{
+    display: none!important;
+} */
+/* -- temporary -- */
+
 .button{
     background-color: var(--black-color);
     padding: 1.1rem 1.5rem;
@@ -591,16 +596,16 @@ button{text-align: center;}
 .button:hover{
     background-color: var(--first-color);
 }
-.button__ghost{
+.button__surprise{
     border: 3px solid var(--black-color);
     color: var(--black-color);
     padding: .5rem;
     transition: border .4s, color .4s;
 }
-.button__ghost i{
+.button__surprise i{
     font-size: 1.25rem;
 }
-.button__ghost:hover{
+.button__surprise:hover{
     border: 3px solid var(--first-color);
 }
 
