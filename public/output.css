@@ -819,6 +819,36 @@ button{
   display: none;
 }
 
+/* =======--- SURPRISE BUTTON ---======= */
+
+.button__surprise{
+  position: fixed;
+  z-index: 11;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: .5rem;
+       column-gap: .5rem;
+  border-radius: 50px;
+  border: 1px solid hsla(32, 55%, 45%, 0.678);
+  background-color: hsla(32, 55%, 45%, 0.727);
+  color: var(--white-color);
+  width: 45px;
+  height: 45px;
+  padding: .75rem;
+  transition: border .4s, color .4s;
+}
+
+.button__surprise i{
+  font-size: 1.25rem;
+}
+
+.button__surprise:hover{
+  border: 3px solid var(--first-color);
+}
+
 /* ============== HEADER & NAVBAR ============== */
 
 .header{
@@ -1274,24 +1304,12 @@ button{
 
 /* ============== BUTTON ============== */
 
-.button,
-.button__surprise{
+.button{
   display: flex;
   align-items: center;
   justify-content: center;
   -moz-column-gap: .5rem;
        column-gap: .5rem;
-}
-
-/* -- temporary -- */
-
-/* .button__ghost{
-    display: none!important;
-} */
-
-/* -- temporary -- */
-
-.button{
   background-color: var(--black-color);
   padding: 1.1rem 1.5rem;
   color: var(--white-color);
@@ -1307,30 +1325,7 @@ button{
   background-color: var(--first-color);
 }
 
-.button__surprise{
-  border: 3px solid var(--black-color);
-  color: var(--black-color);
-  padding: .5rem;
-  transition: border .4s, color .4s;
-}
-
-.button__surprise i{
-  font-size: 1.25rem;
-}
-
-.button__surprise:hover{
-  border: 3px solid var(--first-color);
-}
-
 /* ============== ABOUT SECTION ============== */
-
-/* -- temporary -- */
-
-.services{
-  display: none;
-}
-
-/* -- temporary -- */
 
 .services__container{
   display: flex;
