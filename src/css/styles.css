@@ -177,8 +177,10 @@ button{text-align: center;}
     display: none;
 }
 
+
+
 /* =======--- SURPRISE BUTTON ---======= */
-.button__surprise{
+.theme__button {
     position: fixed;
     z-index: 11;
     bottom: 1.25rem;
@@ -196,21 +198,15 @@ button{text-align: center;}
     padding: .75rem;
     transition: border .4s, color .4s;
 }
-.button__surprise i{
+.theme__button i{
     font-size: 1.25rem;
 }
-.button__surprise:hover{
+.theme__button:hover{
     border: 1px solid var(--white-color);
     background-color: var(--white-color);
     color: var(--first-color);
 }
-.button__surprise:focus{
-    border: 1px solid var(--white-color);
-    background-color: var(--white-color);
-    color: var(--first-color);
-    width: 40px;
-    height: 40px;
-}
+
 
 
 
@@ -675,7 +671,6 @@ button{text-align: center;}
 .services__title{
     font-size: var(--h2-font-size);
     margin-bottom: 1.25rem;
-
 }
 
 
@@ -690,6 +685,10 @@ button{text-align: center;}
 }
 .contact__data{
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 300px;
     height: 300px;
     background-color: var(--container-color);
@@ -705,6 +704,7 @@ button{text-align: center;}
 }
 .contact__description-1{
     color: var(--title-color);
+    font-size: var(--small-font-size);
     font-weight: var(--font-medium);
     margin-bottom: 2rem;
 }
@@ -792,18 +792,23 @@ button{text-align: center;}
 .contact__button{
     background-color: var(--first-color);
     cursor: pointer;
+    border: 3px solid;
+}
+.contact__button:hover{
+    background-color: var(--white-color);
+    color: var(--first-color);
+    border: 3px solid var(--first-color);
 }
 
 /* -- Opaque placeholder -- */
-.contact__inout::focus::placeholder{
+.contact__input:focus::placeholder{
     opacity: 0;   
 }
 /* -- Move label up and sticky label -- */
 .contact__input::focus + .contact__label,
-.contact__input:not(:placeholder-shown).contact__input:not(:focus) + .contact__label{
+.contact__input:not(:placeholder-shown):not(:focus) + .contact__label{
     opacity: 1;
     top: -16px;
-
 }
 
 
