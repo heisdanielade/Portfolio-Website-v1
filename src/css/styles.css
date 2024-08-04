@@ -49,7 +49,8 @@
 --h3-font-size: 1.25rem;
 --normal-font-size: 1rem;
 --small-font-size: .875rem;
---smaller-font-size: .813rem;}}
+--smaller-font-size: .813rem;}
+}
 /* Resetting default browser styles */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -176,38 +177,6 @@ button{text-align: center;}
 .none{
     display: none;
 }
-
-
-
-/* =======--- SURPRISE BUTTON ---======= */
-.theme__button {
-    position: fixed;
-    z-index: 11;
-    bottom: 1.25rem;
-    right: 1.25rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: .5rem;
-    border-radius: 50px;
-    border: 1px solid var(--first-color);
-    background-color: var(--first-color);
-    color: var(--white-color);
-    width: 45px;
-    height: 45px;
-    padding: .75rem;
-    transition: border .4s, color .4s;
-}
-.theme__button i{
-    font-size: 1.25rem;
-}
-.theme__button:hover{
-    border: 1px solid var(--white-color);
-    background-color: var(--white-color);
-    color: var(--first-color);
-}
-
-
 
 
 /* ============== HEADER & NAVBAR ============== */
@@ -620,7 +589,7 @@ button{text-align: center;}
 }
 /* ============== ABOUT SECTION ============== */
 .services__container{
-    display: flex;
+    /* display: flex; */
     grid-template-columns: 250px;
     justify-content: center;
     row-gap: 2rem;
@@ -792,20 +761,20 @@ button{text-align: center;}
 .contact__button{
     background-color: var(--first-color);
     cursor: pointer;
-    border: 3px solid;
 }
 .contact__button:hover{
     background-color: var(--white-color);
     color: var(--first-color);
-    border: 3px solid var(--first-color);
 }
-
+.contact__input::placeholder{
+    color: transparent;
+}
 /* -- Opaque placeholder -- */
 .contact__input:focus::placeholder{
-    opacity: 0;   
+    color: var(--white-color);
 }
 /* -- Move label up and sticky label -- */
-.contact__input::focus + .contact__label,
+.contact__input:focus + .contact__label,
 .contact__input:not(:placeholder-shown):not(:focus) + .contact__label{
     opacity: 1;
     top: -16px;
@@ -843,6 +812,6 @@ button{text-align: center;}
     text-align: center;
 }
 .footer__name{
-    color: var(--white-color);
+    color: rgb(165, 165, 165);
     font-weight: var(--font-medium);
 }
