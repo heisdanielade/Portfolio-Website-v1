@@ -612,8 +612,8 @@ video {
   margin-right: 0.5rem;
 }
 
-.mr-4{
-  margin-right: 1rem;
+.mr-3{
+  margin-right: 0.75rem;
 }
 
 .mt-24{
@@ -624,10 +624,6 @@ video {
   margin-top: 1.5rem;
 }
 
-.mr-3{
-  margin-right: 0.75rem;
-}
-
 .flex{
   display: flex;
 }
@@ -636,16 +632,20 @@ video {
   display: none;
 }
 
-.h-10{
-  height: 2.5rem;
+.h-12{
+  height: 3rem;
 }
 
 .h-40{
   height: 10rem;
 }
 
-.w-10{
-  width: 2.5rem;
+.w-12{
+  width: 3rem;
+}
+
+.w-28{
+  width: 7rem;
 }
 
 .w-40{
@@ -688,8 +688,20 @@ video {
   border-width: 0.2rem;
 }
 
+.border-\[0\.17rem\]{
+  border-width: 0.17rem;
+}
+
+.border-\[0\.1rem\]{
+  border-width: 0.1rem;
+}
+
 .border-solid{
   border-style: solid;
+}
+
+.border-\[0\.rem\]{
+  border-color: 0.rem;
 }
 
 .bg-transparent{
@@ -709,6 +721,10 @@ video {
   padding: 1rem;
 }
 
+.p-5{
+  padding: 1.25rem;
+}
+
 .py-10{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -718,8 +734,16 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.pb-4{
+  padding-bottom: 1rem;
+}
+
 .pt-3{
   padding-top: 0.75rem;
+}
+
+.pt-4{
+  padding-top: 1rem;
 }
 
 .text-2xl{
@@ -744,10 +768,6 @@ video {
 
 .font-bold{
   font-weight: 700;
-}
-
-.font-medium{
-  font-weight: 500;
 }
 
 /* -------- Font Type------- */
@@ -978,8 +998,8 @@ button{
 .home .profile .name{
   background-color: var(--white-color);
   top: 2rem;
-  left: 6rem;
-  transform: rotate(-12deg);
+  left: 6.5rem;
+  transform: rotate(-10deg);
 }
 
 /* ============== MEDIA QUERIES ============== */
@@ -1029,8 +1049,6 @@ button{
 
   .home .profile .name{
     top: 1rem;
-    left: 5rem;
-    width: 9rem;
   }
 }
 

@@ -178,8 +178,8 @@ button{text-align: center;}
 .home .profile .name{
     background-color: var(--white-color);
     top: 2rem;
-    left: 6rem;
-    transform: rotate(-12deg);
+    left: 6.5rem;
+    transform: rotate(-10deg);
 
 }
 
@@ -224,9 +224,7 @@ button{text-align: center;}
         height: 8rem;
     }
     .home .profile .name{
-        top: 1rem;
-        left: 5rem;
-        width: 9rem;
+        top: 1rem;   
     }
 }
 
