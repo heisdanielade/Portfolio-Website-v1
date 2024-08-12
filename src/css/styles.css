@@ -147,6 +147,9 @@ button{text-align: center;}
     left: 50%;
     transform: translateX(-50%);   
 }
+.nav .nav__action__links a{
+    font-size: 0.625rem;
+}
 .nav .nav__action__links .email{
     background-color: var(--first-color);
     color: var(--white-color);

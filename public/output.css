@@ -612,10 +612,6 @@ video {
   margin-right: 0.5rem;
 }
 
-.mr-3{
-  margin-right: 0.75rem;
-}
-
 .mt-24{
   margin-top: 6rem;
 }
@@ -680,28 +676,16 @@ video {
   border-radius: 9999px;
 }
 
-.border-\[0\.175rem\]{
-  border-width: 0.175rem;
-}
-
 .border-\[0\.2rem\]{
   border-width: 0.2rem;
 }
 
-.border-\[0\.17rem\]{
-  border-width: 0.17rem;
-}
-
-.border-\[0\.1rem\]{
-  border-width: 0.1rem;
+.border-\[0\.25rem\]{
+  border-width: 0.25rem;
 }
 
 .border-solid{
   border-style: solid;
-}
-
-.border-\[0\.rem\]{
-  border-color: 0.rem;
 }
 
 .bg-transparent{
@@ -715,10 +699,6 @@ video {
 
 .p-3{
   padding: 0.75rem;
-}
-
-.p-4{
-  padding: 1rem;
 }
 
 .p-5{
@@ -961,6 +941,10 @@ button{
   width: 1150px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.nav .nav__action__links a{
+  font-size: 0.625rem;
 }
 
 .nav .nav__action__links .email{
