@@ -590,6 +590,10 @@ video {
 
 /* -------- Font Type------- */
 
+.bro{
+  border-radius: 0.4rem;
+}
+
 /* ========= VARIABLES ========== */
 
 :root{
