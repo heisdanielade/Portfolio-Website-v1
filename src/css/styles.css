@@ -179,12 +179,9 @@ button{text-align: center;}
     background-color: var(--white-color);
     top: 2rem;
     left: 6rem;
-    transform: rotate(-15deg);
+    transform: rotate(-12deg);
 
 }
-.home .content .text{
-    /* background-color: red; */
-} 
 
 
 
@@ -223,11 +220,10 @@ button{text-align: center;}
     }
 
     .home .profile .image{
-        width: 7rem;
-        height: 7rem;
+        width: 8rem;
+        height: 8rem;
     }
     .home .profile .name{
-        background-color: var(--white-color);
         top: 1rem;
         left: 5rem;
         width: 9rem;
