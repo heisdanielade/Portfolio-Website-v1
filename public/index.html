@@ -27,43 +27,32 @@
 
 
    <!--====== HEADER ======-->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="" class="nav__logo">
-                <span class="nav__logo-circle"><i class="ri-terminal-line"></i></span>
-                <span class="nav__logo-name">heisdanielade</span>
-            </a>
-
-            <div class="nav__menu" id="nav-menu">
-                <span class="nav__title">Menu</span>
- 
-                <h4 class="nav__name stroke-text-2">Daniel</h4>
-
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link">Home</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">About</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#projects" class="nav__link">Projects</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link">Contact</a>
-                    </li>
-                </ul>
-
-                <!-- Close button -->
-                <div class="nav__close" id="nav-close">
-                    <i class="ri-close-line"></i>
-                </div>
+    <header id="header "class="header fixed flex items-center justify-between w-full top-0 left-0 py-8 bg-transparent">
+        <nav class="nav container relative flex items-center justify-between">
+            <!-- Action links -->
+            <div class="nav__action__links">
+                <a hre2f="mailto:danieladeofficial@gmail.com" class="email font-medium text-sm p-3 rounded-md mr-2 border-[0.15rem] border-solid">
+                    Email
+                </a>
+                <a 2href="#" class="cv font-medium text-sm p-3 rounded-md border-[0.15rem] border-solid">
+                    CV
+                </a>
             </div>
-
-            <div class="nav__buttons">
-                <!-- Toggle button -->
-                <div class="nav__toggle bro" id="nav-toggle">
-                    <i class="ri-menu-5-line"></i>
+            <!-- Social links-->
+            <div class="nav__social__links flex">
+                <!-- mobile -->
+                <div class="mobile hidden items-center text-2xl">
+                    <a href="" class="flex items-center justify-center w-9 mr-4 rounded-full border-[0.125rem] border-solid"><i class="ri-linkedin-box-fill"></i></a>
+                    <a href="" class="flex items-center justify-center w-9 mr-4 rounded-full border-[0.125rem] border-solid"><i class="ri-github-line"></i></a>
+                    <a href="" class="flex items-center justify-center w-9 rounded-full border-[0.15rem] border-solid"><i class="ri-instagram-line"></i></a>
+                </div>
+                <!-- desktop -->
+                <div class="desktop text-sm">
+                    <a href="">LinkedIn</a>
+                    <span class="slash font-bold ml-1 mr-1">/</span>
+                    <a href="">GitHub</a>
+                    <span class="slash font-bold ml-1 mr-1">/</span>
+                    <a href="">Instagram</a>
                 </div>
             </div>
         </nav>
@@ -73,312 +62,24 @@
     <main class="main">
 
         <!--====== HOME ======-->
-        <section class="home section" id="home">
-            <div class="home__container container grid">
-                <h1 class="home__name">
-                    <span class="stroke-text">
-                        Daniel Adediran
-                    </span>
-                </h1>
-
-                <div class="home__perfil">
-                    <div class="home__image">
-                        <img src="./assets/images/me/me-4.jpg" alt="img" class="home__img bro">
-                        <div class="home__shadow"></div>
-                        <img src="./assets/svg/curved-arrow.svg" alt="" class="home__arrow ">
-                        <img src="./assets/svg/random-lines.svg" alt="" class="home__line">
-                        
-                        <div class="geometric-box"></div>
-                    </div>
-                    
-                    <div class="home__social">
-                        <a href="https://www.github.com/heisdanielade/" target="_blank" class="home__social-link bro">
-                            <i class="ri-github-line"></i>
-                        </a>
-                        <a href="https://www.instagram.com/heisdanielade/" target="_blank" class="home__social-link bro">
-                            <i class="ri-instagram-line"></i>
-                        </a>
-                        <a href="#" target="_blank" class="home__social-link bro">
-                            <i class="ri-linkedin-fill"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="home__info">
-                    <p class="home__description">
-                        <b>CS and Econometrics student</b>, with excellent knowledge in data analysis
-                         and machine learning.
-                    </p>
-
-                    <a href="#about" class="home__scroll">
-                        <div class="home__scroll-box bro">
-                            <i class="ri-arrow-down-s-line"></i>
-                        </div>
-
-                        <span class="home__scroll-text">Scroll Down</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!--====== ABOUT ======-->
-        <section class="about section" id="about">
-            <div class="about__container container grid">
-                <h2 class="section__title-1">
-                    <span>About me.</span>
-                </h2>
-
-                <div class="about__perfil">
-                    <div class="about__image">
-                        <img src="assets/images/me/me-1.jpg" alt="image" class="about__img">
-                            <div class="about__shadow"></div>
-                            <div class="geometric-box"></div>
-                            <img src="assets/svg/random-lines.svg" alt="" class="about__line">
-                        <div class="about__box"></div>
-                </div>
-            </div>  
-                <div class="about__info">
-                    <p class="about__description">
-                        Passionate about creating <b>Web pages</b> with 
-                        <b>UI/UX User Interface</b>, I have years of 
-                        experience and many clients are happy with 
-                        the projects carried out.
-                    </p>
-
-                    <ul class="about__list">
-                        <li class="about__item">
-                            <b>My Skills Are:</b> HTML, CSS, JavaScript, 
-                            React, Git & GitHub, Bootstrap, Flutter & 
-                            Figma.
-                        </li>
-                    </ul>
-
-                    <div class="about__buttons">
-                        <a href="#contact" class="button">
-                            <i class="ri-send-plane-line"></i>
-                            Contact Me
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--====== SERVICES ======-->
-        <section class="services section">
-            <h2 class="section__title-2 stroke-text">
-                <span>Services.</span>
-            </h2>
-            <div class="services__container container grid">
-                <article class="services__card">
-                    <div class="services__border"></div>
-
-                    <div class="services__content">
-                        <div class="services__icon">
-                            <div class="services__box"></div>
-                            <i class="ri-layout-4-line"></i>
-                        </div>
-
-                        <h2 class="services__title">Web Design</h2>
-
-                        <p class="services__description">
-                            Beautiful and elegant designs with interfaces 
-                            that are intuitive, efficient and pleasant to 
-                            use for the user.
-                        </p>
-                    </div>
-                </article>
-                <article class="services__card">
-                    <div class="services__border"></div>
-
-                    <div class="services__content">
-                        <div class="services__icon">
-                            <div class="services__box"></div>
-                            <i class="ri-code-box-line"></i>
-                        </div>
-
-                        <h2 class="services__title">Development</h2>
-
-                        <p class="services__description">
-                            Custom web development tailored to your 
-                            specifications, designed to provide a 
-                            flawless user experience. 
-                        </p>
-                    </div>
-                </article>
-                <article class="services__card">
-                    <div class="services__border"></div>
-
-                    <div class="services__content">
-                        <div class="services__icon">
-                            <div class="services__box"></div>
-                            <i class="ri-smartphone-line"></i>
-                        </div>
-
-                        <h2 class="services__title">Mobile App</h2>
-
-                        <p class="services__description">
-                            Design and transform website projects 
-                            into mobile apps to provide a seamless user experience.
-                        </p>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <!--====== PROJECTS ======-->
-        <section class="projects  section" id="projects">
-
-        </section>
-
-        <!--====== CONTACT ======-->
-        <section class="contact section" id="contact">
-            <div class="contact__container grid">
-                <div class="contact__data">
-                    <h2 class="section__title-2">
-                        <span class="stroke-text">Contact Me.</span>
-                    </h2>
-
-                    <p class="contact__description-1">
-                        I will get back to you shortly :)
-                    </p>
-
-                    <div class="geometric-box"></div>
-                </div>
-
-                <div class="contact__mail">
-                    <h2 class="contact__title">
-                        Send Me A Message
-                    </h2>
-
-                    <form action="" class="contact__form" id="contact-form">
-                        <div class="contact__group">
-                            <div class="contact__box">
-                                <input type="text" name="user_name" class="contact__input" id="name" required placeholder="First Name">
-                                <label for="name" class="contact__label">Name</label>
-                            </div>
-                            <div class="contact__box">
-                                <input type="text" name="user_email" class="contact__input" id="email" required placeholder="Email Address">
-                                <label for="email" class="contact__label">Email Address</label>
-                            </div>
-                            <div class="contact__box contact__area">
-                                <textarea name="user_message" id="message" class="contact__input" required placeholder="Message.."></textarea>
-                                <label for="message" class="contact__label">Message</label>
-                            </div>
-                        </div>
-
-                        <button type="submit" class="contact__button button">
-                            Send Message
-                        </button>
-                    </form>
-                </div>
-
-                <div class="contact__social none">
-                    <img src="assets/svg/curved-arrow.svg" alt="" class="contact__social-arrow">
-                    
-                    <div class="contact__social-data">
-                        <div>
-                            <p class="contact__social-description-1">
-                                Does not send emails.
-                            </p>
-                            <p class="contact__social-description-1">
-                                Write me on my social networks.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!--====== FOOTER ======-->
-        <footer id="footer" class="footer">
-            <div class="footer__container container grid">
- 
-                <ul class="footer__socials">
-                    <li>
-                        <a href="https://www.github.com/heisdanielade/" target="_blank" class="home__social-link">
-                            <i class="ri-github-line"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/heisdanielade/" target="_blank" class="home__social-link">
-                            <i class="ri-instagram-line"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank" class="home__social-link">
-                            <i class="ri-linkedin-fill"></i>
-                        </a>
-                    </li>
-                </ul>
-                
-                <ul class="footer__links">
-                    <li>
-                        <a href="#about" class="footer__link">About</a>
-                    </li>
-                    <li>
-                        <a href="#services" class="footer__link">Services</a>
-                    </li>
-                    <li>
-                        <a href="#projects" class="footer__link">Projects</a>
-                    </li>
-                </ul>
-
-                <span class="footer__name">
-                    <a href="">heisdanielade.tech</a>
+        <section class="home section container flex items-center justify-center flex-col w-96 mt-24" id="home">    
+            <div class="profile relative flex">
+                <!-- home profile image -->
+                <img class="image w-40 h-40 rounded-full object-cover border-[0.175rem] border-solid" src="assets/images/me/me-w.jpg" alt="Profile">
+                <span class="name absolute flex items-center justify-center text-sm font-medium rounded-full w-40 p-3">
+                    Daniel Adediran👋🏼 
                 </span>
             </div>
-        </footer>
-
-    </main>
-
- </div>
-
-
-    <!-- JS files -->  
-    <script>
+            <div class="content flex items-center justify-center">
+                <h1 class="text hidden mt-6 text-2xl">
+                    Building digital products, brands and experiences.
+                </h1>                
+            </div>
             
-    // ================== SHOW MENU =====================
-    const navMenu = document.getElementById('nav-menu'),
-        navToggle = document.getElementById('nav-toggle'),
-        navClose = document.getElementById('nav-close')
+        </section>
 
-    // ======---- Menu Show ----======
-    // validate if constants exists
-    if (navToggle){
-        navToggle.addEventListener('click', () => {
-            navMenu.classList.add('show-menu')
-        })
-    }
-    // ======---- Menu Hidden ----======
-    // validate if contants exists
-    if (navClose){
-        navClose.addEventListener('click', () => {
-            navMenu.classList.remove('show-menu')
-        })
-    }
-
-    // ======---- Remove mobile menu ----======
-    const navLink = document.querySelectorAll('.nav__link')
-
-    const linkAction = () => {
-        const navMenu = document.getElementById('nav-menu')
-        // when we click on each nav__link, we remove the show-menu class
-        navMenu.classList.remove('show-menu')
-    }
-    navLink.forEach(n => n.addEventListener('click', linkAction))
-
-    // ======---- Shadow Header ----======
-    const shadowHeader = () => {
-        const header = document.getElementById('header')
-        // when the scroll is greater than 50 viewport, add the shadow-header class to the tag
-        this.scrollY >= 50 ? header.classList.add('shadow-header')
-                        : header.classList.remove('shadow-header')
-    }
-
-    window.addEventListener('scroll', shadowHeader)
-
-    </script>
+    
+    </div>
 
     <script src="./assets/js/main.js"></script>
 
