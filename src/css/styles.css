@@ -184,18 +184,15 @@ button{text-align: center;}
     transition: filter .4s;
 }
 .home .profile .name{
-    animation: slowBounce 2s linear infinite;
+    animation: slowBounce 1s linear infinite;
     background-color: var(--white-color);
     top: 2rem;
     left: 6.5rem;
     transform: rotate(-10deg);
 }
 @keyframes slowBounce {
-    0%, 20% {
-      transform: translate(0, 0) rotate(0deg);
-    }
-    40% {
-      transform: translate(-15px, -15px) rotate(-10deg);
+    0%, 20%, 40% {
+        transform: translate(-15px, -15px) rotate(-10deg);
     }
     60% {
       transform: translate(0, 0) rotate(0deg);
@@ -204,13 +201,14 @@ button{text-align: center;}
       transform: translate(-8px, -8px) rotate(-5deg);
     }
     100% {
-      transform: translate(0, 0) rotate(0deg);
+        transform: translate(-15px, -15px) rotate(-10deg);
     }
   }
   
-/* .home .content .text{
-    
-} */
+.home .content .github__link{
+    background-color: var(--first-color);
+    color: var(--white-color);
+}
 
 
 /* ============== MEDIA QUERIES ============== */
@@ -235,6 +233,7 @@ button{text-align: center;}
     }
 }
 @media screen and (max-width: 550px) {
+    /* --header-- */
     .nav{
         width: 100%;
         left: 0;
@@ -246,7 +245,11 @@ button{text-align: center;}
     .nav .nav__social__links .desktop{
         display: none;
     }
-
+    /* --home-- */
+    .home{
+        border-bottom-left-radius: 4rem;
+        border-bottom-right-radius: 4rem;
+    }
     .home .profile .image{
         width: 8rem;
         height: 8rem;
