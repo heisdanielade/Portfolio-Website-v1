@@ -130,7 +130,7 @@ button{text-align: center;}
 }
 .stroke-text-2{
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 0.02rem;
+    -webkit-text-stroke-width: 0.03rem;
 }
 
 
@@ -173,19 +173,26 @@ button{text-align: center;}
 /* ============== HOME SECTION ============== */
 .home .profile{
     width: 10rem;
-    /* background-color: blue; */
 }
 .home .profile .image{
     border-color: var(--white-color);
+}
+.home .profile .arrow{
+    bottom: -4.5rem;
+    left: 2rem;
+    filter: invert(1);
+    transition: filter .4s;
 }
 .home .profile .name{
     background-color: var(--white-color);
     top: 2rem;
     left: 6.5rem;
     transform: rotate(-10deg);
-
 }
 
+/* .home .content .text{
+    
+} */
 
 
 /* ============== MEDIA QUERIES ============== */
