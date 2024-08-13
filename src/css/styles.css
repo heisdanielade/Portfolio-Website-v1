@@ -179,17 +179,35 @@ button{text-align: center;}
 }
 .home .profile .arrow{
     bottom: -4.5rem;
-    left: 2rem;
+    left: 2.5rem;
     filter: invert(1);
     transition: filter .4s;
 }
 .home .profile .name{
+    animation: slowBounce 2s linear infinite;
     background-color: var(--white-color);
     top: 2rem;
     left: 6.5rem;
     transform: rotate(-10deg);
 }
-
+@keyframes slowBounce {
+    0%, 20% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    40% {
+      transform: translate(-15px, -15px) rotate(-10deg);
+    }
+    60% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    80% {
+      transform: translate(-8px, -8px) rotate(-5deg);
+    }
+    100% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+  }
+  
 /* .home .content .text{
     
 } */
