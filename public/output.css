@@ -1027,7 +1027,7 @@ a, button{
 }
 
 .nav .nav__action__links .language .polish{
-  background-image: linear-gradient(25deg, red 30%, white 55%);
+  background-image: linear-gradient(0deg, red 30%, white 55%);
 }
 
 /* .nav .nav__action__links .language .german{
