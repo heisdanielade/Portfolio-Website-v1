@@ -27,24 +27,26 @@
 
 
    <!--====== HEADER ======-->
-    <header id="header "class="header fixed flex items-center justify-between w-full top-0 left-0 py-10 bg-transparent">
+    <header id="header "class="header flex items-center justify-between w-full top-0 left-0 py-10 bg-transparent">
         <nav class="nav container relative flex items-center justify-between">
             <!-- Action links -->
-            <div class="nav__action__links flex items-center text-xs font-medium tracking-tight">
+            <div class="nav__action__links flex items-center text-sm font-medium tracking-tight">
                 <a href="mailto:danieladeofficial@gmail.com" class="email flex items-center justify-center w-20 h-10 rounded-full mr-2">
                     Email
                 </a>
-                <a href="#" class="cv flex items-center justify-center  w-20 h-11 font-bold rounded-full">
-                    CV
-                </a>
+                <button id="language" class="language flex items-center justify-center  w-12 h-11 font-bold">
+                   <span class="lang-icon english hidden">🇬🇧</span>
+                   <span class="lang-icon polish hidden">🇵🇱</span>
+                   <span class="lang-icon german hiddens">🇩🇪</span>
+                </button>
             </div>
             <!-- Social links-->
             <div class="nav__social__links flex">
                 <!-- mobile -->
                 <div class="mobile hidden items-center text-xl">
-                    <a href="#" class="flex items-center justify-center w-11 h-11 mr-1 rounded-full border-[0.25rem] border-solid"><i class="ri-linkedin-box-fill"></i></a>
-                    <a href="#" class="flex items-center justify-center w-11 h-11 mr-1 rounded-full border-[0.25rem] border-solid"><i class="ri-dribbble-line"></i></a>
-                    <a href="https://www.instagram.com/heisdanielade/" class="flex items-center justify-center w-11 h-11 rounded-full border-[0.25rem] border-solid"><i class="ri-instagram-line"></i></a>
+                    <a href="#" class="flex items-center justify-center mr-1 rounded-full border-[0.25rem] border-solid"><i class="ri-linkedin-box-fill"></i></a>
+                    <a href="#" class="flex items-center justify-center mr-1 rounded-full border-[0.25rem] border-solid"><i class="ri-dribbble-line"></i></a>
+                    <a href="https://www.instagram.com/heisdanielade/" class="flex items-center justify-center rounded-full border-[0.25rem] border-solid"><i class="ri-instagram-line"></i></a>
                 </div>
                 <!-- desktop -->
                 <div class="desktop text-sm">
@@ -58,30 +60,45 @@
         </nav>
     </header>
 
-    <!--====== MAIN ======-->
+    <!--======== MAIN ========-->
     <main class="main">
 
         <!--====== HOME ======-->
-        <section class="home section container flex items-center justify-center flex-col w-96 mt-32" id="home">    
+        <section id="home" class="home section container relative flex items-center justify-center flex-col w-full">    
             <div class="profile relative">
                 <!-- home profile image -->
                 <img class="image relative z-20 w-40 h-40 rounded-full object-cover border-[0.25rem] border-solid" src="assets/images/me/me-b&w.jpg" alt="Profile">
-                <span class="name absolute z-30 flex items-center justify-center text-xs font-medium rounded-full w-28 pt-4 pb-4 p-3">
+                <span class="name absolute z-30 flex items-center justify-center text-xs font-bold rounded-full w-28 pt-4 pb-4 p-3">
                     Daniel Ade &nbsp;👋🏼 
                 </span>
                 <!-- curved arrow -->
                 <img src="assets/svg/curved-arrow.svg" alt="Curved-arrow" class="arrow z-10 absolute w-20 h-20">
             </div>
             <div class="content flex items-center justify-center flex-col pt-2">
-                <h1 class="info gradient-text mt-16 text-3xl text-center">
-                    Building digital products, brands  and experiences.
+                <h1 class="info text-center text-6xl gradient-text mt-16">
+                    <!-- inline-block whitespace-pre-wrap break-words -->
+
+                    Building digital products, brands and experiences.
                 </h1>
-                <a href="https://github.com/heisdanielade" class="github__link flex items-center justify-center mt-8 w-44 h-14 rounded-full">
-                    <span class="font-bold text-xs">GitHub</span>
+                <a href="https://github.com/heisdanielade" class="github__link flex items-center justify-center mt-12 mb-11 w-44 h-14 rounded-full">
+                    <span class="font-medium text-xs">GitHub</span>
                     <i class="ri-arrow-right-up-line underline font-light text-sm ml-2"></i>
                 </a>                
             </div>
-            
+        </section>
+
+
+        <!--====== CAROUSEL ======-->
+        <section id="carousel" class="carousel section container flex items-center justify center p-5">
+            <img src="assets/images/logos/python-cd.png" alt="Logo" class="logo object-cover">
+            <img src="assets/images/logos/react-cd.png" alt="Logo" class="logo object-cover">
+            <img src="assets/images/logos/git-bl.png" alt="Logo" class="logo object-cover">
+            <img src="assets/images/logos/vscode-cd.png" alt="Logo" class="logo object-cover">
+            <img src="assets/images/logos/office-cd.png" alt="Logo" class="logo object-cover">
+        </section>
+
+        <section id="services" class="services section container">
+
         </section>
 
     

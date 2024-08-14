@@ -73,6 +73,7 @@ summary, time, mark, audio, video {
 *, *::before, *::after{box-sizing: border-box;padding: 0;margin: 0;}
 html{scroll-behavior: smooth;}
 body{
+    cursor: url("assets/images/icons/white-arrow.png"), auto;
     overflow-x: hidden;
     font-family: var(--body-font);
     -webkit-touch-callout: none; /* iOS Safari */
@@ -101,6 +102,9 @@ img{
     pointer-events: none;
 }
 button{text-align: center;}
+a, button{
+    cursor: url("assets/images/icons/finger.png"), auto;
+}
 
 
 /* ========== REUSABLE CSS CLASSES ========== */
@@ -156,7 +160,26 @@ button{text-align: center;}
     background-color: var(--first-color);
     color: var(--white-color);
 }
-.nav .nav__social__links .mobile a{
+
+.nav .nav__action__links .language .lang-icon{
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.nav .nav__action__links .language .english{
+    background-image: linear-gradient(90deg, blue 20%, hsl(0, 0%, 95%) 50%, red 40%);
+}
+.nav .nav__action__links .language .polish{
+    background-image: linear-gradient(20deg, rgb(221, 70, 70) 40%, hsl(0, 6%, 57%) 45%);
+}
+.nav .nav__action__links .language .german{
+    background-image: linear-gradient(0deg, gold 30%, red 45%, black 40%);
+}
+
+.nav .nav__social__links .mobile a,
+.nav .nav__social__links .mobile button{
+    width: 2.825rem;
+    height: 2.825rem;
     background-color: var(--white-color);
     color: var(--first-color);
     border-color:var(--first-border);
@@ -176,13 +199,14 @@ button{text-align: center;}
 }
 .home .profile .arrow{
     bottom: -4.5rem;
-    left: 2.5rem;
+    left: 3.25rem;
     filter: invert(1);
     transition: filter .4s;
 }
 .home .profile .name{
     animation: slowBounce 1s linear infinite;
     background-color: var(--white-color);
+    color: var(--first-color);
     top: 2rem;
     left: 6.5rem;
     transform: rotate(-10deg);
@@ -202,6 +226,14 @@ button{text-align: center;}
     }
 }
 
+.home .content{
+    width: 40rem;
+}
+/* .home .content .info{
+    text-align: center;
+    max-width: 30rem;
+} */
+
 .home .content .github__link{
     background-color: var(--first-color);
     color: var(--white-color);
@@ -209,7 +241,14 @@ button{text-align: center;}
 
 
 
+/* ============== CAROUSEL SECTION ============== */
+.carousel{
+    background-color: var(--white-color);
 
+}
+.carousel img{
+    width: 5rem;
+}
 
 
 
@@ -222,7 +261,7 @@ button{text-align: center;}
 
 
 /* ============== MEDIA QUERIES ============== */
-@media screen and (min-width: 1750px) { /*--PC & Ipad Pro--*/
+@media screen and (min-width: 109.375rem) { /*--PC & Ipad Pro: 1750px--*/
     .header{
         width: 100%;
         top: 0;
@@ -234,7 +273,7 @@ button{text-align: center;}
         transform: translateX(0);
     }
 }
-@media screen and (max-width: 1150px) { /*--Ipad Air--*/
+@media screen and (max-width: 71.875rem) { /*--Ipad Air: 1150px--*/
     .nav{
         width: 100%;
     }
@@ -242,8 +281,14 @@ button{text-align: center;}
         background-color: transparent;
         border: none;
     }
+    .home .content .info{
+        font-size: 2.25rem;
+    }
 }
-@media screen and (max-width: 750px) { /*--Ipad Mini--*/
+@media screen and (max-width: 46.875rem) { /*--Ipad Mini: 750px--*/
+    .nav .nav__action__links a{
+        font-size: 0.625rem;
+    }
     .nav .nav__social__links .mobile{
         display: flex;
     }
@@ -252,25 +297,24 @@ button{text-align: center;}
     }
 }
 
-@media screen and (max-width: 550px) { /*--Iphone--*/
+@media screen and (max-width: 34.375rem) { /*--Iphone: 550px--*/
     /* --header-- */
     .nav{
         width: 100%;
         left: 0;
         transform: translateX(0);
     }
-    .nav .nav__action__links .cv{
-        background-color: var(--white-color); 
-        border: 0.2rem solid var(--first-border);
-    }
     .nav .nav__social__links .mobile a{
         background-color: var(--white-color);
         border: 0.25rem solid var(--first-border);
     }
     /* --home-- */
-    .home{
-        border-bottom-left-radius: 4rem;
-        border-bottom-right-radius: 4rem;
+    .carousel{
+        overflow-x: hidden;
+        border-top: none!important;
+        border: 0.0625rem solid rgba(173, 173, 173, 0.427);
+        border-bottom-left-radius: 5rem;
+        border-bottom-right-radius: 5rem;
     }
     .home .profile .image{
         width: 8rem;
@@ -278,6 +322,15 @@ button{text-align: center;}
     }
     .home .profile .name{
         top: 1rem;   
+    }
+    .home .profile .arrow{
+        left: 2.5rem;
+    }
+    .home .content{
+        width: 100%;
+    }
+    .home .content .info{
+        font-size: 1.9rem;
     }
 }
 
