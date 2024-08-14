@@ -12,7 +12,6 @@
     --header-height: 3.5rem;
     /* ---- colors ---- */
     --first-color: #242424;
-    --first-border: rgba(207, 207, 207, 0.712);
     --black-color: hsl(0, 0%, 0%);
     --black-color-light: hsl(0, 0%, 40%);
     --white-color: hsl(0, 0%, 95%);
@@ -181,7 +180,7 @@ a, button{
     height: 2.825rem;
     background-color: var(--white-color);
     color: var(--first-color);
-    border-color:var(--first-border);
+    border-color: rgba(207, 207, 207, 0.549);
 }
 .nav__action__links .desktop{
     color: var(--first-color);
