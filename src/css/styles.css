@@ -170,7 +170,8 @@ a, button{
     background-image: linear-gradient(90deg, blue 20%, hsl(0, 0%, 95%) 50%, red 40%);
 }
 .nav .nav__action__links .language .polish{
-    background-image: linear-gradient(20deg, rgb(221, 70, 70) 40%, hsl(0, 6%, 57%) 45%);
+    /* background-image: linear-gradient(20deg, rgb(221, 70, 70) 40%, hsl(0, 6%, 57%) 45%); */
+    background-image: linear-gradient(20deg, rgb(221, 70, 70) 40%, white 45%);
 }
 .nav .nav__action__links .language .german{
     background-image: linear-gradient(0deg, gold 30%, red 45%, black 40%);
@@ -322,6 +323,7 @@ a, button{
     }
     .home .profile .name{
         top: 1rem;   
+        font-weight: 500;
     }
     .home .profile .arrow{
         left: 2.5rem;
