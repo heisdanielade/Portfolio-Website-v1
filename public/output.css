@@ -616,6 +616,10 @@ video {
   margin-left: 0.25rem;
 }
 
+.ml-2{
+  margin-left: 0.5rem;
+}
+
 .mr-1{
   margin-right: 0.25rem;
 }
@@ -644,8 +648,16 @@ video {
   display: none;
 }
 
-.h-12{
-  height: 3rem;
+.h-10{
+  height: 2.5rem;
+}
+
+.h-11{
+  height: 2.75rem;
+}
+
+.h-14{
+  height: 3.5rem;
 }
 
 .h-20{
@@ -656,8 +668,8 @@ video {
   height: 10rem;
 }
 
-.w-12{
-  width: 3rem;
+.w-11{
+  width: 2.75rem;
 }
 
 .w-20{
@@ -670,6 +682,10 @@ video {
 
 .w-40{
   width: 10rem;
+}
+
+.w-44{
+  width: 11rem;
 }
 
 .w-96{
@@ -704,10 +720,6 @@ video {
   border-width: 0.25rem;
 }
 
-.border-\[0\.2rem\]{
-  border-width: 0.2rem;
-}
-
 .border-solid{
   border-style: solid;
 }
@@ -721,16 +733,8 @@ video {
      object-fit: cover;
 }
 
-.p-14{
-  padding: 3.5rem;
-}
-
 .p-3{
   padding: 0.75rem;
-}
-
-.p-6{
-  padding: 1.5rem;
 }
 
 .py-10{
@@ -738,36 +742,16 @@ video {
   padding-bottom: 2.5rem;
 }
 
-.pb-3{
-  padding-bottom: 0.75rem;
-}
-
 .pb-4{
   padding-bottom: 1rem;
-}
-
-.pb-5{
-  padding-bottom: 1.25rem;
-}
-
-.pl-1{
-  padding-left: 0.25rem;
 }
 
 .pt-2{
   padding-top: 0.5rem;
 }
 
-.pt-3{
-  padding-top: 0.75rem;
-}
-
 .pt-4{
   padding-top: 1rem;
-}
-
-.pt-5{
-  padding-top: 1.25rem;
 }
 
 .text-center{
@@ -779,14 +763,14 @@ video {
   line-height: 2.25rem;
 }
 
-.text-lg{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .text-xs{
@@ -804,6 +788,10 @@ video {
 
 .font-medium{
   font-weight: 500;
+}
+
+.tracking-tight{
+  letter-spacing: -0.025em;
 }
 
 .underline{
@@ -1009,19 +997,9 @@ button{
   transform: translateX(-50%);
 }
 
-.nav .nav__action__links a{
-  font-size: 0.625rem;
-}
-
 .nav .nav__action__links .email{
   background-color: var(--first-color);
   color: var(--white-color);
-}
-
-.nav .nav__action__links .cv{
-  background-color: var(--white-color);
-  color: var(--first-color);
-  border-color:var(--first-border);
 }
 
 .nav .nav__social__links .mobile a{
@@ -1107,6 +1085,11 @@ button{
   .nav{
     width: 100%;
   }
+
+  .nav .nav__social__links .mobile a{
+    background-color: transparent;
+    border: none;
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -1130,6 +1113,16 @@ button{
     width: 100%;
     left: 0;
     transform: translateX(0);
+  }
+
+  .nav .nav__action__links .cv{
+    background-color: var(--white-color);
+    border: 0.2rem solid var(--first-border);
+  }
+
+  .nav .nav__social__links .mobile a{
+    background-color: var(--white-color);
+    border: 0.25rem solid var(--first-border);
   }
 
   /* --home-- */
