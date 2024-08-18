@@ -45,14 +45,14 @@
                 <!-- mobile -->
                 <div class="mobile hidden items-center text-xl">
                     <a href="#" class="flex items-center justify-center mr-1 rounded-full border-[0.25rem] border-solid"><i class="ri-linkedin-box-fill"></i></a>
-                    <a href="#" class="flex items-center justify-center mr-1 rounded-full border-[0.25rem] border-solid"><i class="ri-dribbble-line"></i></a>
+                    <a href="#" class="flex items-center justify-center mr-1 rounded-full border-[0.25rem] border-solid"><i class="ri-stack-overflow-line"></i></a>
                     <a href="https://www.instagram.com/heisdanielade/" class="flex items-center justify-center rounded-full border-[0.25rem] border-solid"><i class="ri-instagram-line"></i></a>
                 </div>
                 <!-- desktop -->
                 <div class="desktop text-sm">
                     <a href="#">LinkedIn</a>
                     <span class="slash font-bold ml-1 mr-1">/</span>
-                    <a href="#">Dribbble</a>
+                    <a href="#">Stackoverflow</a>
                     <span class="slash font-bold ml-1 mr-1">/</span>
                     <a href="https://www.instagram.com/heisdanielade/">Instagram</a>
                 </div>
@@ -89,12 +89,15 @@
 
 
         <!--====== CAROUSEL ======-->
-        <section id="carousel" class="carousel section container flex items-center justify center p-5">
-            <img src="assets/images/logos/python-cd.png" alt="Logo" class="logo object-cover">
-            <img src="assets/images/logos/react-cd.png" alt="Logo" class="logo object-cover">
-            <img src="assets/images/logos/git-bl.png" alt="Logo" class="logo object-cover">
-            <img src="assets/images/logos/vscode-cd.png" alt="Logo" class="logo object-cover">
-            <img src="assets/images/logos/office-cd.png" alt="Logo" class="logo object-cover">
+        <div id="empty" class="empty absolute"></div>
+
+        <section id="carousel" class="carousel section container relative flex items-center justify center p-5">
+            <!-- logos -->
+            <img src="assets/images/logos/python-cd.png" alt="Logo" class="logo object-cover mr-10">
+            <img src="assets/images/logos/react-cd.png" alt="Logo" class="logo object-cover mr-10">
+            <img src="assets/images/logos/office-cd.png" alt="Logo" class="logo object-cover mr-10">
+            <img src="assets/images/logos/git-bl.png" alt="Logo" class="logo object-cover mr-10">
+            <img src="assets/images/logos/vscode-cd.png" alt="Logo" class="logo object-cover mr-10">
         </section>
 
         <section id="services" class="services section container">
