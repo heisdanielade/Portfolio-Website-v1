@@ -1192,14 +1192,14 @@ a, button{
 
   .nav .nav__social__links .mobile a{
     border: 0.25rem solid;
-    border-color: rgba(191, 191, 191, 0.41);
+    border-color: rgba(191, 191, 191, 0.489);
   }
 
   /* --home-- */
 
   .home{
     border-top: none!important;
-    border: 0.0625rem solid rgba(173, 173, 173, 0.279);
+    border: 0.0625rem solid rgba(187, 187, 187, 0.374);
     border-bottom-left-radius: 5rem;
     border-bottom-right-radius: 5rem;
   }
