@@ -276,7 +276,7 @@ a, button{
 .contact .actions a:nth-child(2){
     background-color: var(--white-color);
     color: var(--first-color);
-    border: 0.25rem solid rgba(215, 215, 215, 0.61);
+    border: 0.25rem solid rgba(215, 215, 215, 0.447);
 }
 
 
