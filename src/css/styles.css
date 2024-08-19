@@ -139,7 +139,7 @@ a, button{
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 0.03rem;
 }
-.gradient-text {
+.gradient-text{
     background-image: linear-gradient(90deg, var(--first-color) 46%, hsl(0, 0%, 67%));
     -webkit-background-clip: text;
     background-clip: text;
@@ -251,16 +251,33 @@ a, button{
 /* ============== SERVICES SECTION ============== */
 .services .title{
     background-color: var(--white-color);
-    width: 7.625rem;
-    height: 3rem;
     transform: translate(-15px, -15px) rotate(-10deg);
 }
-/* .services .serv-con{
-    
+.services .serv-con .info{
+    font-size: 0.875rem;
+}
+
+
+
+/* ============== CONTACT SECTION ============== */
+.contact .heading .title{
+    font-size: 1.9rem;
+}
+/* .contact .heading{
+    background-color: red;
+}
+.contact .actions{
+    background-color: blue;
 } */
-
-
-
+.contact .actions a{
+    background-color: var(--first-color);
+    color: var(--white-color);
+}
+.contact .actions a:nth-child(2){
+    background-color: var(--white-color);
+    color: var(--first-color);
+    border: 0.25rem solid rgba(213, 213, 213, 0.892);
+}
 
 
 
@@ -280,14 +297,20 @@ a, button{
     }
 }
 @media screen and (max-width: 71.875rem) { /*--Ipad Air: 1150px--*/
+    /* --nav-- */
     .nav{
         width: 100%;
     }
     .nav .nav__social__links .mobile a{
         border: none;
     }
+    /* --home-- */
     .home .content .info{
         font-size: 2.25rem;
+    }
+    /* --services-- */
+    .services .serv-con{
+        flex-direction: column;
     }
 }
 @media screen and (max-width: 46.875rem) { /*--Ipad Mini: 750px--*/
@@ -300,6 +323,7 @@ a, button{
     .nav .nav__social__links .desktop{
         display: none;
     }
+    
 }
 
 @media screen and (max-width: 34.375rem) { /*--Iphone: 550px--*/
@@ -359,6 +383,17 @@ a, button{
     }
     .services .serv-con{
         flex-direction: column;
+    }
+    .services .serv-con .info{
+        font-size: 0.7875rem;
+    }
+    /* --contact-- */
+    .contact .heading .image-container{
+        border-top: 0.046975rem solid rgba(173, 173, 173, 0.279);
+        width: 7.25rem;
+        height: 7.25rem;
+        background-image: linear-gradient(180deg, hsl(0, 0%, 73%), #f2f2f2 90%);
+        /* background-image: linear-gradient(180deg, hsl(50, 8%, 72%), #eae8e1 90%); */
     }
 }
 
