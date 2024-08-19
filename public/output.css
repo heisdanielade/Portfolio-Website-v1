@@ -1234,8 +1234,8 @@ a, button{
 /* ============== FOOTER ============== */
 
 .footer .line{
-  background-color: rgba(215, 215, 215, 0.789);
-  height: 0.0125rem;
+  background-color: rgba(215, 215, 215, 0.866);
+  height: 0.0175rem;
 }
 
 /* ============== MEDIA QUERIES ============== */
@@ -1314,8 +1314,7 @@ a, button{
     transform: translateX(0);
   }
 
-  .nav .nav__social__links .mobile a,
-    .footer .content .socials a{
+  .nav .nav__social__links .mobile a{
     border: 0.25rem solid;
     border-color: rgba(191, 191, 191, 0.434);
   }
@@ -1391,6 +1390,11 @@ a, button{
   }
 
   /* --footer-- */
+
+  .footer .content .socials a{
+    border: 0.25rem solid;
+    border-color: rgba(191, 191, 191, 0.275);
+  }
 }
 
 
