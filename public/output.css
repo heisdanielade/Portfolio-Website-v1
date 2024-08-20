@@ -1148,7 +1148,7 @@ a, button{
 }
 
 .home .profile .name{
-  animation: bounce 2s infinite ease-in-out;
+  animation: bounce 2.5s infinite ease-in-out;
   background-color: var(--white-color);
   color: var(--first-color);
   top: 2rem;
@@ -1239,7 +1239,7 @@ a, button{
 .contact .actions a:nth-child(2){
   background-color: var(--white-color);
   color: var(--first-color);
-  border: 0.25rem solid rgba(215, 215, 215, 0.447);
+  border: 0.25rem solid rgba(212, 212, 212, 0.275);
 }
 
 /* ============== FOOTER ============== */
@@ -1419,14 +1419,13 @@ a, button{
     width: 7.25rem;
     height: 7.25rem;
     background-image: linear-gradient(180deg, hsl(0, 0%, 77%), #f2f2f2 90%);
-    /* background-image: linear-gradient(180deg, hsl(50, 8%, 72%), #eae8e1 90%); */
   }
 
   /* --footer-- */
 
   .footer .content .socials a{
     border: 0.25rem solid;
-    border-color: rgba(191, 191, 191, 0.275);
+    border-color: rgba(212, 212, 212, 0.275);
   }
 }
 
