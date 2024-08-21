@@ -241,13 +241,8 @@ a, button{
     }
 }
 .home .content{
-    /* background-color: red; */
     width: 40rem;
 }
-/* .home .content .info{
-    text-align: center;
-    max-width: 30rem;
-} */
 .home .content .github__link{
     background-color: var(--first-color);
     color: var(--white-color);
@@ -284,7 +279,7 @@ a, button{
 /* ============== SERVICES SECTION ============== */
 .services .title{
     background-color: var(--white-color);
-    border-color: var(--link-border-color);
+    border-color: rgba(212, 212, 212, 0.451);
     transform: translate(-15px, -15px) rotate(-10deg);
 }
 .services .serv-con .box{
