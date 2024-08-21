@@ -752,12 +752,12 @@ video {
   width: 2rem;
 }
 
-.w-full{
-  width: 100%;
-}
-
 .w-9{
   width: 2.25rem;
+}
+
+.w-full{
+  width: 100%;
 }
 
 .flex-col{
@@ -1366,7 +1366,7 @@ a, button{
 
   .nav .nav__social__links .mobile a{
     border: 0.25rem solid;
-    border-color: var(--link-border-color);
+    border-color: rgba(212, 212, 212, 0.355);
   }
 
   /* --home-- */
