@@ -239,7 +239,7 @@ a, button{
 
 
 /* ============== MEDIA QUERIES ============== */
-@media screen and (min-width: 109.375rem) { /*--PC & Ipad Pro: 1750px--*/
+@media screen and (min-width: 109.375rem) { /*--PC: 1750px--*/
     .header{
         width: 100%;
         top: 0;
@@ -251,7 +251,7 @@ a, button{
         transform: translateX(0);
     }
 }
-@media screen and (max-width: 71.875rem) { /*--Ipad Air: 1150px--*/
+@media screen and (max-width: 71.875rem) { /*--Ipad Pro: 1150px--*/
     /* --nav-- */
     .nav{
         width: 100%;
@@ -270,9 +270,15 @@ a, button{
     .services .serv-con .con-1{
         margin-bottom: 2rem;
     }
-
 }
-@media screen and (max-width: 46.875rem) { /*--Ipad Mini: 750px--*/
+@media screen and (min-width: 52.125rem) {/*--Ipad Pro: 750px--*/
+    .nav, .home, .carousel, .services, .contact, .footer{
+        width: 52rem;
+    }
+}
+
+
+@media screen and (max-width: 46.875rem) { /*--Ipad Air: 750px--*/
     .home, .carousel, .services, .contact, .footer{
         width: 100%;
     }

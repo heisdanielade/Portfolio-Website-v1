@@ -752,10 +752,6 @@ video {
   height: 2.825rem;
 }
 
-.h-1{
-  height: 0.25rem;
-}
-
 .w-10{
   width: 2.5rem;
 }
@@ -806,10 +802,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.w-1{
-  width: 0.25rem;
 }
 
 .-translate-x-1\/2{
@@ -1279,7 +1271,7 @@ a, button{
 /* ============== MEDIA QUERIES ============== */
 
 @media screen and (min-width: 109.375rem) {
-  /*--PC & Ipad Pro: 1750px--*/
+  /*--PC: 1750px--*/
 
   .header{
     width: 100%;
@@ -1296,7 +1288,7 @@ a, button{
 }
 
 @media screen and (max-width: 71.875rem) {
-  /*--Ipad Air: 1150px--*/
+  /*--Ipad Pro: 1150px--*/
 
   /* --nav-- */
 
@@ -1325,8 +1317,16 @@ a, button{
   }
 }
 
+@media screen and (min-width: 52.125rem) {
+  /*--Ipad Pro: 750px--*/
+
+  .nav, .home, .carousel, .services, .contact, .footer{
+    width: 52rem;
+  }
+}
+
 @media screen and (max-width: 46.875rem) {
-  /*--Ipad Mini: 750px--*/
+  /*--Ipad Air: 750px--*/
 
   .home, .carousel, .services, .contact, .footer{
     width: 100%;
