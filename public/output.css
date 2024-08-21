@@ -644,6 +644,10 @@ video {
   margin-right: 2.5rem;
 }
 
+.mr-12{
+  margin-right: 3rem;
+}
+
 .mr-2{
   margin-right: 0.5rem;
 }
@@ -1184,7 +1188,7 @@ a, button{
   background-color: var(--white-color);
   color: var(--first-color);
   top: 2rem;
-  left: 7rem;
+  left: 8rem;
   transform: rotate(-10deg);
 }
 
@@ -1233,7 +1237,7 @@ a, button{
 
 .carousel-track {
   /* width: calc(100% * 7); */
-  animation: scroll 30s linear infinite;
+  animation: scroll 45s linear infinite;
 }
 
 .carousel img:nth-child(1){
@@ -1276,13 +1280,6 @@ a, button{
 .contact .heading .title{
   font-size: 1.9rem;
 }
-
-/* .contact .heading{
-    background-color: red;
-}
-.contact .actions{
-    background-color: blue;
-} */
 
 .contact .actions a{
   background-color: var(--first-color);
@@ -1372,6 +1369,11 @@ a, button{
 
   .home .content{
     width: 100%;
+  }
+
+  .home .profile .name{
+    top: 1rem;
+    left: 6.5rem;
   }
 }
 
