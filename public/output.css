@@ -1317,14 +1317,6 @@ a, button{
   }
 }
 
-@media screen and (min-width: 52.125rem) {
-  /*--Ipad Pro: 750px--*/
-
-  .nav, .home, .carousel, .services, .contact, .footer{
-    width: 52rem;
-  }
-}
-
 @media screen and (max-width: 46.875rem) {
   /*--Ipad Air: 750px--*/
 

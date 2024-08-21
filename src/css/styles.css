@@ -251,6 +251,7 @@ a, button{
         transform: translateX(0);
     }
 }
+
 @media screen and (max-width: 71.875rem) { /*--Ipad Pro: 1150px--*/
     /* --nav-- */
     .nav{
@@ -271,12 +272,6 @@ a, button{
         margin-bottom: 2rem;
     }
 }
-@media screen and (min-width: 52.125rem) {/*--Ipad Pro: 750px--*/
-    .nav, .home, .carousel, .services, .contact, .footer{
-        width: 52rem;
-    }
-}
-
 
 @media screen and (max-width: 46.875rem) { /*--Ipad Air: 750px--*/
     .home, .carousel, .services, .contact, .footer{
