@@ -15,6 +15,7 @@
     --black-color: hsl(0, 0%, 0%);
     --black-color-light: hsl(0, 0%, 40%);
     --white-color: hsl(0, 0%, 95%);
+    --link-border-color: rgba(212, 212, 212, 0.275);
     --title-color: hsl(0, 0%, 0%);
     --text-color: hsl(0, 0%, 35%);
     --text-color-light: hsl(0, 0%, 64%);
@@ -179,15 +180,16 @@ a, button{
     color: var(--white-color);
 }
 
-.nav .nav__action__links .language .lang-icon{
+.nav .nav__action__links .nothing .noth-icon{
     font-size: 1rem;
     -webkit-background-clip: text;
     background-clip: text;
-    color: transparent;
+    /* color: transparent; */
+    color: var(--first-color);
 }
-.nav .nav__action__links .language .polish{
+/* .nav .nav__action__links .language .polish{
     background-image: linear-gradient(0deg, red 30%, white 55%);
-}
+} */
 /* .nav .nav__action__links .language .german{
     background-image: linear-gradient(0deg, gold 40%, red 55%, black 20%);
 } */
@@ -294,7 +296,7 @@ a, button{
 .contact .actions a:nth-child(2){
     background-color: var(--white-color);
     color: var(--first-color);
-    border: 0.25rem solid rgba(212, 212, 212, 0.275);
+    border: 0.25rem solid var(--link-border-color);
 }
 
 
@@ -302,7 +304,7 @@ a, button{
 /* ============== FOOTER ============== */
 .footer .line{
     background-color: rgba(215, 215, 215, 0.866);
-    height: 0.0175rem;
+    height: 0.0225rem;
 }
 
 
@@ -400,7 +402,7 @@ a, button{
     }
     .nav .nav__social__links .mobile a{
         border: 0.25rem solid;
-        border-color: rgba(191, 191, 191, 0.434);
+        border-color: var(--link-border-color);
     }
     /* --home-- */
     .home{
@@ -450,17 +452,20 @@ a, button{
     .services .serv-con .info{
         font-size: 0.7875rem;
     }
+    .services .serv-con .info .text-break{
+        display: flex;
+    }
     /* --contact-- */
     .contact .heading .image-container{
         border-top: 0.046975rem solid rgba(173, 173, 173, 0.279);
         width: 7.25rem;
         height: 7.25rem;
-        background-image: linear-gradient(180deg, hsl(0, 0%, 77%), rgba(219, 219, 219, 0.519) 90%);
+        background-image: linear-gradient(180deg, hsl(0, 0%, 77%), #f2f2f2 90%);
     }
     /* --footer-- */
     .footer .content .socials a{
         border: 0.25rem solid;
-        border-color: rgba(212, 212, 212, 0.275);
+        border-color: var(--link-border-color);
     }
 }
 
