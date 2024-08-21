@@ -29,7 +29,7 @@
 
    <!--====== HEADER ======-->
     <header id="header "class="header flex items-center justify-between w-full top-0 left-0 py-10 bg-transparent">
-        <nav class="nav container container-padding-1 relative flex items-center justify-between">
+        <nav class="nav container container-padding-1 left-2/4 w-[71.875rem] h-14 -translate-x-1/2 relative flex items-center justify-between">
             <!-- Action links -->
             <div class="nav__action__links flex items-center font-medium tracking-tight">
                 <a href="mailto:danieladeofficial@gmail.com" class="email text-sm flex items-center justify-center w-20 h-10 rounded-full mr-2">
@@ -37,7 +37,7 @@
                 </a>
                 <button id="nothing" class="nothing text-xs flex items-center justify-center w-12 h-11 font-extrabold">
                    <!-- <span class="noth-icon"><i class="ri-cup-line"></i></span> -->
-                   <span class="noth-icon">
+                   <span class="noth-icon text-base">
                     <img src="assets/images/descriptions/coffee-cup.gif" alt="Coffee" class="w-9 h-9">
                    </span>
                 </button>
@@ -46,15 +46,15 @@
             <div class="nav__social__links flex">
                 <!-- mobile -->
                 <div class="mobile hidden items-center text-xl">
-                    <a href="https://www.linkedin.com/in/daniel-adediran-072a29282" target="_blank" class="flex items-center justify-center mr-2 rounded-full border-[0.25rem] border-solid"><i class="ri-linkedin-box-fill"></i></a>
-                    <a href="https://stackoverflow.com/users/23490724/daniel" target="_blank" class="flex items-center justify-center mr-2 rounded-full border-[0.25rem] border-solid"><i class="ri-stack-overflow-line"></i></a>
+                    <a href="https://www.linkedin.com/in/daniel-adediran-072a29282" target="_blank" class="flex items-center justify-center w-[2.825rem] h-[2.825rem] mr-2 rounded-full border-[0.25rem] border-solid"><i class="ri-linkedin-box-fill"></i></a>
+                    <a href="https://stackoverflow.com/users/23490724/daniel" target="_blank" class="flex items-center justify-center w-[2.825rem] h-[2.825rem] mr-2 rounded-full border-[0.25rem] border-solid"><i class="ri-stack-overflow-line"></i></a>
                     <!-- <a href="https://www.instagram.com/heisdanielade/" target="_blank" class="flex items-center justify-center rounded-full border-[0.25rem] border-solid"><i class="ri-instagram-line"></i></a> -->
                 </div>
                 <!-- desktop -->
                 <div class="desktop text-sm">
-                    <a href="https://www.linkedin.com/in/daniel-adediran-072a29282" target="_blank">LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/daniel-adediran-072a29282" target="_blank" class="relative pb-[0.125rem] no-underline tracking-wide">LinkedIn</a>
                     <span class="slash font-bold ml-1 mr-1">/</span>
-                    <a href="https://stackoverflow.com/users/23490724/daniel" target="_blank">Stack Overflow</a>
+                    <a href="https://stackoverflow.com/users/23490724/daniel" target="_blank" class="relative pb-[0.125rem] no-underline tracking-wide">Stack Overflow</a>
                     <!-- <span class="slash font-bold ml-1 mr-1">/</span> -->
                     <!-- <a href="https://www.instagram.com/heisdanielade/" target="_blank">Instagram</a> -->
                 </div>
@@ -64,20 +64,20 @@
 
     
     <!--======== MAIN ========-->
-    <main class="main container flex flex-col items-center w-full">
+    <main class="main overflow-hidden container flex flex-col items-center w-full">
 
 
         <!--====== HOME ======-->
-        <section id="home" class="home section container container-padding-1 relative flex items-center justify-center flex-col">    
-            <div class="profile relative">
+        <section id="home" class="home w-[71.875rem] section container container-padding-1 relative flex items-center justify-center flex-col">    
+            <div class="profile relative w-40">
                 <!-- home profile image -->
                 <img class="image relative z-20 w-40 h-40 rounded-full object-cover border-[0.225rem] border-solid" 
                 src="assets/images/me/avatar-2.jpg" alt="Profile">
-                <span class="name absolute font-medium z-30 flex items-center justify-center text-xs rounded-full w-28 pt-4 pb-4 p-3">
+                <span class="name absolute top-8 left-[8rem] font-medium z-30 flex items-center justify-center text-xs rounded-full w-28 pt-4 pb-4 p-3">
                     I'm Daniel &nbsp;👋🏼 
                 </span>
                 <!-- curved arrow -->
-                <img src="assets/svg/curved-arrow.svg" alt="Curved-arrow" class="arrow z-10 absolute w-20 h-20">
+                <img src="assets/svg/curved-arrow.svg" alt="Curved-arrow" class="arrow invert z-10 absolute w-20 h-20 left-[3.25rem] bottom-[-4.5rem]">
             </div>
             <div class="content flex items-center justify-center flex-col pt-2">
                 <h1 class="info text-center text-6xl gradient-text mt-20">
@@ -94,36 +94,36 @@
 
 
         <!--====== CAROUSEL ======-->
-        <section id="carousel" class="carousel container container-padding-2 relative overflow-hidden flex items-center justify-center bg-transparent w-full">
-            <div class="carousel-track flex items-center justify-evenly h-20 p-1">
-                <img src="assets/images/logos/roblox.png" alt="Logo" class="logo object-cover mr-12">
-                <img src="assets/images/logos/oracle.png" alt="Logo" class="logo object-cover mr-9">
-                <img src="assets/images/logos/git.png" alt="Logo" class="logo object-cover mr-12 h-8">
-                <img src="assets/images/logos/uncharted.png" alt="Logo" class="logo object-cover mr-12 h-8">
-                <img src="assets/images/logos/openai.png" alt="Logo" class="logo object-cover mr-12 h-6">
-                <img src="assets/images/logos/spotify.png" alt="Logo" class="logo object-cover mr-12 h-8">
-                <img src="assets/images/logos/react.png" alt="Logo" class="logo object-cover mr-12 h-10">
-                <img src="assets/images/logos/perplexity.png" alt="Logo" class="logo object-cover h-14 mr-10">
+        <section id="carousel" class="carousel w-[71.875rem] container container-padding-2 relative overflow-hidden flex items-center justify-center bg-transparent">
+            <div class="carousel-track animate-carousel flex items-center justify-evenly h-20 p-1">
+                <img src="assets/images/logos/roblox.png" alt="Logo" class="logo object-cover w-[8.5rem] mr-16">
+                <img src="assets/images/logos/oracle.png" alt="Logo" class="logo object-cover w-[8.5rem] mr-16">
+                <img src="assets/images/logos/git.png" alt="Logo" class="logo object-cover w-[8.5rem] mr-16 h-8">
+                <img src="assets/images/logos/uncharted.png" alt="Logo" class="logo object-cover w-[8.5rem] mr-16 h-8">
+                <img src="assets/images/logos/openai.png" alt="Logo" class="logo object-cover w-[8.5rem] mr-16 h-6">
+                <img src="assets/images/logos/spotify.png" alt="Logo" class="logo object-cover w-[8.5rem] mr-16 h-8">
+                <img src="assets/images/logos/react.png" alt="Logo" class="logo object-cover w-[8.5rem] mr-16 h-10">
+                <img src="assets/images/logos/perplexity.png" alt="Logo" class="logo object-cover w-[8.5rem] mr-16 h-14">
                     
                 <!-- Image duplication for seamless loop -->
-                <img src="assets/images/logos/roblox.png" alt="Logo" class="logo object-cover mr-12">
-                <img src="assets/images/logos/oracle.png" alt="Logo" class="logo object-cover mr-9">
-                <img src="assets/images/logos/git.png" alt="Logo" class="logo object-cover mr-12 h-8">
-                <img src="assets/images/logos/uncharted.png" alt="Logo" class="logo object-cover mr-12 h-8">
-                <img src="assets/images/logos/openai.png" alt="Logo" class="logo object-cover mr-12 h-6">
-                <img src="assets/images/logos/spotify.png" alt="Logo" class="logo object-cover mr-12 h-8">
-                <img src="assets/images/logos/react.png" alt="Logo" class="logo object-cover mr-12 h-10">
-                <img src="assets/images/logos/perplexity.png" alt="Logo" class="logo object-cover h-14 mr-10">
+                <img src="assets/images/logos/roblox.png" alt="Logo" class="logo object-cover w-[8.5rem] mr-16">
+                <img src="assets/images/logos/oracle.png" alt="Logo" class="logo object-cover w-[8.5rem] mr-16">
+                <img src="assets/images/logos/git.png" alt="Logo" class="logo object-cover w-[8.5rem] mr-16 h-8">
+                <img src="assets/images/logos/uncharted.png" alt="Logo" class="logo object-cover w-[8.5rem] mr-16 h-8">
+                <img src="assets/images/logos/openai.png" alt="Logo" class="logo object-cover w-[8.5rem] mr-16 h-6">
+                <img src="assets/images/logos/spotify.png" alt="Logo" class="logo object-cover w-[8.5rem] mr-16 h-8">
+                <img src="assets/images/logos/react.png" alt="Logo" class="logo object-cover w-[8.5rem] mr-16 h-10">
+                <img src="assets/images/logos/perplexity.png" alt="Logo" class="logo object-cover w-[8.5rem] mr-16 h-14">
             
                 <!-- Image duplication for seamless loop -->
-                <img src="assets/images/logos/roblox.png" alt="Logo" class="logo object-cover mr-12">
-                <img src="assets/images/logos/oracle.png" alt="Logo" class="logo object-cover mr-9">
-                <img src="assets/images/logos/git.png" alt="Logo" class="logo object-cover mr-12 h-8">
-                <img src="assets/images/logos/uncharted.png" alt="Logo" class="logo object-cover mr-12 h-8">
-                <img src="assets/images/logos/openai.png" alt="Logo" class="logo object-cover mr-12 h-6">
-                <img src="assets/images/logos/spotify.png" alt="Logo" class="logo object-cover mr-12 h-8">
-                <img src="assets/images/logos/react.png" alt="Logo" class="logo object-cover mr-12 h-10">
-                <img src="assets/images/logos/perplexity.png" alt="Logo" class="logo object-cover h-14 mr-10">
+                <img src="assets/images/logos/roblox.png" alt="Logo" class="logo object-cover w-[8.5rem] mr-16">
+                <img src="assets/images/logos/oracle.png" alt="Logo" class="logo object-cover w-[8.5rem] mr-16">
+                <img src="assets/images/logos/git.png" alt="Logo" class="logo object-cover w-[8.5rem] mr-16 h-8">
+                <img src="assets/images/logos/uncharted.png" alt="Logo" class="logo object-cover w-[8.5rem] mr-16 h-8">
+                <img src="assets/images/logos/openai.png" alt="Logo" class="logo object-cover w-[8.5rem] mr-16 h-6">
+                <img src="assets/images/logos/spotify.png" alt="Logo" class="logo object-cover w-[8.5rem] mr-16 h-8">
+                <img src="assets/images/logos/react.png" alt="Logo" class="logo object-cover w-[8.5rem] mr-16 h-10">
+                <img src="assets/images/logos/perplexity.png" alt="Logo" class="logo object-cover w-[8.5rem] mr-16 h-14">
             
             </div>
         
@@ -131,7 +131,7 @@
 
         
         <!--====== SERVICES ======-->
-        <section id="services" class="services section container container-padding-1 relative flex items-center justify-center flex-col">
+        <section id="services" class="services w-[71.875rem] section container container-padding-1 relative flex items-center justify-center flex-col">
             <h1 class="title-info text-center text-4xl gradient-text">
                 Let's collaborate to<br> achieve remarkable<br> outcomes.
             </h1>
@@ -142,33 +142,33 @@
 
             <div class="serv-con mt-8 mb-5 flex items-center justify-evenly w-full">
                 <div class="con-1 flex items-center justify-evenly">
-                    <div class="box m-1">
+                    <div class="box m-1 w-[15rem]">
                         <img src="assets/images/descriptions/analytics.gif" alt="Data" class="descriptive-icon w-9 h-9 mb-5">
                         <h2 class="text text-lg font-medium mb-3">Data Analysis</h2>
-                        <p class="info">
+                        <p class="info text-sm">
                             Conducting analyses that<br class="text-break hidden"> are insightful and accurate for your needs.
                         </p>
                     </div>
-                    <div class="box m-1">
+                    <div class="box m-1 w-[15rem]">
                         <img src="assets/images/descriptions/web.gif" alt="Coding" class="descriptive-icon w-9 h-9 mb-5">
                         <h2 class="text text-lg font-medium mb-3">Web Development</h2>
-                        <p class="info">
+                        <p class="info text-sm">
                             Turning concepts into outstanding web app experiences.
                         </p>
                     </div>
                 </div>
                 <div class="con-2 flex items-center justify-evenly">
-                    <div class="box m-1">
+                    <div class="box m-1 w-[15rem]">
                         <img src="assets/images/descriptions/design.gif" alt="Design" class="descriptive-icon w-9 h-9 mb-5">
                         <h2 class="text text-lg font-medium mb-3">UI & UX</h2>
-                        <p class="info">
+                        <p class="info text-sm">
                             Creating visually striking designs that resonate with your audience.
                         </p>
                     </div>
-                    <div class="box m-1">
+                    <div class="box m-1 w-[15rem]">
                         <img src="assets/images/descriptions/quality.gif" alt="Quality" class="descriptive-icon w-9 h-9 mb-5">
                         <h2 class="text text-lg font-medium mb-3">Quality Assurance</h2>
-                        <p class="info">
+                        <p class="info text-sm">
                             Ensuring your vision comes to life with top-tier quality and testing standards.
                         </p>
                     </div>
@@ -178,14 +178,14 @@
 
 
          <!--====== CONTACT ======-->
-         <section id="contact" class="contact section container container-padding-1">
+         <section id="contact" class="contact w-[71.875rem] section container container-padding-1">
             <!-- image & title -->
              <div class="heading flex items-center flex-col">
                 <div class="image-container rounded-full flex items-center justify-center">
                     <img src="assets/images/descriptions/talk.gif" alt="Contact" class="w-24 h-24">
                 </div>
 
-                <h1 class="title mt-8 text-6xl gradient-text text-center">
+                <h1 class="title mt-8 text-3xl gradient-text text-center">
                     Discuss your next<br> project
                 </h1>
              </div>
@@ -203,8 +203,8 @@
 
 
          <!--====== FOOTER ======-->
-         <footer id="footer" class="footer section container container-padding-1 relative flex items-center flex-col">
-            <div class="line mb-12 w-full"></div>
+         <footer id="footer" class="footer w-[71.875rem] section container container-padding-1 relative flex items-center flex-col">
+            <div class="line mb-12 w-full h-[0.025rem]"></div>
 
             <div class="content flex items-center justify-between w-full">
                 <div class="arr">
