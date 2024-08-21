@@ -752,6 +752,10 @@ video {
   height: 2.825rem;
 }
 
+.h-1{
+  height: 0.25rem;
+}
+
 .w-10{
   width: 2.5rem;
 }
@@ -802,6 +806,10 @@ video {
 
 .w-full{
   width: 100%;
+}
+
+.w-1{
+  width: 0.25rem;
 }
 
 .-translate-x-1\/2{
