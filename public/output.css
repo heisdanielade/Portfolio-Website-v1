@@ -648,6 +648,10 @@ video {
   margin-right: 0.5rem;
 }
 
+.mr-9{
+  margin-right: 2.25rem;
+}
+
 .mt-12{
   margin-top: 3rem;
 }
@@ -712,16 +716,16 @@ video {
   height: 10rem;
 }
 
+.h-6{
+  height: 1.5rem;
+}
+
 .h-8{
   height: 2rem;
 }
 
 .h-9{
   height: 2.25rem;
-}
-
-.h-7{
-  height: 1.75rem;
 }
 
 .w-10{
@@ -752,10 +756,6 @@ video {
   width: 11rem;
 }
 
-.w-8{
-  width: 2rem;
-}
-
 .w-9{
   width: 2.25rem;
 }
@@ -782,6 +782,10 @@ video {
 
 .justify-evenly{
   justify-content: space-evenly;
+}
+
+.overflow-hidden{
+  overflow: hidden;
 }
 
 .whitespace-pre-wrap{
@@ -815,6 +819,10 @@ video {
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.p-1{
+  padding: 0.25rem;
 }
 
 .p-2{
@@ -1223,8 +1231,28 @@ a, button{
   background-color: var(--white-color);
 }
 
+.carousel-track {
+  /* width: calc(100% * 7); */
+  animation: scroll 30s linear infinite;
+}
+
+.carousel img:nth-child(1){
+  height: 2rem;
+}
+
 .carousel img{
   width: 8.5rem;
+  margin-right: 4rem;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-200%);
+  }
 }
 
 /* ============== SERVICES SECTION ============== */

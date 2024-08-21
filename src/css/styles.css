@@ -259,8 +259,24 @@ a, button{
 .carousel{
     background-color: var(--white-color);
 }
+.carousel-track {
+    /* width: calc(100% * 7); */
+    animation: scroll 30s linear infinite;
+}
+.carousel img:nth-child(1){
+    height: 2rem;
+}
 .carousel img{
     width: 8.5rem;
+    margin-right: 4rem;
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-200%);
+    }
 }
 
 
