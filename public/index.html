@@ -62,16 +62,18 @@
         </nav>
     </header>
 
+    
     <!--======== MAIN ========-->
     <main class="main container flex flex-col items-center w-full">
+
 
         <!--====== HOME ======-->
         <section id="home" class="home section container container-padding-1 relative flex items-center justify-center flex-col">    
             <div class="profile relative">
                 <!-- home profile image -->
-                <img class="image relative z-20 w-40 h-40 rounded-full object-cover border-[0.2rem] border-solid" 
+                <img class="image relative z-20 w-40 h-40 rounded-full object-cover border-[0.225rem] border-solid" 
                 src="assets/images/me/avatar-2.jpg" alt="Profile">
-                <span class="name absolute z-30 flex items-center justify-center text-xs rounded-full w-28 pt-4 pb-4 p-3">
+                <span class="name absolute font-medium z-30 flex items-center justify-center text-xs rounded-full w-28 pt-4 pb-4 p-3">
                     I'm Daniel &nbsp;👋🏼 
                 </span>
                 <!-- curved arrow -->
@@ -95,9 +97,11 @@
         <section id="carousel" class="carousel container container-padding-2 relative flex items-center justify-center bg-transparent">
             <!-- logos -->
             <img src="assets/images/logos/office-cd.png" alt="Logo" class="logo object-cover mr-10">
-            <img src="assets/images/logos/python.png" alt="Logo" class="logo object-cover mr-10 w-8 h-8">
-            <img src="assets/images/logos/react.png" alt="Logo" class="logo object-cover mr-10">
+
             <img src="assets/images/logos/git.png" alt="Logo" class="logo object-cover mr-10">
+            <img src="assets/images/logos/openai.png" alt="Logo" class="logo object-cover mr-10 h-7">
+            <img src="assets/images/logos/perplexity.png" alt="Logo" class="logo object-cover mr-10">
+            <img src="assets/images/logos/react.png" alt="Logo" class="logo object-cover h-9 mr-10">
             <img src="assets/images/logos/vscode-cd.png" alt="Logo" class="logo object-cover mr-10">
         </section>
 
@@ -108,7 +112,7 @@
                 Let's collaborate to<br> achieve remarkable<br> outcomes.
             </h1>
 
-            <span class="title text-sm w-28 h-12 font-bold rounded-full mt-14 p-2 flex items-center justify-center">
+            <span class="title text-sm w-28 h-12 font-bold rounded-full mt-14 p-2 border-[0.25rem] border-solid flex items-center justify-center">
                 Services
             </span>
 
@@ -167,11 +171,12 @@
                     <i class="ri-mail-send-line mr-2"></i>
                     <span>Email</span>
                 </a>
-                <a href="#" target="_blank" class="flex items-center justify-center w-24 h-12 rounded-full p-2">
+                <a href="#" target="_blank" class="flex items-center justify-center border-[0.25rem] border-solid w-24 h-12 rounded-full p-2">
                     WhatsApp
                 </a>
             </div>
          </section>
+
 
          <!--====== FOOTER ======-->
          <footer id="footer" class="footer section container container-padding-1 relative flex items-center flex-col">
@@ -180,7 +185,7 @@
             <div class="content flex items-center justify-between w-full">
                 <div class="arr">
                     <p class="text-xs font-medium mt-3">
-                        &copy; 2024 All rights reserved.
+                        &copy; <span id="year"></span> All rights reserved.
                     </p>
                 </div>
     
@@ -193,8 +198,17 @@
             </div>
          </footer>
 
-    
+
+
     </div>
+
+    <script>
+        
+        // Display current year in footer
+        const currentYear = new Date().getFullYear();
+        document.getElementById("year").textContent = currentYear;
+
+    </script>
 
     <script src="./assets/js/main.js"></script>
 
