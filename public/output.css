@@ -1588,7 +1588,7 @@ a, button{
 
   /* --services-- */
 
-  .services, .footer{
+  .services{
     border-radius: 5rem;
     border: 0.046875rem solid rgba(173, 173, 173, 0.279);
   }
@@ -1668,6 +1668,12 @@ a, button{
 
   /* --footer-- */
 
+  .footer{
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+    border: 0.046875rem solid rgba(173, 173, 173, 0.279);
+  }
+
   .footer .content .socials a{
     border: 0.25rem solid;
     border-color: var(--link-border-color);
@@ -1685,7 +1691,7 @@ a, button{
   .projects .content .proj-cont .proj-link{
     margin-bottom: 1.625rem!important;
     width: 98%;
-    height: 12.5rem;
+    height: 13rem;
   }
 
   .projects .content .proj-cont:nth-child(1) .proj-link:nth-child(1){
