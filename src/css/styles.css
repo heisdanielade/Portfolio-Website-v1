@@ -124,12 +124,6 @@ a, button{
     background-color: var(--first-color);
     color: var(--white-color);
 }
-/* .nav .nav__action__links .language .polish{
-    background-image: linear-gradient(0deg, red 30%, white 55%);
-} 
-.nav .nav__action__links .language .german{
-    background-image: linear-gradient(0deg, gold 40%, red 55%, black 20%);
-} */
 .nav .nav__action__links .desktop{
     color: var(--first-color);
 }
@@ -207,6 +201,38 @@ a, button{
     border-color: rgba(212, 212, 212, 0.451);
     transform: translate(-15px, -15px) rotate(-10deg);
 }
+
+
+/* ============== PROJECTS SECTION ============== */
+.projects{
+    /* background-color: red; */
+}
+.projects .title{
+    background-color: var(--container-color);
+    border-color: transparent;
+    transform: translate(-15px, -15px) rotate(-10deg);
+}
+.projects .content .top .proj-link{
+    width: 26.75rem;
+    height: 15.375;
+}
+.projects .content .top .proj-link .arrow{
+    background-color: rgba(95, 95, 95, 0.842);
+    border-radius: 0.5rem;
+    color: var(--white-color);
+    top: 0.75rem;
+    right: 0.75rem;
+}
+.projects .content .top .proj-link .proj-img{
+    width: 100%;
+    height: 100%;
+
+    border-radius: 1rem;
+}
+
+
+
+
 
 
 /* ============== CONTACT SECTION ============== */
@@ -353,7 +379,8 @@ a, button{
     .services .title-info{
         font-size: 1.5rem;
     }
-    .services .title{
+    .services .title,
+    .projects .title{
         font-size: 0.75rem;
     }
     .services .serv-con{
@@ -368,6 +395,12 @@ a, button{
     .services .serv-con .info .text-break{
         display: flex;
     }
+    /* --projects-- */
+    .projects .title{
+        border-color: rgba(212, 212, 212, 0.451);
+    }
+
+
     /* --contact-- */
     .contact .heading .image-container{
         border-top: 0.046975rem solid rgba(173, 173, 173, 0.279);
