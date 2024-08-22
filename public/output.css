@@ -588,6 +588,14 @@ video {
   position: relative;
 }
 
+.bottom-0{
+  bottom: 0px;
+}
+
+.bottom-4{
+  bottom: 1rem;
+}
+
 .bottom-\[-4\.5rem\]{
   bottom: -4.5rem;
 }
@@ -600,12 +608,20 @@ video {
   left: 50%;
 }
 
+.left-3{
+  left: 0.75rem;
+}
+
 .left-\[3\.25rem\]{
   left: 3.25rem;
 }
 
 .left-\[8rem\]{
   left: 8rem;
+}
+
+.right-0{
+  right: 0px;
 }
 
 .top-0{
@@ -632,6 +648,14 @@ video {
   margin: 0.25rem;
 }
 
+.mb-1{
+  margin-bottom: 0.25rem;
+}
+
+.mb-10{
+  margin-bottom: 2.5rem;
+}
+
 .mb-11{
   margin-bottom: 2.75rem;
 }
@@ -640,12 +664,20 @@ video {
   margin-bottom: 3rem;
 }
 
+.mb-14{
+  margin-bottom: 3.5rem;
+}
+
 .mb-3{
   margin-bottom: 0.75rem;
 }
 
 .mb-5{
   margin-bottom: 1.25rem;
+}
+
+.mb-8{
+  margin-bottom: 2rem;
 }
 
 .ml-1{
@@ -666,6 +698,10 @@ video {
 
 .mr-2{
   margin-right: 0.5rem;
+}
+
+.mr-8{
+  margin-right: 2rem;
 }
 
 .mt-12{
@@ -748,8 +784,24 @@ video {
   height: 0.025rem;
 }
 
+.h-\[15\.375rem\]{
+  height: 15.375rem;
+}
+
 .h-\[2\.825rem\]{
   height: 2.825rem;
+}
+
+.h-full{
+  height: 100%;
+}
+
+.h-\[0\.05rem\]{
+  height: 0.05rem;
+}
+
+.h-\[0\.035rem\]{
+  height: 0.035rem;
 }
 
 .w-10{
@@ -772,6 +824,10 @@ video {
   width: 7rem;
 }
 
+.w-32{
+  width: 8rem;
+}
+
 .w-40{
   width: 10rem;
 }
@@ -788,12 +844,28 @@ video {
   width: 2.25rem;
 }
 
+.w-\[15\.375rem\]{
+  width: 15.375rem;
+}
+
 .w-\[15rem\]{
   width: 15rem;
 }
 
+.w-\[18\.375rem\]{
+  width: 18.375rem;
+}
+
 .w-\[2\.825rem\]{
   width: 2.825rem;
+}
+
+.w-\[23\.75rem\]{
+  width: 23.75rem;
+}
+
+.w-\[26\.75rem\]{
+  width: 26.75rem;
 }
 
 .w-\[71\.875rem\]{
@@ -802,6 +874,10 @@ video {
 
 .w-\[8\.5rem\]{
   width: 8.5rem;
+}
+
+.w-\[9\.35rem\]{
+  width: 9.35rem;
 }
 
 .w-full{
@@ -847,6 +923,14 @@ video {
 
 .break-words{
   overflow-wrap: break-word;
+}
+
+.rounded-2xl{
+  border-radius: 1rem;
+}
+
+.rounded-\[1rem\]{
+  border-radius: 1rem;
 }
 
 .rounded-full{
@@ -994,6 +1078,7 @@ video {
   --link-border-color: rgba(212, 212, 212, 0.275);
   --text-color-light: hsl(0, 0%, 64%);
   --container-color: rgba(219, 219, 219, 0.441);
+  --info-overlay-color: rgba(123, 123, 123, 0.744);
   /* ---- fonts ---- */
   --body-font: "Bai Jamjuree", sans-serif;
   /* -- font sizes -- */
@@ -1143,7 +1228,15 @@ a, button{
   color: transparent;
 }
 
+.home, .services, .footer{
+  background-color: rgb(214, 214, 214);
+}
+
 /* ============== HEADER & NAVBAR ============== */
+
+.header{
+  background-color: transparent;
+}
 
 .nav .nav__action__links .email{
   background-color: var(--first-color);
@@ -1212,6 +1305,10 @@ a, button{
   width: 40rem;
 }
 
+.home .content .info .hht{
+  background-image: none!important;
+}
+
 .home .content .github__link{
   background-color: var(--first-color);
   color: var(--white-color);
@@ -1247,33 +1344,42 @@ a, button{
 
 /* ============== PROJECTS SECTION ============== */
 
-.projects{
-  /* background-color: red; */
-}
-
 .projects .title{
   background-color: var(--container-color);
-  border-color: transparent;
+  border-color: rgba(212, 212, 212, 0.451);
   transform: translate(-15px, -15px) rotate(-10deg);
 }
 
-.projects .content .top .proj-link{
-  width: 26.75rem;
-  height: 15.375;
+.projects .content .proj-cont:nth-child(1) .proj-link:nth-child(1),
+.projects .content .proj-cont:nth-child(2) .proj-link:nth-child(1),
+.projects .content .proj-cont:nth-child(2) .proj-link:nth-child(3){
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.381);
 }
 
-.projects .content .top .proj-link .arrow{
-  background-color: rgba(95, 95, 95, 0.842);
-  border-radius: 0.5rem;
+.projects .content .proj-cont .proj-link .proj-img{
+  transition: transform 0.4s;
+  box-shadow: none;
+}
+
+.projects .content .proj-cont .proj-link:hover .proj-img{
+  transform: scale(1.04);
+  /* Scale up by 4% */
+  transition: transform 0.35s ease, box-shadow 0.35s ease-in-out;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.381);
+}
+
+.projects .content .proj-cont .proj-link .arrow,
+.projects .content .proj-cont .proj-link .proj-details{
+  z-index: 10;
+  border-bottom-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+  background-color: var(--first-color);
   color: var(--white-color);
-  top: 0.75rem;
-  right: 0.75rem;
 }
 
-.projects .content .top .proj-link .proj-img{
-  width: 100%;
-  height: 100%;
-  border-radius: 1rem;
+.projects .content .proj-cont .proj-link .proj-details .proj-stack{
+  font-size: 0.725rem;
+  color: aqua;
 }
 
 /* ============== CONTACT SECTION ============== */
@@ -1292,7 +1398,8 @@ a, button{
 /* ============== FOOTER ============== */
 
 .footer .line{
-  background-color: rgba(203, 203, 203, 0.866);
+  background-color: var(--white-color);
+  /* background-color: rgba(203, 203, 203, 0.866); */
 }
 
 /* ============== MEDIA QUERIES ============== */
@@ -1347,7 +1454,7 @@ a, button{
 @media screen and (max-width: 46.875rem) {
   /*--Ipad Air: 750px--*/
 
-  .home, .carousel, .services, .contact, .footer{
+  .home, .carousel, .services, .projects, .contact, .footer{
     width: 100%;
   }
 
@@ -1378,11 +1485,15 @@ a, button{
 
   /* --general */
 
-  .header, .home, .services{
+  .carousel, .contact{
+    background-color: var(--white-color);
+  }
+
+  .header, .home, .services, .footer{
     background-color: var(--container-color);
   }
 
-  .home, .services, .contact, .footer{
+  .home, .services, .projects, .contact, .footer{
     width: 100%;
   }
 
@@ -1442,7 +1553,7 @@ a, button{
 
   /* --services-- */
 
-  .services{
+  .services, .footer{
     border-radius: 5rem;
     border: 0.046875rem solid rgba(173, 173, 173, 0.279);
   }
@@ -1474,8 +1585,8 @@ a, button{
 
   /* --projects-- */
 
-  .projects .title{
-    border-color: rgba(212, 212, 212, 0.451);
+  .projects{
+    display: none;
   }
 
   /* --contact-- */

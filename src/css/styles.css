@@ -15,6 +15,7 @@
     --link-border-color: rgba(212, 212, 212, 0.275);
     --text-color-light: hsl(0, 0%, 64%);
     --container-color: rgba(219, 219, 219, 0.441);
+    --info-overlay-color: rgba(123, 123, 123, 0.744);
     /* ---- fonts ---- */
     --body-font: "Bai Jamjuree", sans-serif;
     /* -- font sizes -- */
@@ -115,11 +116,17 @@ a, button{
     background-clip: text;
     color: transparent;
 }
+.home, .services, .footer{
+    background-color: rgb(214, 214, 214);
+}
 
 
 
 
 /* ============== HEADER & NAVBAR ============== */
+.header{
+    background-color: transparent;
+}
 .nav .nav__action__links .email{
     background-color: var(--first-color);
     color: var(--white-color);
@@ -172,6 +179,9 @@ a, button{
 .home .content{
     width: 40rem;
 }
+.home .content .info .hht{
+    background-image: none!important;
+}
 .home .content .github__link{
     background-color: var(--first-color);
     color: var(--white-color);
@@ -204,32 +214,37 @@ a, button{
 
 
 /* ============== PROJECTS SECTION ============== */
-.projects{
-    /* background-color: red; */
-}
 .projects .title{
     background-color: var(--container-color);
-    border-color: transparent;
+    border-color: rgba(212, 212, 212, 0.451);
     transform: translate(-15px, -15px) rotate(-10deg);
 }
-.projects .content .top .proj-link{
-    width: 26.75rem;
-    height: 15.375;
+.projects .content .proj-cont:nth-child(1) .proj-link:nth-child(1),
+.projects .content .proj-cont:nth-child(2) .proj-link:nth-child(1),
+.projects .content .proj-cont:nth-child(2) .proj-link:nth-child(3){
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.381);
 }
-.projects .content .top .proj-link .arrow{
-    background-color: rgba(95, 95, 95, 0.842);
-    border-radius: 0.5rem;
+.projects .content .proj-cont .proj-link .proj-img{
+    transition: transform 0.4s;
+    box-shadow: none;
+}
+.projects .content .proj-cont .proj-link:hover .proj-img{
+    transform: scale(1.04); /* Scale up by 4% */
+    transition: transform 0.35s ease, box-shadow 0.35s ease-in-out;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.381);
+}
+.projects .content .proj-cont .proj-link .arrow,
+.projects .content .proj-cont .proj-link .proj-details{
+    z-index: 10;
+    border-bottom-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    background-color: var(--first-color);
     color: var(--white-color);
-    top: 0.75rem;
-    right: 0.75rem;
 }
-.projects .content .top .proj-link .proj-img{
-    width: 100%;
-    height: 100%;
-
-    border-radius: 1rem;
+.projects .content .proj-cont .proj-link .proj-details .proj-stack{
+    font-size: 0.725rem;
+    color: aqua;
 }
-
 
 
 
@@ -250,7 +265,8 @@ a, button{
 
 /* ============== FOOTER ============== */
 .footer .line{
-    background-color: rgba(203, 203, 203, 0.866);
+    background-color: var(--white-color);
+    /* background-color: rgba(203, 203, 203, 0.866); */
 }
 
 
@@ -300,7 +316,7 @@ a, button{
 }
 
 @media screen and (max-width: 46.875rem) { /*--Ipad Air: 750px--*/
-    .home, .carousel, .services, .contact, .footer{
+    .home, .carousel, .services, .projects, .contact, .footer{
         width: 100%;
     }
     .nav .nav__action__links a{
@@ -323,10 +339,13 @@ a, button{
 
 @media screen and (max-width: 34.375rem) { /*--Iphone: 550px--*/
     /* --general */
-    .header, .home, .services{
+    .carousel, .contact{
+        background-color: var(--white-color);
+    }
+    .header, .home, .services, .footer{
         background-color: var(--container-color);
     }
-    .home, .services, .contact, .footer{
+    .home, .services, .projects, .contact, .footer{
         width: 100%;
     }
 
@@ -372,7 +391,7 @@ a, button{
         width: 7.5rem;
     }
     /* --services-- */
-    .services{
+    .services, .footer{
         border-radius: 5rem;
         border: 0.046875rem solid rgba(173, 173, 173, 0.279);
     }
@@ -396,11 +415,9 @@ a, button{
         display: flex;
     }
     /* --projects-- */
-    .projects .title{
-        border-color: rgba(212, 212, 212, 0.451);
+    .projects{
+        display: none;
     }
-
-
     /* --contact-- */
     .contact .heading .image-container{
         border-top: 0.046975rem solid rgba(173, 173, 173, 0.279);
