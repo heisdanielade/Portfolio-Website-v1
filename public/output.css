@@ -728,10 +728,6 @@ video {
   margin-top: 2.25rem;
 }
 
-.inline-block{
-  display: inline-block;
-}
-
 .flex{
   display: flex;
 }
@@ -770,6 +766,10 @@ video {
 
 .h-6{
   height: 1.5rem;
+}
+
+.h-7{
+  height: 1.75rem;
 }
 
 .h-8{
@@ -828,8 +828,8 @@ video {
   width: 11rem;
 }
 
-.w-8{
-  width: 2rem;
+.w-7{
+  width: 1.75rem;
 }
 
 .w-9{
@@ -907,14 +907,6 @@ video {
 
 .overflow-hidden{
   overflow: hidden;
-}
-
-.whitespace-pre-wrap{
-  white-space: pre-wrap;
-}
-
-.break-words{
-  overflow-wrap: break-word;
 }
 
 .rounded-2xl{
@@ -1346,7 +1338,7 @@ a, button{
 .projects .content .proj-cont:nth-child(1) .proj-link:nth-child(1),
 .projects .content .proj-cont:nth-child(2) .proj-link:nth-child(1),
 .projects .content .proj-cont:nth-child(2) .proj-link:nth-child(3){
-  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.381);
+  box-shadow: 0.21rem 0.21rem 0.42rem rgba(0, 0, 0, 0.381);
 }
 
 .projects .content .proj-cont .proj-link .proj-img{
@@ -1358,7 +1350,7 @@ a, button{
   transform: scale(1.04);
   /* Scale up by 4% */
   transition: transform 0.35s ease, box-shadow 0.35s ease-in-out;
-  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.381);
+  box-shadow: 0.21rem 0.21rem 0.42rem rgba(0, 0, 0, 0.381);
 }
 
 .projects .content .proj-cont .proj-link .arrow,
@@ -1443,6 +1435,30 @@ a, button{
   }
 }
 
+@media screen and (max-width: 64.625rem) {
+  /* --projects-- */
+
+  .projects .content .proj-cont{
+    justify-content: center;
+    width: 100%;
+  }
+
+  .projects .content .proj-cont:nth-child(1) .proj-link:nth-child(1){
+    width: 20rem;
+    margin-right: 2rem;
+  }
+
+  .projects .content .proj-cont .proj-link{
+    width: 15rem;
+    height: 12.5rem;
+  }
+
+  .projects .content .proj-cont .proj-link:hover .proj-img{
+    transform: scale(1);
+    box-shadow: none;
+  }
+}
+
 @media screen and (max-width: 46.875rem) {
   /*--Ipad Air: 750px--*/
 
@@ -1469,6 +1485,33 @@ a, button{
   .home .profile .name{
     top: 1rem;
     left: 6.5rem;
+  }
+
+  /* --projects-- */
+
+  .projects .content .proj-cont:nth-child(1) .proj-link:nth-child(1){
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 41.275rem) {
+  .projects .content .proj-cont .proj-link{
+    margin: 0.5rem;
+    margin-bottom: 0!important;
+    width: 12.5rem;
+    height: 10rem;
+  }
+
+  .projects .content .proj-cont:nth-child(1) .proj-link:nth-child(1){
+    width: 17.5rem;
+  }
+
+  .projects .content .proj-cont .proj-link .proj-details{
+    height: 2.5rem;
+  }
+
+  .projects .content .proj-cont .proj-link .proj-details .proj-stack{
+    display: none;
   }
 }
 
@@ -1580,8 +1623,10 @@ a, button{
 
   .projects .content .proj-cont{
     width: 100%;
-    flex-direction: column;
-    margin-right: 0;
+  }
+
+  .projects .content .proj-cont:nth-child(1){
+    margin-bottom: 0;
   }
 
   .projects .content .proj-cont:nth-child(1) .proj-link:nth-child(1),
@@ -1590,28 +1635,26 @@ a, button{
     margin-right: 0!important;
   }
 
-  .projects .proj-info-text-break-1{
-    display: none;
-  }
-
-  .projects .proj-info-text-break-2{
-    display: flex;
-  }
-
   .projects .content .proj-cont .proj-link .arrow{
     font-weight: 500;
   }
 
   .projects .content .proj-cont .proj-link{
-    /* box-shadow: none!important; */
     margin-bottom: 1.5rem;
-    width: 100%;
-    box-shadow: 0.21rem 0.21rem 0.42rem rgba(0, 0, 0, 0.381)!important;
+    box-shadow: 0.175rem 0.175rem 0.35rem rgba(0, 0, 0, 0.381)!important;
   }
 
   .projects .content .proj-cont .proj-link:hover .proj-img{
     transform: scale(1);
     box-shadow: none;
+  }
+
+  .projects .content .proj-cont .proj-link .proj-details{
+    height: 3.5rem;
+  }
+
+  .projects .content .proj-cont .proj-link .proj-details .proj-stack{
+    display: flex;
   }
 
   /* --contact-- */
@@ -1631,4 +1674,24 @@ a, button{
   }
 }
 
+@media screen and (max-width: 29.375rem) {
+  /* --projects-- */
 
+  .projects .content .proj-cont{
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .projects .content .proj-cont .proj-link{
+    margin-bottom: 1.625rem!important;
+    width: 98%;
+    height: 12.5rem;
+  }
+
+  .projects .content .proj-cont:nth-child(1) .proj-link:nth-child(1){
+    width: 98%;
+  }
+}
+
+
+    
