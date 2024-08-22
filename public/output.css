@@ -660,12 +660,12 @@ video {
   margin-bottom: 2.75rem;
 }
 
-.mb-12{
-  margin-bottom: 3rem;
-}
-
 .mb-14{
   margin-bottom: 3.5rem;
+}
+
+.mb-2{
+  margin-bottom: 0.5rem;
 }
 
 .mb-3{
@@ -726,18 +726,6 @@ video {
 
 .mt-9{
   margin-top: 2.25rem;
-}
-
-.mb-0{
-  margin-bottom: 0px;
-}
-
-.mb-20{
-  margin-bottom: 5rem;
-}
-
-.mb-2{
-  margin-bottom: 0.5rem;
 }
 
 .flex{
@@ -1653,7 +1641,7 @@ a, button{
 
   .projects .content .proj-cont .proj-link{
     margin-bottom: 1.5rem;
-    box-shadow: 0.175rem 0.175rem 0.35rem rgba(0, 0, 0, 0.381)!important;
+    box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.381)!important;
   }
 
   .projects .content .proj-cont .proj-link:hover .proj-img{

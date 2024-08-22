@@ -512,7 +512,7 @@ a, button{
     }
     .projects .content .proj-cont .proj-link{
         margin-bottom: 1.5rem;
-        box-shadow: 0.175rem 0.175rem 0.35rem rgba(0, 0, 0, 0.381)!important;
+        box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.381)!important;
     }
     .projects .content .proj-cont .proj-link:hover .proj-img{
         transform: scale(1);
