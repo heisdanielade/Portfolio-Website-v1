@@ -12,8 +12,7 @@
     /* ---- colors ---- */
     --first-color: #242424;
     --white-color: hsl(0, 0%, 95%);
-    /* --link-border-color: rgba(212, 212, 212, 0.275); */
-    --link-border-color: rgba(212, 212, 212, 0.668);;
+    --link-border-color: rgba(212, 212, 212, 0.275);
     --text-color-light: hsl(0, 0%, 64%);
     --container-color: rgba(219, 219, 219, 0.441);
     --container-color-desktop: rgba(214, 214, 214, 0.921);
