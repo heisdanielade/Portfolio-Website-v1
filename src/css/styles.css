@@ -12,7 +12,8 @@
     /* ---- colors ---- */
     --first-color: #242424;
     --white-color: hsl(0, 0%, 95%);
-    --link-border-color: rgba(212, 212, 212, 0.275);
+    --section-border-color: rgba(187, 187, 187, 0.374);
+    --link-border-color: rgba(212, 212, 212, 0.23);
     --text-color-light: hsl(0, 0%, 64%);
     --container-color: rgba(219, 219, 219, 0.441);
     --container-color-desktop: rgba(214, 214, 214, 0.921);
@@ -79,6 +80,7 @@ button{text-align: center;}
 a, button{
     cursor: url("assets/images/cursors/finger.png"), auto;
 }
+
 
 
 /* ========== REUSABLE CSS CLASSES ========== */
@@ -254,7 +256,6 @@ a, button{
 }
 .projects .content .proj-cont .proj-link .arrow,
 .projects .content .proj-cont .proj-link .proj-details{
-    z-index: 10;
     border-bottom-left-radius: 0.8rem;
     border-top-right-radius: 0.8rem;
     background-color: var(--first-color);
@@ -460,12 +461,13 @@ a, button{
     }
     .nav .nav__social__links .mobile a{
         border: 0.25rem solid;
-        border-color: rgba(212, 212, 212, 0.451);
+        border-color: var(--link-border-color);
+        /* border-color: rgba(212, 212, 212, 0.451); */
     }
     /* --home-- */
     .home{
         border-top: none!important;
-        border: 0.046875rem solid rgba(187, 187, 187, 0.374);
+        border: 0.046875rem solid var(--section-border-color);
         border-bottom-left-radius: 5rem;
         border-bottom-right-radius: 5rem;
     }
@@ -494,7 +496,7 @@ a, button{
     /* --services-- */
     .services{
         border-radius: 5rem;
-        border: 0.046875rem solid rgba(173, 173, 173, 0.279);
+        border: 0.046875rem solid var(--section-border-color);
     }
     .services .title-info,
     .projects .title-info{
@@ -547,7 +549,7 @@ a, button{
     }
     /* --contact-- */
     .contact .heading .image-container{
-        border-top: 0.046975rem solid rgba(173, 173, 173, 0.279);
+        border-top: 0.046975rem solid var(--section-border-color);
         width: 7.5rem;
         height: 7.5rem;
         background-color: rgb(239, 239, 239);
@@ -556,11 +558,13 @@ a, button{
     .footer{
         border-top-left-radius: 5rem;
         border-top-right-radius: 5rem;
-        border: 0.046875rem solid rgba(173, 173, 173, 0.279);
+        border: 0.046875rem solid var(--section-border-color);
     }
     .footer .content .socials a{
         border: 0.25rem solid;
         border-color: var(--link-border-color);
+        background-color: var(--white-color);
+        color: var(--first-color);
     }
 }
 @media screen and (max-width: 29.375rem) { 
