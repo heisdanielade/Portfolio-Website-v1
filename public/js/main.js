@@ -20,6 +20,11 @@ const hiddenElements = document.querySelectorAll('.not-shown');
 hiddenElements.forEach((el) => observer.observe(el));
 
 
-// else {
-//     entry.target.classList.remove('shown');
-// }
+// Page loader animation
+ window.onload = function() {
+    // Set a timeout to hide the loader after 3 seconds
+    setTimeout(function() {
+        document.getElementById('page-loader').style.opacity = '0';
+        document.getElementById('page-loader').style.visibility = 'hidden';
+    }, 2000);
+};
