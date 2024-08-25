@@ -1218,6 +1218,19 @@ a, button{
   background-color: var(--container-color-desktop);
 }
 
+/* --Scroll reveal animation-- */
+
+.not-shown{
+  opacity: 0;
+  scale: 0.85;
+  transition: all 1.5s;
+}
+
+.shown{
+  opacity: 1;
+  scale: 1;
+}
+
 /* ============== HEADER & NAVBAR ============== */
 
 .header{
