@@ -135,10 +135,10 @@ a, button{
 /* --Page loader-- */
 .page-loader{
     /* background-color: var(--container-color-desktop); */
-    background-color: rgba(219, 219, 219, 0.97);
+    background-color: rgb(230, 230, 230);
     transition: 0.5s ease;
 }
-.page-loader .loader {
+.page-loader .loader{
     width: 45px;
     aspect-ratio: .75;
     --c: no-repeat linear-gradient(#242424 0 0);
@@ -148,17 +148,13 @@ a, button{
       var(--c) 100% 50%;
     background-size: 20% 50%;
     animation: loader-bars 1s infinite linear;
-  }
-  @keyframes loader-bars {
-    20% {background-position: 0% 0%  ,50% 50% ,100% 50% }
-    40% {background-position: 0% 100%,50% 0%  ,100% 50% }
-    60% {background-position: 0% 50% ,50% 100%,100% 0%  }
-    80% {background-position: 0% 50% ,50% 50% ,100% 100%}
-  }
-  .page-loader .name{
-    color: var(--first-color);
-  }
-
+}
+@keyframes loader-bars{
+   20% {background-position: 0% 0%  ,50% 50% ,100% 50% }
+   40% {background-position: 0% 100%,50% 0%  ,100% 50% }
+   60% {background-position: 0% 50% ,50% 100%,100% 0%  }
+   80% {background-position: 0% 50% ,50% 50% ,100% 100%}
+}
 
 
 

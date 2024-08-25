@@ -728,10 +728,6 @@ video {
   margin-top: 0.75rem;
 }
 
-.mt-5{
-  margin-top: 1.25rem;
-}
-
 .mt-8{
   margin-top: 2rem;
 }
@@ -1250,11 +1246,11 @@ a, button{
 
 .page-loader{
   /* background-color: var(--container-color-desktop); */
-  background-color: rgba(219, 219, 219, 0.97);
+  background-color: rgb(230, 230, 230);
   transition: 0.5s ease;
 }
 
-.page-loader .loader {
+.page-loader .loader{
   width: 45px;
   aspect-ratio: .75;
   --c: no-repeat linear-gradient(#242424 0 0);
@@ -1266,7 +1262,7 @@ a, button{
   animation: loader-bars 1s infinite linear;
 }
 
-@keyframes loader-bars {
+@keyframes loader-bars{
   20% {
     background-position: 0% 0%  ,50% 50% ,100% 50%
   }
@@ -1282,10 +1278,6 @@ a, button{
   80% {
     background-position: 0% 50% ,50% 50% ,100% 100%
   }
-}
-
-.page-loader .name{
-  color: var(--first-color);
 }
 
 /* ============== HEADER & NAVBAR ============== */
