@@ -126,7 +126,7 @@ a, button{
 .not-shown{
     opacity: 0;
     scale: 0.85;
-    transition: all 1.3s;
+    transition: all 1s;
 }
 .shown{
     opacity: 1;
