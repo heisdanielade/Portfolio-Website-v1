@@ -860,6 +860,10 @@ video {
   width: 18.375rem;
 }
 
+.w-\[2\.813rem\]{
+  width: 2.813rem;
+}
+
 .w-\[2\.825rem\]{
   width: 2.825rem;
 }
@@ -1245,13 +1249,11 @@ a, button{
 /* --Page loader-- */
 
 .page-loader{
-  /* background-color: var(--container-color-desktop); */
   background-color: rgb(230, 230, 230);
   transition: 0.5s ease;
 }
 
 .page-loader .loader{
-  width: 45px;
   aspect-ratio: .75;
   --c: no-repeat linear-gradient(#242424 0 0);
   background: 
