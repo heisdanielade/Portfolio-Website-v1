@@ -12,6 +12,8 @@ const observer = new IntersectionObserver((entries) => {
         console.log(entry)
         if (entry.isIntersecting){
             entry.target.classList.add('shown');
+        } else {
+            entry.target.classList.remove('shown')
         }
     });
 });
@@ -26,5 +28,5 @@ hiddenElements.forEach((el) => observer.observe(el));
     setTimeout(function() {
         document.getElementById('page-loader').style.opacity = '0';
         document.getElementById('page-loader').style.visibility = 'hidden';
-    }, 1500);
+    }, 1250);
 };
