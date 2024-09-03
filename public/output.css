@@ -1264,7 +1264,7 @@ a, button{
 .page-loader .loader {
   stroke-dasharray: 250;
   stroke-dashoffset: 250;
-  animation: draw 2.4s forwards ease-in-out;
+  animation: draw 2.6s forwards ease-in-out;
   /* Draw animation */
 }
 
