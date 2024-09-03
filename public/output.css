@@ -1076,22 +1076,13 @@ video {
   /* ---- colors ---- */
   --first-color: #242424;
   --white-color: hsl(0, 0%, 95%);
-  --aqua-color: aqua
-    --section-border-color: rgba(187, 187, 187, 0.374);
+  --aqua-color: aqua;
+  --section-border-color: rgba(187, 187, 187, 0.374);
   --link-border-color: rgba(212, 212, 212, 0.23);
   --text-color-light: hsl(0, 0%, 64%);
   --container-color: rgba(219, 219, 219, 0.441);
   --container-color-desktop: rgba(214, 214, 214, 0.921);
   --info-overlay-color: rgba(123, 123, 123, 0.744);
-  /* --white-color: #242424;
-    --first-color: hsl(0, 0%, 95%);
-    --aqua-color: aqua;
-    --section-border-color: rgba(187, 187, 187, 0.374);
-    --link-border-color: rgba(212, 212, 212, 0.23);
-    --text-color-light: hsl(0, 0%, 64%);
-    --container-color: rgba(219, 219, 219, 0.441);
-    --container-color-desktop:  #1e1e1e;
-    --info-overlay-color: rgba(123, 123, 123, 0.744); */
   /* ---- fonts ---- */
   --body-font: "Bai Jamjuree", sans-serif;
   /* -- font weights -- */
@@ -1580,7 +1571,6 @@ a, button{
   .nav .nav__social__links .mobile a{
     border: 0.25rem solid;
     border-color: var(--link-border-color);
-    /* border-color: rgba(212, 212, 212, 0.451); */
   }
 
   /* --home-- */
