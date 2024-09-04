@@ -738,6 +738,14 @@ video {
   margin-top: 2.25rem;
 }
 
+.mt-1{
+  margin-top: 0.25rem;
+}
+
+.mt-10{
+  margin-top: 2.5rem;
+}
+
 .flex{
   display: flex;
 }
@@ -860,10 +868,6 @@ video {
 
 .w-\[18\.375rem\]{
   width: 18.375rem;
-}
-
-.w-\[2\.813rem\]{
-  width: 2.813rem;
 }
 
 .w-\[2\.825rem\]{
@@ -1363,7 +1367,8 @@ a, button{
 
 /* ============== SERVICES SECTION ============== */
 
-.services .title{
+.services .title,
+.projects .title{
   border-color: rgba(212, 212, 212, 0.451);
   transform: translate(-15px, -15px) rotate(-10deg);
 }
@@ -1411,8 +1416,8 @@ a, button{
 
 /* ============== MEDIA QUERIES ============== */
 
-@media screen and (min-width: 109.375rem) {
-  /*--PC: 1750px--*/
+@media screen and (min-width: 189.375rem) {
+  /*--PC: 1750px--109.375rem min-w previous*/
 
   .header{
     width: 100%;
@@ -1618,8 +1623,7 @@ a, button{
     border: 0.046875rem solid var(--section-border-color);
   }
 
-  .services .title-info,
-    .projects .title-info{
+  .services .title-info{
     font-size: 1.5rem;
   }
 
