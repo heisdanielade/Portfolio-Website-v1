@@ -5,8 +5,8 @@
 @import "tailwindcss/utilities";
 
 /* -------- Font Type------- */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap'); 
-/* @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');  */
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');  */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap'); 
 
 /* @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
@@ -24,7 +24,7 @@
     --container-color-desktop: rgba(214, 214, 214, 0.921);
     --info-overlay-color: rgba(123, 123, 123, 0.744);
     /* ---- fonts ---- */
-    --body-font: "Open Sans", sans-serif;
+    --body-font: "DM Sans", sans-serif;
     --font-regular: 400;
     --font-medium: 500;
     --font-semi-bold: 600;
