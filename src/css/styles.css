@@ -413,10 +413,10 @@ a, button{
 
 @media screen and (max-width: 34.375rem) { /*--Iphone: 550px--*/
     /* --general */
-    .carousel, .contact, .footer{
+    .carousel, .contact{
         background-color: var(--white-color);
     }
-    .header, .home, .services{
+    .header, .home, .services, .footer{
         background-color: var(--container-color);
     }
     .home, .services, .projects, .contact, .footer{

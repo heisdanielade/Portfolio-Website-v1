@@ -1539,11 +1539,11 @@ a, button{
 
   /* --general */
 
-  .carousel, .contact, .footer{
+  .carousel, .contact{
     background-color: var(--white-color);
   }
 
-  .header, .home, .services{
+  .header, .home, .services, .footer{
     background-color: var(--container-color);
   }
 
