@@ -208,9 +208,9 @@ a, button{
         transform: translateY(-15px) rotate(-10deg); /* Move up again */
     }
 }
-.home .content .info .hht{
+/* .home .content .info .hht{
     background-image: none!important;
-}
+} */
 
 /* ============== CAROUSEL SECTION ============== */
 .carousel-track {
@@ -416,7 +416,7 @@ a, button{
 
 @media screen and (max-width: 34.375rem) { /*--Iphone: 550px--*/
     /* --general */
-    .carousel, .contact{
+    .carousel, .contact, .footer{
         background-color: var(--white-color);
     }
     .header, .home, .services{
@@ -527,12 +527,11 @@ a, button{
         height: 7.5rem;
     }
     /* --footer-- */
-    .footer{
+    /* .footer{
         border-top-left-radius: 5rem;
         border-top-right-radius: 5rem;
         border: 0.046875rem solid var(--section-border-color);
-        background-color: transparent;
-    }
+    } */
     .footer .content .socials a{
         border: 0.25rem solid;
         border-color: var(--link-border-color);
