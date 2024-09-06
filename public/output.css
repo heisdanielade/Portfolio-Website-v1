@@ -906,6 +906,34 @@ video {
   width: 100%;
 }
 
+.w-\[9\%\]{
+  width: 9%;
+}
+
+.w-\[\%\]{
+  width: %;
+}
+
+.w-\[5\%\]{
+  width: 5%;
+}
+
+.w-\[50\%\]{
+  width: 50%;
+}
+
+.w-\[7\%\]{
+  width: 7%;
+}
+
+.w-\[70\%\]{
+  width: 70%;
+}
+
+.w-\[0\%\]{
+  width: 0%;
+}
+
 .-translate-x-1\/2{
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
