@@ -469,7 +469,7 @@ a, button{
         border: 0.035rem solid var(--section-border-color);
     }
     .services .title-info,
-    .prjects .title-info{
+    .projects .title-info{
         font-size: 1.5rem;
     }
     .services .title,
