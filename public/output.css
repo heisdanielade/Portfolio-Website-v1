@@ -898,44 +898,12 @@ video {
   width: 9.35rem;
 }
 
-.w-full{
-  width: 100%;
-}
-
-.w-\[\]{
-  width: ;
-}
-
-.w-\[9\]{
-  width: 9;
-}
-
-.w-\[90\]{
-  width: 90;
-}
-
-.w-\[95\]{
-  width: 95;
-}
-
-.w-\[95\%\]{
-  width: 95%;
-}
-
-.w-\[956\]{
-  width: 956;
-}
-
-.w-\[96\]{
-  width: 96;
-}
-
 .w-\[96\%\]{
   width: 96%;
 }
 
-.w-\[full\]{
-  width: full;
+.w-full{
+  width: 100%;
 }
 
 .-translate-x-1\/2{
@@ -1657,7 +1625,8 @@ a, button{
     border: 0.035rem solid var(--section-border-color);
   }
 
-  .services .title-info{
+  .services .title-info,
+    .prjects .title-info{
     font-size: 1.5rem;
   }
 

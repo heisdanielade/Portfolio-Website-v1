@@ -468,7 +468,8 @@ a, button{
         border-radius: 5rem;
         border: 0.035rem solid var(--section-border-color);
     }
-    .services .title-info{
+    .services .title-info,
+    .prjects .title-info{
         font-size: 1.5rem;
     }
     .services .title,
