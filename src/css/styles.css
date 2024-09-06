@@ -230,7 +230,12 @@ a, button{
     transform: translate(-15px, -15px) rotate(-10deg);
 }
 
-
+/* .services .serv-con .con-1{
+    background-color: red;
+}
+.services .serv-con .con-2{
+    background-color: blue;
+} */
 /* ============== PROJECTS SECTION ============== */
 .projects .content .proj-cont:nth-child(1) .proj-link:nth-child(1),
 .projects .content .proj-cont:nth-child(2) .proj-link:nth-child(1),
@@ -258,7 +263,7 @@ a, button{
 
 /* ============== CONTACT SECTION ============== */
 .contact .actions a:nth-child(2){
-    border-color: var(--link-border-color);
+    border-color: rgba(212, 212, 212, 0.192);
 }
 .contact .heading .image-container{
     border-top: 0.046975rem solid var(--section-border-color);
@@ -525,8 +530,8 @@ a, button{
     }
     /* --footer-- */
     .footer{
-        border-top-left-radius: 3.5rem;
-        border-top-right-radius: 3.5rem;
+        border-top-left-radius: 4rem;
+        border-top-right-radius: 4rem;
         border: 0.046875rem solid var(--section-border-color);
     }
     .footer .content .socials a{

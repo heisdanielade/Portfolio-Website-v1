@@ -658,6 +658,10 @@ video {
   margin: 0.25rem;
 }
 
+.m-9{
+  margin: 2.25rem;
+}
+
 .mb-1{
   margin-bottom: 0.25rem;
 }
@@ -668,10 +672,6 @@ video {
 
 .mb-11{
   margin-bottom: 2.75rem;
-}
-
-.mb-14{
-  margin-bottom: 3.5rem;
 }
 
 .mb-3{
@@ -736,6 +736,26 @@ video {
 
 .mt-8{
   margin-top: 2rem;
+}
+
+.mt-9{
+  margin-top: 2.25rem;
+}
+
+.mb-9{
+  margin-bottom: 2.25rem;
+}
+
+.mb-12{
+  margin-bottom: 3rem;
+}
+
+.mt-1{
+  margin-top: 0.25rem;
+}
+
+.mb-14{
+  margin-bottom: 3.5rem;
 }
 
 .flex{
@@ -1025,6 +1045,11 @@ video {
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .font-bold{
@@ -1363,6 +1388,13 @@ a, button{
   transform: translate(-15px, -15px) rotate(-10deg);
 }
 
+/* .services .serv-con .con-1{
+    background-color: red;
+}
+.services .serv-con .con-2{
+    background-color: blue;
+} */
+
 /* ============== PROJECTS SECTION ============== */
 
 .projects .content .proj-cont:nth-child(1) .proj-link:nth-child(1),
@@ -1396,7 +1428,7 @@ a, button{
 /* ============== CONTACT SECTION ============== */
 
 .contact .actions a:nth-child(2){
-  border-color: var(--link-border-color);
+  border-color: rgba(212, 212, 212, 0.192);
 }
 
 .contact .heading .image-container{
@@ -1686,8 +1718,8 @@ a, button{
   /* --footer-- */
 
   .footer{
-    border-top-left-radius: 3.5rem;
-    border-top-right-radius: 3.5rem;
+    border-top-left-radius: 4rem;
+    border-top-right-radius: 4rem;
     border: 0.046875rem solid var(--section-border-color);
   }
 
