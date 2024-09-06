@@ -229,13 +229,6 @@ a, button{
     border-color: rgba(212, 212, 212, 0.451);
     transform: translate(-15px, -15px) rotate(-10deg);
 }
-
-/* .services .serv-con .con-1{
-    background-color: red;
-}
-.services .serv-con .con-2{
-    background-color: blue;
-} */
 /* ============== PROJECTS SECTION ============== */
 .projects .content .proj-cont:nth-child(1) .proj-link:nth-child(1),
 .projects .content .proj-cont:nth-child(2) .proj-link:nth-child(1),
@@ -444,7 +437,7 @@ a, button{
     /* --home-- */
     .home{
         border-top: none!important;
-        border: 0.046875rem solid var(--section-border-color);
+        border: 0.035rem solid var(--section-border-color);
         border-bottom-left-radius: 5rem;
         border-bottom-right-radius: 5rem;
     }
@@ -473,7 +466,7 @@ a, button{
     /* --services-- */
     .services{
         border-radius: 5rem;
-        border: 0.046875rem solid var(--section-border-color);
+        border: 0.035rem solid var(--section-border-color);
     }
     .services .title-info{
         font-size: 1.5rem;
@@ -532,7 +525,7 @@ a, button{
     .footer{
         border-top-left-radius: 4rem;
         border-top-right-radius: 4rem;
-        border: 0.046875rem solid var(--section-border-color);
+        border: 0.035rem solid var(--section-border-color);
     }
     .footer .content .socials a{
         border: 0.25rem solid;

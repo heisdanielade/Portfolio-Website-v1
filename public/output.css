@@ -638,6 +638,10 @@ video {
   top: 2rem;
 }
 
+.top-\[10\.75rem\]{
+  top: 10.75rem;
+}
+
 .z-10{
   z-index: 10;
 }
@@ -658,10 +662,6 @@ video {
   margin: 0.25rem;
 }
 
-.m-9{
-  margin: 2.25rem;
-}
-
 .mb-1{
   margin-bottom: 0.25rem;
 }
@@ -672,6 +672,14 @@ video {
 
 .mb-11{
   margin-bottom: 2.75rem;
+}
+
+.mb-12{
+  margin-bottom: 3rem;
+}
+
+.mb-14{
+  margin-bottom: 3.5rem;
 }
 
 .mb-3{
@@ -688,6 +696,10 @@ video {
 
 .mb-8{
   margin-bottom: 2rem;
+}
+
+.mb-9{
+  margin-bottom: 2.25rem;
 }
 
 .ml-1{
@@ -714,16 +726,8 @@ video {
   margin-right: 2rem;
 }
 
-.mt-10{
-  margin-top: 2.5rem;
-}
-
 .mt-12{
   margin-top: 3rem;
-}
-
-.mt-14{
-  margin-top: 3.5rem;
 }
 
 .mt-20{
@@ -736,26 +740,6 @@ video {
 
 .mt-8{
   margin-top: 2rem;
-}
-
-.mt-9{
-  margin-top: 2.25rem;
-}
-
-.mb-9{
-  margin-bottom: 2.25rem;
-}
-
-.mb-12{
-  margin-bottom: 3rem;
-}
-
-.mt-1{
-  margin-top: 0.25rem;
-}
-
-.mb-14{
-  margin-bottom: 3.5rem;
 }
 
 .flex{
@@ -810,8 +794,12 @@ video {
   height: 2.25rem;
 }
 
-.h-\[0\.1rem\]{
-  height: 0.1rem;
+.h-\[0\.0325rem\]{
+  height: 0.0325rem;
+}
+
+.h-\[0\.075rem\]{
+  height: 0.075rem;
 }
 
 .h-\[15\.375rem\]{
@@ -912,6 +900,42 @@ video {
 
 .w-full{
   width: 100%;
+}
+
+.w-\[\]{
+  width: ;
+}
+
+.w-\[9\]{
+  width: 9;
+}
+
+.w-\[90\]{
+  width: 90;
+}
+
+.w-\[95\]{
+  width: 95;
+}
+
+.w-\[95\%\]{
+  width: 95%;
+}
+
+.w-\[956\]{
+  width: 956;
+}
+
+.w-\[96\]{
+  width: 96;
+}
+
+.w-\[96\%\]{
+  width: 96%;
+}
+
+.w-\[full\]{
+  width: full;
 }
 
 .-translate-x-1\/2{
@@ -1022,8 +1046,8 @@ video {
   line-height: 2.5rem;
 }
 
-.text-6xl{
-  font-size: 3.75rem;
+.text-5xl{
+  font-size: 3rem;
   line-height: 1;
 }
 
@@ -1045,11 +1069,6 @@ video {
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-5xl{
-  font-size: 3rem;
-  line-height: 1;
 }
 
 .font-bold{
@@ -1388,13 +1407,6 @@ a, button{
   transform: translate(-15px, -15px) rotate(-10deg);
 }
 
-/* .services .serv-con .con-1{
-    background-color: red;
-}
-.services .serv-con .con-2{
-    background-color: blue;
-} */
-
 /* ============== PROJECTS SECTION ============== */
 
 .projects .content .proj-cont:nth-child(1) .proj-link:nth-child(1),
@@ -1604,7 +1616,7 @@ a, button{
 
   .home{
     border-top: none!important;
-    border: 0.046875rem solid var(--section-border-color);
+    border: 0.035rem solid var(--section-border-color);
     border-bottom-left-radius: 5rem;
     border-bottom-right-radius: 5rem;
   }
@@ -1642,7 +1654,7 @@ a, button{
 
   .services{
     border-radius: 5rem;
-    border: 0.046875rem solid var(--section-border-color);
+    border: 0.035rem solid var(--section-border-color);
   }
 
   .services .title-info{
@@ -1720,7 +1732,7 @@ a, button{
   .footer{
     border-top-left-radius: 4rem;
     border-top-right-radius: 4rem;
-    border: 0.046875rem solid var(--section-border-color);
+    border: 0.035rem solid var(--section-border-color);
   }
 
   .footer .content .socials a{
