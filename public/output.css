@@ -690,10 +690,6 @@ video {
   margin-bottom: 1.25rem;
 }
 
-.mb-6{
-  margin-bottom: 1.5rem;
-}
-
 .mb-8{
   margin-bottom: 2rem;
 }
@@ -886,6 +882,10 @@ video {
   width: 40rem;
 }
 
+.w-\[70\%\]{
+  width: 70%;
+}
+
 .w-\[71\.875rem\]{
   width: 71.875rem;
 }
@@ -898,40 +898,8 @@ video {
   width: 9.35rem;
 }
 
-.w-\[96\%\]{
-  width: 96%;
-}
-
 .w-full{
   width: 100%;
-}
-
-.w-\[9\%\]{
-  width: 9%;
-}
-
-.w-\[\%\]{
-  width: %;
-}
-
-.w-\[5\%\]{
-  width: 5%;
-}
-
-.w-\[50\%\]{
-  width: 50%;
-}
-
-.w-\[7\%\]{
-  width: 7%;
-}
-
-.w-\[70\%\]{
-  width: 70%;
-}
-
-.w-\[0\%\]{
-  width: 0%;
 }
 
 .-translate-x-1\/2{
@@ -1117,7 +1085,7 @@ video {
   --link-border-color: rgba(212, 212, 212, 0.23);
   --text-color-light: hsl(0, 0%, 64%);
   --container-color: rgba(222, 222, 222, 0.441);
-  --container-color-desktop: rgba(218, 218, 218, 0.921);
+  --container-color-desktop: rgba(227, 227, 227, 0.921);
   --info-overlay-color: rgba(123, 123, 123, 0.744);
   /* ---- fonts ---- */
   --body-font: "Bai Jamjuree", sans-serif;
@@ -1374,10 +1342,6 @@ a, button{
     /* Move up again */
   }
 }
-
-/* .home .content .info .hht{
-    background-image: none!important;
-} */
 
 /* ============== CAROUSEL SECTION ============== */
 
@@ -1727,8 +1691,8 @@ a, button{
   /* --footer-- */
 
   .footer{
-    border-top-left-radius: 4rem;
-    border-top-right-radius: 4rem;
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 5rem;
     border: 0.035rem solid var(--section-border-color);
   }
 

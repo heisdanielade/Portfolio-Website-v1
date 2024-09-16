@@ -18,7 +18,7 @@
     --link-border-color: rgba(212, 212, 212, 0.23);
     --text-color-light: hsl(0, 0%, 64%);
     --container-color: rgba(222, 222, 222, 0.441);
-    --container-color-desktop: rgba(218, 218, 218, 0.921);
+    --container-color-desktop: rgba(227, 227, 227, 0.921);
     --info-overlay-color: rgba(123, 123, 123, 0.744);
     /* ---- fonts ---- */
     --body-font: "Bai Jamjuree", sans-serif;
@@ -205,9 +205,6 @@ a, button{
         transform: translateY(-15px) rotate(-10deg); /* Move up again */
     }
 }
-/* .home .content .info .hht{
-    background-image: none!important;
-} */
 
 /* ============== CAROUSEL SECTION ============== */
 .carousel-track {
@@ -524,8 +521,8 @@ a, button{
     }
     /* --footer-- */
     .footer{
-        border-top-left-radius: 4rem;
-        border-top-right-radius: 4rem;
+        border-top-left-radius: 5rem;
+        border-top-right-radius: 5rem;
         border: 0.035rem solid var(--section-border-color);
     }
     .footer .content .socials a{
