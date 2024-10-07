@@ -1362,7 +1362,7 @@ a, button, .cursor-custom{
   position: absolute;
   border-radius: 10rem;
   /* background-color: var(--aqua-color); */
-  background-color: rgb(56, 56, 56);
+  /* background-color: rgb(56, 56, 56); */
   height: 0.094rem;
   left: 0;
   bottom: -0.125rem;
@@ -1373,14 +1373,17 @@ a, button, .cursor-custom{
 
 .holder .item:nth-child(1) .lang::after{
   width: 100%;
+  background-color: rgb(37, 130, 206);
 }
 
 .holder .item:nth-child(2) .lang::after{
-  width: 40%;
+  width: 65%;
+  background-color: rgb(108, 203, 139);
 }
 
 .holder .item:nth-child(3) .lang::after{
-  width: 65%;
+  background-color: rgb(208, 39, 39);
+  width: 40%;
 }
 
 /* ============== CAROUSEL SECTION ============== */
@@ -1732,9 +1735,9 @@ a, button, .cursor-custom{
 
   .footer{
     justify-content: center;
-    height: 1rem;
-    border-top-left-radius: 5rem;
-    border-top-right-radius: 5rem;
+    height: 1.5rem;
+    /* border-top-left-radius: 3.25rem;
+        border-top-right-radius: 3.25rem; */
     border: 0.035rem solid var(--section-border-color);
   }
 
