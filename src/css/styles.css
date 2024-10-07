@@ -223,14 +223,14 @@ a, button, .cursor-custom{
 /* --Proficiency levels-- */
 .holder .item:nth-child(1) .lang::after{
     width: 100%;
-    background-color: rgb(37, 130, 206);
+    background-color: rgb(4, 53, 93);
 }
 .holder .item:nth-child(2) .lang::after{
     width: 65%;
-    background-color: rgb(108, 203, 139);
+    background-color: rgb(22, 163, 69);
 }
 .holder .item:nth-child(3) .lang::after{
-    background-color: rgb(208, 39, 39);
+    background-color: rgb(210, 14, 14);
     width: 40%;
 }
 
@@ -550,8 +550,8 @@ a, button, .cursor-custom{
     .footer{
         justify-content: center;
         height: 1.5rem;
-        /* border-top-left-radius: 3.25rem;
-        border-top-right-radius: 3.25rem; */
+        border-top-left-radius: 2.5rem;
+        border-top-right-radius: 2.5rem;
         border: 0.035rem solid var(--section-border-color);
     }
     .footer .line{
