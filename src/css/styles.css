@@ -545,9 +545,14 @@ a, button, .cursor-custom{
     }
     /* --footer-- */
     .footer{
+        justify-content: center;
+        height: 1rem;
         border-top-left-radius: 5rem;
         border-top-right-radius: 5rem;
         border: 0.035rem solid var(--section-border-color);
+    }
+    .footer .line{
+        display: none;
     }
     .footer .content .socials a{
         border: 0.25rem solid;

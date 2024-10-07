@@ -662,10 +662,6 @@ video {
   margin: 0.25rem;
 }
 
-.m-2{
-  margin: 0.5rem;
-}
-
 .mb-1{
   margin-bottom: 0.25rem;
 }
@@ -740,18 +736,6 @@ video {
 
 .mt-8{
   margin-top: 2rem;
-}
-
-.mr-6{
-  margin-right: 1.5rem;
-}
-
-.mr-5{
-  margin-right: 1.25rem;
-}
-
-.mr-4{
-  margin-right: 1rem;
 }
 
 .flex{
@@ -969,10 +953,6 @@ video {
 
 .rounded-full{
   border-radius: 9999px;
-}
-
-.border-\[0\.15rem\]{
-  border-width: 0.15rem;
 }
 
 .border-\[0\.225rem\]{
@@ -1751,9 +1731,15 @@ a, button, .cursor-custom{
   /* --footer-- */
 
   .footer{
+    justify-content: center;
+    height: 1rem;
     border-top-left-radius: 5rem;
     border-top-right-radius: 5rem;
     border: 0.035rem solid var(--section-border-color);
+  }
+
+  .footer .line{
+    display: none;
   }
 
   .footer .content .socials a{
