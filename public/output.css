@@ -722,6 +722,10 @@ video {
   margin-right: 2rem;
 }
 
+.mt-10{
+  margin-top: 2.5rem;
+}
+
 .mt-12{
   margin-top: 3rem;
 }
@@ -734,8 +738,20 @@ video {
   margin-top: 0.75rem;
 }
 
+.mt-6{
+  margin-top: 1.5rem;
+}
+
 .mt-8{
   margin-top: 2rem;
+}
+
+.mt-5{
+  margin-top: 1.25rem;
+}
+
+.mt-1{
+  margin-top: 0.25rem;
 }
 
 .flex{
@@ -852,6 +868,10 @@ video {
 
 .w-7{
   width: 1.75rem;
+}
+
+.w-8{
+  width: 2rem;
 }
 
 .w-9{
@@ -1355,6 +1375,10 @@ a, button, .cursor-custom{
   }
 }
 
+.home .content .location .text{
+  color: #5B5B5B;
+}
+
 /* ============== SPOKEN LANGUAGES SECTION ============== */
 
 .holder .item .lang::after{
@@ -1736,8 +1760,8 @@ a, button, .cursor-custom{
   .footer{
     justify-content: center;
     height: 1.5rem;
-    border-top-left-radius: 2.5rem;
-    border-top-right-radius: 2.5rem;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
     border: 0.035rem solid var(--section-border-color);
   }
 
