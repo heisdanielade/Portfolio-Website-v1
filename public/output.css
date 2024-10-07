@@ -662,6 +662,10 @@ video {
   margin: 0.25rem;
 }
 
+.m-2{
+  margin: 0.5rem;
+}
+
 .mb-1{
   margin-bottom: 0.25rem;
 }
@@ -736,6 +740,18 @@ video {
 
 .mt-8{
   margin-top: 2rem;
+}
+
+.mr-6{
+  margin-right: 1.5rem;
+}
+
+.mr-5{
+  margin-right: 1.25rem;
+}
+
+.mr-4{
+  margin-right: 1rem;
 }
 
 .flex{
@@ -846,6 +862,10 @@ video {
   width: 11rem;
 }
 
+.w-6{
+  width: 1.5rem;
+}
+
 .w-7{
   width: 1.75rem;
 }
@@ -880,6 +900,10 @@ video {
 
 .w-\[40rem\]{
   width: 40rem;
+}
+
+.w-\[7\.5rem\]{
+  width: 7.5rem;
 }
 
 .w-\[70\%\]{
@@ -945,6 +969,10 @@ video {
 
 .rounded-full{
   border-radius: 9999px;
+}
+
+.border-\[0\.15rem\]{
+  border-width: 0.15rem;
 }
 
 .border-\[0\.225rem\]{
@@ -1051,6 +1079,10 @@ video {
   font-weight: 500;
 }
 
+.font-semibold{
+  font-weight: 600;
+}
+
 .tracking-tight{
   letter-spacing: -0.025em;
 }
@@ -1078,8 +1110,8 @@ video {
 
 :root{
   /* ---- colors ---- */
-  --first-color: #242424;
-  --white-color: hsl(0, 0%, 95%);
+  --primary-color: #242424;
+  --secondary-color: hsl(0, 0%, 95%);
   --aqua-color: aqua;
   --section-border-color: rgba(187, 187, 187, 0.374);
   --link-border-color: rgba(212, 212, 212, 0.23);
@@ -1185,7 +1217,7 @@ button{
   text-align: center;
 }
 
-a, button{
+a, button, .cursor-custom{
   cursor: url("assets/images/cursors/finger.png"), auto;
 }
 
@@ -1197,7 +1229,7 @@ a, button{
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  background-color: var(--white-color);
+  background-color: var(--secondary-color);
   /* background-image: url(data:image/png;base64,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); */
 }
 
@@ -1228,7 +1260,7 @@ a, button{
 }
 
 .gradient-text{
-  background-image: linear-gradient(90deg, var(--first-color) 46%, hsl(0, 0%, 67%));
+  background-image: linear-gradient(90deg, var(--primary-color) 46%, hsl(0, 0%, 67%));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -1270,24 +1302,24 @@ a, button{
 
 /* --Color classes-- */
 
-.clr-first{
-  color: var(--first-color);
+.color-primary{
+  color: var(--primary-color);
 }
 
-.clr-white{
-  color: var(--white-color);
+.color-secondary{
+  color: var(--secondary-color);
 }
 
-.clr-aqua{
+.color-aqua{
   color: var(--aqua-color);
 }
 
-.bg-first{
-  background-color: var(--first-color);
+.bg-primary{
+  background-color: var(--primary-color);
 }
 
-.bg-whitec{
-  background-color: var(--white-color);
+.bg-secondary{
+  background-color: var(--secondary-color);
 }
 
 .bg-container-desktop{
@@ -1299,11 +1331,11 @@ a, button{
 .nav .nav__social__links .desktop a::after{
   content: "";
   position: absolute;
-  background-color: var(--first-color);
-  height: 1.5px;
+  background-color: var(--primary-color);
+  height: 0.094rem;
   width: 0;
   left: 0;
-  bottom: -2px;
+  bottom: -0.125rem;
   transition: 0.3s;
 }
 
@@ -1314,7 +1346,7 @@ a, button{
 /* ============== HOME SECTION ============== */
 
 .home .profile .image{
-  border-color: var(--white-color);
+  border-color: var(--secondary-color);
 }
 
 .home .profile .name{
@@ -1341,6 +1373,34 @@ a, button{
     transform: translateY(-15px) rotate(-10deg);
     /* Move up again */
   }
+}
+
+/* ============== SPOKEN LANGUAGES SECTION ============== */
+
+.holder .item .lang::after{
+  content: "";
+  position: absolute;
+  border-radius: 10rem;
+  /* background-color: var(--aqua-color); */
+  background-color: rgb(56, 56, 56);
+  height: 0.094rem;
+  left: 0;
+  bottom: -0.125rem;
+  width: 0;
+}
+
+/* --Proficiency levels-- */
+
+.holder .item:nth-child(1) .lang::after{
+  width: 100%;
+}
+
+.holder .item:nth-child(2) .lang::after{
+  width: 40%;
+}
+
+.holder .item:nth-child(3) .lang::after{
+  width: 65%;
 }
 
 /* ============== CAROUSEL SECTION ============== */
@@ -1544,7 +1604,7 @@ a, button{
   /* --general */
 
   .carousel, .contact{
-    background-color: var(--white-color);
+    background-color: var(--secondary-color);
   }
 
   .header, .home, .services, .footer{
@@ -1699,8 +1759,8 @@ a, button{
   .footer .content .socials a{
     border: 0.25rem solid;
     border-color: var(--link-border-color);
-    background-color: var(--white-color);
-    color: var(--first-color);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
   }
 }
 
