@@ -694,10 +694,6 @@ video {
   margin-bottom: 2rem;
 }
 
-.mb-9{
-  margin-bottom: 2.25rem;
-}
-
 .ml-1{
   margin-left: 0.25rem;
 }
@@ -918,10 +914,6 @@ video {
   width: 100%;
 }
 
-.w-2{
-  width: 0.5rem;
-}
-
 .-translate-x-1\/2{
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1035,6 +1027,11 @@ video {
   line-height: 1;
 }
 
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -1055,9 +1052,32 @@ video {
   line-height: 1rem;
 }
 
-.text-base{
-  font-size: 1rem;
-  line-height: 1.5rem;
+.text-\[10rem\]{
+  font-size: 10rem;
+}
+
+.text-\[10em\]{
+  font-size: 10em;
+}
+
+.text-\[1em\]{
+  font-size: 1em;
+}
+
+.text-\[0em\]{
+  font-size: 0em;
+}
+
+.text-\[0\.8em\]{
+  font-size: 0.8em;
+}
+
+.text-\[0\.87em\]{
+  font-size: 0.87em;
+}
+
+.text-\[0\.875em\]{
+  font-size: 0.875em;
 }
 
 .font-bold{
@@ -1086,6 +1106,30 @@ video {
 
 .tracking-wide{
   letter-spacing: 0.025em;
+}
+
+.text-\[\]{
+  color: ;
+}
+
+.text-\[1\]{
+  color: 1;
+}
+
+.text-\[10\]{
+  color: 10;
+}
+
+.text-\[10r\]{
+  color: 10r;
+}
+
+.text-\[em\]{
+  color: em;
+}
+
+.text-\[0\.em\]{
+  color: 0.em;
 }
 
 .underline{
