@@ -25,7 +25,7 @@ hiddenElements.forEach((el) => observer.observe(el));
 // };
 
 const greetings = [
-    // "",
+    "Hello",
     "Hello",     // English
     "Cześć",     // Polish
     "안녕하세요",    // Korean
