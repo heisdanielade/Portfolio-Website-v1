@@ -54,7 +54,7 @@ const greetings = [
     index = (index + 1) % greetings.length; // Loop to the start
   }
   
-  setInterval(changeGreeting, 700);
+  setInterval(changeGreeting, 675);
   
   setTimeout(() => {
     document.getElementById("page-loader").style.opacity = "0";
