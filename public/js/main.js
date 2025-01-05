@@ -61,5 +61,5 @@ const greetings = [
     setTimeout(() => {
       document.getElementById("page-loader").style.display = "none";
     }, 600);
-  }, 3000);
+  }, 3500);
   
