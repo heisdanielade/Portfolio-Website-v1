@@ -25,13 +25,13 @@ hiddenElements.forEach((el) => observer.observe(el));
 // };
 
 const greetings = [
-    "",
+    // "",
     "Hello",     // English
     "Cześć",     // Polish
-    "你好",        // Chinese
+    "안녕하세요",    // Korean
     "Привіт",    // Ukrainian
     "Bonjour",   // French
-    "안녕하세요",    // Korean
+    "你好",        // Chinese
   ];
   
   let index = 0;

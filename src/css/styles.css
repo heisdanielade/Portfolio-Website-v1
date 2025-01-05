@@ -131,23 +131,13 @@ a, button, .cursor-custom{
 }
 /* --Page loader-- */
 #page-loader {
-    transition: opacity 1s ease;
+    /* transition: opacity 1s ease; */
   }
 .page-loader{
     background-color: rgb(230, 230, 230);
     transition: 0.5s ease;
 }
-.page-loader .greeting-container {
-    height: 2rem;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}  
 .page-loader .greeting {
-    font-size: 2rem;
-    font-weight: 600;
-    transform: translateY(0);
     transition: transform 0.3s ease;
 }
 /* Responsive adjustments */
