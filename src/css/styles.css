@@ -117,6 +117,24 @@ a, button, .cursor-custom{
     background-clip: text;
     color: transparent;
 }
+/* --Link tooltip-- */
+.tooltip {
+    position: relative;
+}
+  
+.tooltip:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+}
 /* --Scroll reveal animation-- */
 .not-shown{
     opacity: 0;
@@ -128,9 +146,9 @@ a, button, .cursor-custom{
     scale: 1;
 }
 /* --Page loader-- */
-#page-loader {
-    /* transition: opacity 1s ease; */
-  }
+/* #page-loader {
+    transition: opacity 1s ease;
+  } */
 .page-loader{
     background-color: rgb(230, 230, 230);
     transition: 0.5s ease;
@@ -138,23 +156,20 @@ a, button, .cursor-custom{
 .page-loader .greeting {
     transition: transform 0.3s ease;
 }
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .greeting {
-      font-size: 1.75rem;
-    }
-} 
+
 /* 
+-----OTHER PAGE LOADER ANIMATION-----
 .page-loader .loader{
     stroke-dasharray: 250;
     stroke-dashoffset: 250;
     animation: draw 2s forwards ease-in-out;
-} */
+}
 @keyframes draw{
     to{
-        stroke-dashoffset: 0; /* Reveal the text */
+        stroke-dashoffset: 0; 
     }
 } */
+
 /* --Color classes-- */
 .color-primary{
     color: var(--primary-color);
@@ -174,8 +189,16 @@ a, button, .cursor-custom{
 .bg-container-desktop{
     background-color: var(--container-color-desktop);
 }
-
-
+/* --Button hover-- */
+.btn-hover{
+    transition: 0.3s ease-in;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.btn-hover:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
 
 
 
@@ -215,10 +238,6 @@ a, button, .cursor-custom{
     75% {
         transform: translateY(-15px) rotate(-10deg); /* Move up again */
     }
-}
-
-.home .content .location .text{
-    color: #505050;
 }
 
 
@@ -269,13 +288,18 @@ a, button, .cursor-custom{
 
 
 /* ============== CONTACT SECTION ============== */
-.contact .actions a:nth-child(1){
-    border-color: rgba(212, 212, 212, 0.192);
-}
 .contact .heading .image-container{
     border-top: 0.046975rem solid var(--section-border-color);
     background-color: rgb(239, 239, 239);
 }
+.contact .location .text{
+    /* color: #505050; */
+    color: #666;
+}
+.contact .actions a:nth-child(1){
+    border-color: rgba(212, 212, 212, 0.192);
+}
+
 
 
 /* ============== SPOKEN LANGUAGES SECTION ============== */
@@ -401,7 +425,7 @@ a, button, .cursor-custom{
 
 @media screen and (max-width: 46.875rem) { /*--Ipad Air: 750px--*/
     .page-loader .greeting {
-        font-size: 1.75rem;
+        font-size: 2rem;
     }
     .home, .carousel, .skillset, .projects, .contact, .footer{
         width: 100%;

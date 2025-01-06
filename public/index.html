@@ -25,7 +25,7 @@
  <div id="page" class="page">
 
     <!--====== PAGE LOADER ======-->
-    <div id="page-loader" class="page-loader transition-opacity fixed flex items-center justify-center top-0 left-0 z-50 h-screen w-full">
+    <div id="page-loader" class="page-loader fixed flex items-center justify-center transition-opacity top-0 left-0 z-50 h-screen w-full">
         <!-- <svg width="400" height="100" xmlns="http://www.w3.org/2000/svg">
             <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-family="Protest Guerrilla" font-size="5.25rem" fill="none" stroke="#242424" stroke-width="1.9" class="loader">
                 @
@@ -44,7 +44,7 @@
         <nav class="nav container container-padding-1 left-2/4 w-[71.875rem] h-14 -translate-x-1/2 relative flex items-center justify-between">
             <!-- Action links -->
             <div class="nav__action__links flex items-center font-medium tracking-tight">
-                <a href="mailto:danieladeofficial@gmail.com" class="email color-secondary bg-primary text-xs flex items-center justify-center w-20 h-10 rounded-full mr-2 p-2">
+                <a href="mailto:danieladeofficial@gmail.com" class="email btn-hover color-secondary bg-primary text-xs flex items-center justify-center w-20 h-10 rounded-full mr-2 p-2">
                     <i class="ri-mail-send-line mr-2"></i>
                     <span>Email</span>
                 </a>
@@ -58,14 +58,17 @@
             <div class="nav__social__links flex">
                 <!-- mobile -->
                 <div class="mobile hidden items-center text-xl">
-                    <a href="https://www.linkedin.com/in/heisdanielade" target="_blank" class="flex color-primary bg-secondary items-center justify-center w-[2.825rem] h-[2.825rem] mr-1 rounded-full border-[0.25rem] border-solid"><i class="ri-linkedin-box-fill"></i></a>
-                    <a href="https://github.com/heisdanielade" target="_blank" class="flex color-primary bg-secondary items-center justify-center w-[2.825rem] h-[2.825rem] mr-1 rounded-full border-[0.25rem] border-solid"><i class="ri-github-line"></i></a>
+                    <a href="https://www.linkedin.com/in/heisdanielade" aria-label="Visit LinkedIn profile" target="_blank" class="flex color-primary bg-secondary items-center justify-center w-[2.825rem] h-[2.825rem] mr-1 rounded-full border-[0.25rem] border-solid"><i class="ri-linkedin-box-fill"></i></a>
+                    <!-- <a href="https://github.com/heisdanielade" aria-label="Visit GitHub profile" target="_blank" class="flex color-primary bg-secondary items-center justify-center w-[2.825rem] h-[2.825rem] mr-1 rounded-full border-[0.25rem] border-solid"><i class="ri-github-line"></i></a> -->
+                    <a href="https://leetcode.com/u/heisdanielade/" aria-label="Visit Leetcode profile" target="_blank" class="flex color-primary bg-secondary items-center justify-center w-[2.825rem] h-[2.825rem] mr-1 rounded-full border-[0.25rem] border-solid">
+                        <img src="./assets/images/logos/leetcode.svg" class="w-[1.125rem] h-[1.125rem]" alt="Leetcode">
+                    </a>
                 </div>
                 <!-- desktop -->
                 <div class="desktop color-primary text-sm">
-                    <a href="https://www.linkedin.com/in/heisdanielade" target="_blank" class="relative pb-[0.125rem] no-underline tracking-wide">LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/heisdanielade" aria-label="Visit LinkedIn profile" target="_blank" class="relative pb-[0.125rem] no-underline tracking-wide">LinkedIn</a>
                     <span class="slash font-bold ml-1 mr-1">/</span>
-                    <a href="https://github.com/heisdanielade" target="_blank" class="relative pb-[0.125rem] no-underline tracking-wide">GitHub</a>
+                    <a href="https://github.com/heisdanielade" aria-label="Visit GitHub profile" target="_blank" class="relative pb-[0.125rem] no-underline tracking-wide">GitHub</a>
                 </div>
             </div>
         </nav>
@@ -90,18 +93,15 @@
             </div>
             <div class="content flex items-center justify-center flex-col w-[40rem] pt-2">
                 <h1 class="info not-shown text-center text-5xl mt-20">
-                    <span class="gradient-text">Learn. Code. Innovate.<br> Repeat.</span><span class="hht stroke-text-2 hidden">xyz.</span>
+                    <span class="gradient-text leading-10">Computer Science<br>Student.</span><span class="hht stroke-text-2 hidden">xyz</span>
                 </h1>
-
-                <div class="location flex items-center justify-center mt-6">
-                     <img src="assets/images/descriptions/location.gif" alt="Location" class="icon w-8 h-8">
-                     <span class="text font-semibold text-sm">Zielona Góra, Poland</span>
-                </div>
                 
-                <a href="https://github.com/heisdanielade" target="_blank" class="github__link not-shown color-secondary bg-primary flex items-center justify-center mt-8 mb-11 w-44 h-14 rounded-full">
-                    <span class="font-medium text-xs">GitHub</span>
-                    <i class="ri-arrow-right-up-line underline font-light text-sm ml-2"></i>
-                </a>                
+                <a href="https://github.com/heisdanielade" target="_blank" class="github__link btn-hover not-shown color-secondary bg-primary flex items-center justify-center mt-9 mb-11 w-44 h-14 rounded-full">
+                    <span class="font-medium text-xs">My GitHub</span>
+                    <i class="ri-github-fill text-base ml-2"></i>
+                </a>
+                
+            
             </div>
         </section>
 
@@ -141,7 +141,7 @@
 
         
         <!--====== SKILLSET ======-->
-        <section id="skillset" class="skillset bg-container-desktop w-[71.875rem] section container container-padding-1 relative flex items-center justify-center flex-col">
+        <section id="skillset" class="skillset bg-container-desktop w-[71.875rem] mb-7 section container container-padding-1 relative flex items-center justify-center flex-col">
             <h1 class="title-info not-shown mb-14 text-center text-4xl gradient-text">
                 Arsenal
             </h1>
@@ -345,11 +345,16 @@
                     Have questions?<br> Let's talk
                 </h1>
              </div>
+            
+            <div class="location flex items-center justify-center mt-7">
+                <img src="assets/images/descriptions/location.gif" alt="Location" class="icon w-5 h-5 mr-1">
+                <span class="text font-medium text-[0.85rem]">Zielona Góra, Poland</span>
+           </div>
+
             <!-- action buttons -->
-            <div class="actions not-shown flex items-center justify-center mt-12 text-xs font-medium">
+            <div class="actions not-shown flex items-center justify-center mt-8 text-xs font-medium">
 
-
-                <a href="mailto:danieladeofficial@gmail.com" target="_blank" class="color-secondary bg-primary flex items-center justify-center w-24 h-12 rounded-full mr-2 p-2">
+                <a href="mailto:danieladeofficial@gmail.com" target="_blank" class="btn-hover color-secondary bg-primary flex items-center justify-center w-24 h-12 rounded-full mr-2 p-2">
                     <i class="ri-mail-send-line mr-2"></i>
                     <span>Email</span>
                 </a>
@@ -390,14 +395,16 @@
             <div class="content flex items-center justify-between w-full">
                 <div class="arr">
                     <p class="text-xs font-medium mt-3 color-primary">
-                        &copy; <span id="year"></span>&nbsp;Daniel Adediran.
+                        &copy; <span id="year"></span>&nbsp;heisdanielade.
                     </p>
                 </div>
     
                 <!-- social links -->
                 <div class="socials flex items-center justify-center text-xl">
-                    <a href="https://www.linkedin.com/in/heisdanielade" target="_blank" class="color-primary flex items-center justify-center w-10 h-10 mr-1 rounded-full"><i class="ri-linkedin-box-fill"></i></a>
-                    <a href="https://github.com/heisdanielade" target="_blank" class="color-primary flex items-center justify-center w-10 h-10 mr-1 rounded-full"><i class="ri-github-line"></i></a>
+                    <a href="https://www.linkedin.com/in/heisdanielade" data-tooltip="LinkedIn"  aria-label="Visit LinkedIn profile" target="_blank" class="tooltip color-primary flex items-center justify-center w-10 h-10 mr-1 rounded-full"><i class="ri-linkedin-box-fill"></i></a>
+                    <a href="https://leetcode.com/u/heisdanielade/" data-tooltip="Leetcode" aria-label="Visit Leetcode profile" target="_blank" class="tooltip color-primary flex items-center justify-center w-10 h-10 mr-1 rounded-full">
+                        <img src="./assets/images/logos/leetcode.svg" class="w-[1.125rem] h-[1.125rem]" alt="Leetcode">
+                    </a>
                 </div>
             </div>
          </footer>

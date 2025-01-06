@@ -25,13 +25,19 @@ hiddenElements.forEach((el) => observer.observe(el));
 // };
 
 const greetings = [
-    "Hello",
-    "Hello",     // English
-    "Cześć",     // Polish
-    "안녕하세요",    // Korean
-    "Привіт",    // Ukrainian
-    "Bonjour",   // French
-    "你好",        // Chinese
+    // "Hello",
+    // "Hello",     // English
+    // "Cześć",     // Polish
+    // "Привіт",    // Ukrainian
+    // "Bonjour",   // French
+    // "안녕하세요",    // Korean
+    // "你好",        // Chinese
+
+    "Learn",
+    "Learn",     // English
+    "Code",     // Polish
+    "Innovate",    // Ukrainian
+    "Repeat",   // French
   ];
   
   let index = 0;
@@ -61,5 +67,5 @@ const greetings = [
     setTimeout(() => {
       document.getElementById("page-loader").style.display = "none";
     }, 600);
-  }, 3500);
+  }, 3240);
   
