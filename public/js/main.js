@@ -8,6 +8,8 @@ const observer = new IntersectionObserver((entries) => {
     console.log(entry);
     if (entry.isIntersecting) {
       entry.target.classList.add("shown");
+    }else{
+      entry.target.classList.remove("shown");
     }
   });
 });
@@ -25,14 +27,6 @@ hiddenElements.forEach((el) => observer.observe(el));
 // };
 
 const words = [
-    // "Hello",
-    // "Hello",     // English
-    // "Cześć",     // Polish
-    // "Привіт",    // Ukrainian
-    // "Bonjour",   // French
-    // "안녕하세요",    // Korean
-    // "你好",        // Chinese
-
     "Learn",
     "Learn",   
     "Code",    
