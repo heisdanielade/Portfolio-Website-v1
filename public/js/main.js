@@ -19,11 +19,15 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 // Page loader: Word change animation
 const words = [
-  "Are",
-  "Are",
-  "you",
-  "ready?",
+  "",
+  // "Hello", 
+  "Cześć", 
+  "Hallo",
+  "привіт",
+  "Pẹlẹ o",
+  "Hwfar"
 ];
+
 
 let index = 0;
 
@@ -48,13 +52,13 @@ function changeWord() {
     clearInterval(wordChangeInterval); // Stop the interval once all words have been displayed
   }
 }
-const wordChangeInterval = setInterval(changeWord, 845);
+const wordChangeInterval = setInterval(changeWord, 560);
 setTimeout(() => {
   document.getElementById("page-loader").style.opacity = "0";
   setTimeout(() => {
     document.getElementById("page-loader").style.display = "none";
   }, 600);
-}, 4150);
+}, 3850);
 
   
 // Second Page loader animation
