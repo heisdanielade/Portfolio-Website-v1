@@ -15,7 +15,7 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll(".not-shown");
 hiddenElements.forEach((el) => observer.observe(el));
 
-// // Page loader animation
+// Other Page loader animation
 // window.onload = function () {
 //   // Set a timeout to hide the loader after 3 seconds
 //   setTimeout(function () {
@@ -24,7 +24,7 @@ hiddenElements.forEach((el) => observer.observe(el));
 //   }, 1450); // 1450
 // };
 
-const greetings = [
+const words = [
     // "Hello",
     // "Hello",     // English
     // "Cześć",     // Polish
@@ -34,33 +34,33 @@ const greetings = [
     // "你好",        // Chinese
 
     "Learn",
-    "Learn",     // English
-    "Code",     // Polish
-    "Innovate",    // Ukrainian
-    "Repeat",   // French
+    "Learn",   
+    "Code",    
+    "Build",   
+    "Repeat", 
   ];
   
   let index = 0;
   
-  function changeGreeting() {
-    const greetingElement = document.querySelector(".greeting");
+  function changeWord() {
+    const wordElement = document.querySelector(".word");
   
     // Slide out current greeting
-    greetingElement.style.transform = "translateY(-100%)";
+    wordElement.style.transform = "translateY(-100%)";
   
     // Wait for animation to finish, then update text and reset position
     setTimeout(() => {
-      greetingElement.textContent = greetings[index];
-      greetingElement.style.transform = "translateY(100%)";
+      wordElement.textContent = words[index];
+      wordElement.style.transform = "translateY(100%)";
       setTimeout(() => {
-        greetingElement.style.transform = "translateY(0)";
+        wordElement.style.transform = "translateY(0)";
       }, 50); // Small delay for smooth effect
     }, 300);
   
-    index = (index + 1) % greetings.length; // Loop to the start
+    index = (index + 1) % words.length; // Loop to the start
   }
   
-  setInterval(changeGreeting, 675);
+  setInterval(changeWord, 675);
   
   setTimeout(() => {
     document.getElementById("page-loader").style.opacity = "0";
