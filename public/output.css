@@ -1057,6 +1057,10 @@ video {
   font-size: 0.85rem;
 }
 
+.text-\[2\.5rem\]{
+  font-size: 2.5rem;
+}
+
 .text-base{
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1486,12 +1490,11 @@ button,
 
 /* ============== HOME SECTION ============== */
 
-.home .profile .name {
+/* .home .profile .name {
   background-color: #fff;
   box-shadow: 0 0.063rem 0.125 rgba(0, 0, 0, 0.05);
   animation: name-bounce 2.5s infinite ease-in-out;
 }
-
 .home .profile .name:before,
 .home .profile .name:after {
   content: "";
@@ -1501,7 +1504,6 @@ button,
   position: absolute;
   z-index: -1;
 }
-
 .home .profile .name:after {
   bottom: -0.625rem;
   right: 1.625rem;
@@ -1509,6 +1511,22 @@ button,
   height: 1.875rem;
   box-shadow: 1.063rem 2.688rem 0 -0.375rem #fff, -0.313rem 1.688rem 0 -0.313rem #fff;
 }
+@keyframes name-bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(-15px);
+    }
+    50% {
+      transform: translateY(0);
+    }
+    75% {
+      transform: translateY(-15px);
+    }
+  }
+   */
 
 .home .profile .image {
   border-color: var(--secondary-color);
@@ -1516,29 +1534,6 @@ button,
 
 .home .profile .hand {
   animation: hand-bounce 2.5s infinite ease-in-out;
-}
-
-@keyframes name-bounce {
-  0%,
-    100% {
-    transform: translateY(0);
-    /* Start and end at the original position */
-  }
-
-  25% {
-    transform: translateY(-15px);
-    /* Move up */
-  }
-
-  50% {
-    transform: translateY(0);
-    /* Return to original position */
-  }
-
-  75% {
-    transform: translateY(-15px);
-    /* Move up again */
-  }
 }
 
 @keyframes hand-bounce {
@@ -1770,6 +1765,10 @@ button,
   .home .content {
     width: 100%;
   }
+
+  /* .home .profile .name{
+    display: none;
+  } */
 
   .home .profile .hand {
     top: 1rem;
