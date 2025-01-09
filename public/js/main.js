@@ -25,7 +25,6 @@ const words = [
   "Hallo",
   "привіт",
   "Pẹlẹ o",
-  "Hwfar"
 ];
 
 
@@ -58,7 +57,7 @@ setTimeout(() => {
   setTimeout(() => {
     document.getElementById("page-loader").style.display = "none";
   }, 600);
-}, 3850);
+}, 3250);
 
   
 // Second Page loader animation
