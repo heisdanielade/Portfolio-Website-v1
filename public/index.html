@@ -25,7 +25,7 @@
  <div id="page" class="page">
 
     <!--====== PAGE LOADER ======-->
-    <div id="page-loader" class="page-loader fixed flex items-center justify-center transition-opacity top-0 left-0 z-50 h-screen w-full">
+    <div id="page-loader" class="page-loader fixed hidden items-center justify-center transition-opacity top-0 left-0 z-50 h-screen w-full">
         <!-- <svg width="400" height="100" xmlns="http://www.w3.org/2000/svg">
             <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-family="Protest Guerrilla" font-size="5.25rem" fill="none" stroke="#242424" stroke-width="1.9" class="loader">
                 @
@@ -160,39 +160,35 @@
                 Skillset
             </span>
 
-            <div class="serv-con mb-8 flex items-center justify-evenly w-full">
-                <div class="con-1 flex items-center justify-evenly">
-                    <div class="box not-shown m-1 w-[15rem]">
-                        <img src="assets/images/descriptions/server.gif" alt="Backend" class="descriptive-icon w-10 h-10 mb-5">
-                        <h2 class="text text-lg font-medium mb-3 color-primary">Back-end</h2>
-                        <p class="info text-sm color-primary">
-                            Building reliable server-side apps with Java.
-                        </p>
-                    </div>
-                    <div class="box not-shown m-1 w-[15rem]">
-                        <img src="assets/images/descriptions/database.gif" alt="Databases" class="descriptive-icon w-10 h-10 mb-5">
-                        <h2 class="text text-lg font-medium mb-3 color-primary">Databases</h2>
-                        <p class="info text-sm color-primary">
-                            Proficient in SQL and Database design.
-                        </p>
-                    </div>
+            <div class="skill-con flex flex-wrap justify-center items-center gap-4 ">
+                <div class="box not-shown m-1 mb-2 w-[10rem] text-center flex flex-col items-center justify-center">
+                    <img src="assets/images/descriptions/server.gif" alt="Backend" class="descriptive-icon w-10 h-10 mb-4">
+                    <h2 class="text text-base font-medium mb-3 color-primary">Back-end</h2>
+                    <p class="info text-[0.825rem] color-primary">
+                        Building reliable server-side apps with Java.
+                    </p>
                 </div>
 
-                <div class="con-2 flex items-center justify-evenly">
-                    <div class="box not-shown m-1 w-[15rem]">
-                        <img src="assets/images/descriptions/web.gif" alt="Frontend" class="descriptive-icon w-10 h-10 mb-5">
-                        <h2 class="text text-lg font-medium mb-3 color-primary">Front-end</h2>
-                        <p class="info text-sm color-primary">
-                            Dynamic & responsive web apps with Vue.js.
-                        </p>
-                    </div>
-                    <div class="box not-shown m-1 w-[15rem]">
-                        <img src="assets/images/descriptions/quality.gif" alt="Testing" class="descriptive-icon w-10 h-10 mb-5">
-                        <h2 class="text text-lg font-medium mb-3 color-primary">Testing</h2>
-                        <p class="info text-sm color-primary">
-                            Ensuring software quality and reliability.
-                        </p>
-                    </div>
+                <div class="box not-shown m-1 mb-2 w-[10rem] text-center flex flex-col items-center justify-center">
+                    <img src="assets/images/descriptions/database.gif" alt="Databases" class="descriptive-icon w-10 h-10 mb-4">
+                    <h2 class="text text-base font-medium mb-3 color-primary">Databases</h2>
+                    <p class="info text-[0.825rem] color-primary">
+                        Proficient in SQL and Database design.
+                    </p>
+                </div>
+                <div class="box not-shown m-1 w-[10rem] text-center flex flex-col items-center justify-center">
+                    <img src="assets/images/descriptions/web.gif" alt="Frontend" class="descriptive-icon w-10 h-10 mb-4">
+                    <h2 class="text text-base font-medium mb-3 color-primary">Front-end</h2>
+                    <p class="info text-[0.825rem] color-primary">
+                        Dynamic & responsive web apps with Vue.js.
+                    </p>
+                </div>
+                <div class="box not-shown m-1 w-[10rem] text-center flex flex-col items-center justify-center">
+                    <img src="assets/images/descriptions/quality.gif" alt="Testing" class="descriptive-icon w-10 h-10 mb-4">
+                    <h2 class="text text-base font-medium mb-3 color-primary">Testing</h2>
+                    <p class="info text-[0.825rem] color-primary">
+                        Ensuring software quality and reliability.
+                    </p>
                 </div>
             </div>
         </section>

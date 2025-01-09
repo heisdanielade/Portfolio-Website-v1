@@ -482,13 +482,6 @@ button,
   .contact .heading .title {
     font-size: 2.25rem;
   }
-  /* --skillset-- */
-  .skillset .serv-con {
-    flex-direction: column;
-  }
-  .skillset .serv-con .con-1 {
-    margin-bottom: 2rem;
-  }
 }
 @media screen and (max-width: 64.625rem) {
   /* --projects-- */
@@ -642,18 +635,6 @@ button,
   .skillset .title,
   .projects .title {
     font-size: 0.75rem;
-  }
-  .skillset .serv-con {
-    flex-direction: column;
-  }
-  .skillset .serv-con .box {
-    width: 100%;
-  }
-  .skillset .serv-con .info {
-    font-size: 0.7875rem;
-  }
-  .skillset .serv-con .info .text-break {
-    display: flex;
   }
   /* --projects-- */
   .projects .content .proj-cont {
