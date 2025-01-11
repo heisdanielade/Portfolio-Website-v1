@@ -1,753 +1,460 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Portfolio website for Daniel Adediran - heisdanielade"
-    />
-    <meta
-      name="keywords"
-      content="heisdanielade, java, developer, poland, javascript, polish, zielona góra, software engineer, uz"
-    />
+    <meta name="description" content="Portfolio website for Daniel Adediran - heisdanielade" />
+    <meta name="keywords"
+        content="heisdanielade, java, developer, poland, javascript, polish, zielona góra, software engineer, uz" />
     <meta name="author" content="Daniel Adediran" />
     <meta name="robots" content="index, follow" />
     <meta property="og:title" content="Portfolio | heisdanielade" />
-    <meta
-      property="og:description"
-      content="Portfolio website for Daniel Adediran - heisdanielade"
-    />
-    <meta
-      property="og:image"
-      content="https://heisdanielade.xyz/assets/images/projects/portfolio-project.png"
-    />
+    <meta property="og:description" content="Portfolio website for Daniel Adediran - heisdanielade" />
+    <meta property="og:image" content="https://heisdanielade.xyz/assets/images/projects/portfolio-project.png" />
     <meta property="og:url" content="https://www.heisdanielade.xyz" />
     <link rel="canonical" href="https://www.heisdanielade.xyz" />
     <!-- Addition files-->
     <link rel="stylesheet" href="./output.css" />
     <!-- Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css"
-      crossorigin=""
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="" />
     <!-- Page details -->
     <title>Portfolio | heisdanielade</title>
-    <link
-      rel="shortcut icon"
-      href="assets/images/me/favicon.png"
-      type="image/x-icon"
-    />
-  </head>
+    <link rel="shortcut icon" href="assets/images/me/favicon.png" type="image/x-icon" />
+</head>
 
-  <body>
+<body>
     <div id="page" class="page">
-      <!--====== PAGE LOADER ======-->
-      <div
-        id="page-loader"
-        class="page-loader fixed hidden items-center justify-center transition-opacity top-0 left-0 z-50 h-screen w-full"
-      >
-        <!-- <svg width="400" height="100" xmlns="http://www.w3.org/2000/svg">
+        <!--====== PAGE LOADER ======-->
+        <div id="page-loader"
+            class="page-loader fixed flex items-center justify-center transition-opacity top-0 left-0 z-50 h-screen w-full">
+            <!-- <svg width="400" height="100" xmlns="http://www.w3.org/2000/svg">
             <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-family="Protest Guerrilla" font-size="5.25rem" fill="none" stroke="#242424" stroke-width="1.9" class="loader">
                 @
             </text>
         </svg> -->
 
-        <div
-          class="word-container h-9 flex items-center justify-center overflow-hidden"
-        >
-          <span
-            class="word gradient-text text-4xl font-semibold translate-x-0"
-          ></span>
+            <div class="word-container h-9 flex items-center justify-center overflow-hidden">
+                <span class="word gradient-text text-4xl font-semibold translate-x-0"></span>
+            </div>
         </div>
-      </div>
 
-      <!--====== HEADER ======-->
-      <header
-        id="header "
-        class="header md:max-w-screen-md lg:max-w-screen-lg mx-auto w-full bg-transparent"
-      >
-        <nav
-          class="nav h-14 container-padding-1 section w-full relative flex items-center justify-between"
-        >
-          <!-- Action links -->
-          <div
-            class="nav__action__links flex items-center font-medium tracking-tight"
-          >
-            <a
-              href="mailto:danieladeofficial@gmail.com"
-              class="email btn-hover color-secondary bg-primary text-xs flex items-center justify-center w-20 h-10 rounded-full mr-2 p-2"
-            >
-              <i class="ri-mail-send-line mr-2"></i>
-              <span>Email</span>
-            </a>
-            <a
-              href="https://buymeacoffee.com/heisdanielade"
-              target="_blank"
-              id="buymeacoffee"
-              class="buymeacoffee text-xs flex items-center justify-center w-12 h-11 font-extrabold"
-            >
-              <span class="noth-icon">
-                <img
-                  src="assets/images/descriptions/coffee-cup.gif"
-                  alt="Coffee"
-                  class="w-9 h-9"
-                />
-              </span>
-            </a>
-          </div>
-          <!-- Social links-->
-          <div class="nav__social__links flex">
-            <!-- mobile -->
-            <div class="mobile flex md:hidden lg:hidden items-center text-xl">
-              <a
-                href="https://www.linkedin.com/in/heisdanielade"
-                aria-label="Visit LinkedIn profile"
-                target="_blank"
-                class="flex color-primary bg-secondary items-center justify-center w-[2.825rem] h-[2.825rem] mr-1 rounded-full border-[0.25rem] border-solid"
-                ><i class="ri-linkedin-box-fill"></i
-              ></a>
-              <!-- <a href="https://github.com/heisdanielade" aria-label="Visit GitHub profile" target="_blank" class="flex color-primary bg-secondary items-center justify-center w-[2.825rem] h-[2.825rem] mr-1 rounded-full border-[0.25rem] border-solid"><i class="ri-github-line"></i></a> -->
-              <a
-                href="https://leetcode.com/u/heisdanielade/"
-                aria-label="Visit Leetcode profile"
-                target="_blank"
-                class="flex color-primary bg-secondary items-center justify-center w-[2.825rem] h-[2.825rem] mr-1 rounded-full border-[0.25rem] border-solid"
-              >
-                <img
-                  src="./assets/images/logos/leetcode.svg"
-                  class="w-[1.075rem] h-[1.075rem]"
-                  alt="Leetcode"
-                />
-              </a>
-            </div>
-            <!-- desktop -->
-            <div class="desktop hidden md:flex lg:flex color-primary text-sm">
-              <a
-                href="https://www.linkedin.com/in/heisdanielade"
-                aria-label="Visit LinkedIn profile"
-                target="_blank"
-                class="relative pb-[0.125rem] no-underline tracking-wide"
-                >LinkedIn</a
-              >
-              <span class="slash font-extrabold ml-2 mr-2">|</span>
-              <a
-                href="https://leetcode.com/u/heisdanielade/"
-                aria-label="Visit Leetcode profile"
-                target="_blank"
-                class="relative pb-[0.125rem] no-underline tracking-wide"
-                >Leetcode</a
-              >
-            </div>
-          </div>
-        </nav>
-      </header>
-      
-
-      <!--======== MAIN ========-->
-      <main class="main overflow-hidden container flex flex-col items-center w-full">
-        <!--====== HOME ======-->
-        <section
-          id="home"
-          class="home bg-container-desktop w-full max-w-screen-lg mx-auto p-4 md:py-8 section container container-padding-1 relative flex items-center justify-center flex-col"
-        >
-          <!-- profile -->
-          <div class="profile relative w-40">
-            <!-- home profile image -->
-            <img
-              class="image not-shown relative z-20 w-40 h-40 rounded-full object-cover border-[0.225rem] border-solid"
-              src="assets/images/me/favicon.png"
-              alt="Me"
-            />
-            <!-- home profile animated hand -->
-            <span
-              class="hand not-shown color-primary bg-transparent text-[0.775em] absolute top-8 left-[8.25rem] font-medium z-30 flex items-center justify-center rounded-full w-32 pt-4 pb-4 p-3"
-            >
-              <img src="assets/images/me/mx-211.png" alt="Hand" class="w-20" />
-            </span>
-            <!-- curved arrow -->
-            <img
-              src="assets/svg/curved-arrow.svg"
-              alt="Curved-arrow"
-              class="arrow not-shown invert z-10 absolute w-20 h-20 left-[3.25rem] bottom-[-4.5rem]"
-            />
-          </div>
-          <!-- content -->
-          <div
-            class="content flex items-center justify-center flex-col w-[40rem] pt-2"
-          >
-            <h1 class="info not-shown text-center text-[2.5rem] mt-20">
-              <span class="gradient-text leading-10"
-                >I'm Daniel,<br />CS Student @UZ.</span
-              ><span class="hht stroke-text-2 hidden">xyz</span>
-            </h1>
-            <!-- link -->
-            <a
-              href="https://github.com/heisdanielade"
-              target="_blank"
-              class="github__link btn-hover not-shown color-secondary bg-primary flex items-center justify-center mt-9 mb-11 w-44 h-14 rounded-full"
-            >
-              <span class="font-medium text-xs">Mój GitHub</span>
-              <i class="ri-github-fill text-base ml-2"></i>
-            </a>
-          </div>
-        </section>
-
-
-        <!--====== CAROUSEL ======-->
-        <section
-          id="carousel"
-          class="carousel flex bg-secondary not-shown w-full max-w-screen-lg mx-auto p-4 md:py-8 containerrelative overflow-hidden items-center justify-center bg-transparent"
-        >
-          <div
-            class="carousel-track animate-carousel flex items-center justify-evenly h-20 p-1"
-          >
-            <img
-              src="assets/images/logos/Spring_Framework-Logo.wine.svg"
-              alt="Logo"
-              class="logo object-cover w-[8.5rem] mr-16"
-            />
-            <img
-              src="assets/images/logos/oracle.png"
-              alt="Logo"
-              class="logo object-cover w-[8.5rem] mr-16"
-            />
-            <img
-              src="assets/images/logos/git-scm-ar21.svg"
-              alt="Logo"
-              class="logo object-cover w-[8.5rem] mr-16 h-8"
-            />
-            <img
-              src="assets/images/logos/mysql-horizontal.svg"
-              alt="Logo"
-              class="logo object-cover w-[8.5rem] mr-16 h-8"
-            />
-            <img
-              src="assets/images/logos/openai.png"
-              alt="Logo"
-              class="logo object-cover w-[8.5rem] mr-16 h-6"
-            />
-            <img
-              src="assets/images/logos/tailwindcss-ar21.svg"
-              alt="Logo"
-              class="logo object-cover w-[8.5rem] mr-16 h-8"
-            />
-            <img
-              src="assets/images/logos/vuejs-ar21.svg"
-              alt="Logo"
-              class="logo object-cover w-[8.5rem] mr-16 h-10"
-            />
-            <img
-              src="assets/images/logos/perplexity.png"
-              alt="Logo"
-              class="logo object-cover w-[8.5rem] mr-16 h-14"
-            />
-            <!-- Image duplication for seamless loop -->
-            <img
-              src="assets/images/logos/Spring_Framework-Logo.wine.svg"
-              alt="Logo"
-              class="logo object-cover w-[8.5rem] mr-16"
-            />
-            <img
-              src="assets/images/logos/oracle.png"
-              alt="Logo"
-              class="logo object-cover w-[8.5rem] mr-16"
-            />
-            <img
-              src="assets/images/logos/git-scm-ar21.svg"
-              alt="Logo"
-              class="logo object-cover w-[8.5rem] mr-16 h-8"
-            />
-            <img
-              src="assets/images/logos/mysql-horizontal.svg"
-              alt="Logo"
-              class="logo object-cover w-[8.5rem] mr-16 h-8"
-            />
-            <img
-              src="assets/images/logos/openai.png"
-              alt="Logo"
-              class="logo object-cover w-[8.5rem] mr-16 h-6"
-            />
-            <img
-              src="assets/images/logos/tailwindcss-ar21.svg"
-              alt="Logo"
-              class="logo object-cover w-[8.5rem] mr-16 h-8"
-            />
-            <img
-              src="assets/images/logos/vuejs-ar21.svg"
-              alt="Logo"
-              class="logo object-cover w-[8.5rem] mr-16 h-10"
-            />
-            <img
-              src="assets/images/logos/perplexity.png"
-              alt="Logo"
-              class="logo object-cover w-[8.5rem] mr-16 h-14"
-            />
-            <!-- Image duplication for seamless loop -->
-            <img
-              src="assets/images/logos/Spring_Framework-Logo.wine.svg"
-              alt="Logo"
-              class="logo object-cover w-[8.5rem] mr-16"
-            />
-            <img
-              src="assets/images/logos/oracle.png"
-              alt="Logo"
-              class="logo object-cover w-[8.5rem] mr-16"
-            />
-            <img
-              src="assets/images/logos/git-scm-ar21.svg"
-              alt="Logo"
-              class="logo object-cover w-[8.5rem] mr-16 h-8"
-            />
-            <img
-              src="assets/images/logos/mysql-horizontal.svg"
-              alt="Logo"
-              class="logo object-cover w-[8.5rem] mr-16 h-8"
-            />
-            <img
-              src="assets/images/logos/openai.png"
-              alt="Logo"
-              class="logo object-cover w-[8.5rem] mr-16 h-6"
-            />
-            <img
-              src="assets/images/logos/tailwindcss-ar21.svg"
-              alt="Logo"
-              class="logo object-cover w-[8.5rem] mr-16 h-8"
-            />
-            <img
-              src="assets/images/logos/vuejs-ar21.svg"
-              alt="Logo"
-              class="logo object-cover w-[8.5rem] mr-16 h-10"
-            />
-            <img
-              src="assets/images/logos/perplexity.png"
-              alt="Logo"
-              class="logo object-cover w-[8.5rem] mr-16 h-14"
-            />
-          </div>
-        </section>
-
-
-        <!--====== SKILLSET ======-->
-        <section
-          id="skillset"
-          class="skillset bg-container-desktop w-full max-w-screen-lg mx-auto p-4 md:py-8 mb-12 section container container-padding-1 relative flex items-center justify-center flex-col"
-        >
-          <h1
-            class="title-info not-shown mb-14 text-center text-4xl gradient-text"
-          >
-            Arsenal
-          </h1>
-
-          <div
-            class="title-stroke-line not-shown top-[10.5rem] md:top-[8.5rem] lg:top-[8.5rem] z-10 bg-primary absolute mb-8 w-[70%] h-[0.0325rem]"
-          ></div>
-          <span
-            class="title z-20 color-secondary bg-primary not-shown text-sm w-28 h-12 font-bold rounded-full mb-12 p-2 -border-[0.25rem] flex items-center justify-center"
-          >
-            Skillset
-          </span>
-
-          <div
-            class="skill-con flex flex-wrap justify-center items-center gap-4"
-          >
-            <div
-              class="box not-shown m-[0.075rem] mb-2 w-[9.525rem] text-center flex flex-col items-center justify-center"
-            >
-              <img
-                src="assets/images/descriptions/server.gif"
-                alt="Backend"
-                class="descriptive-icon w-10 h-10 mb-4"
-              />
-              <h2 class="text text-base font-medium mb-3 color-primary">
-                Back-end
-              </h2>
-              <p class="info text-[0.825rem] text-gray-600">
-                Building reliable server-side apps with Java.
-              </p>
-            </div>
-
-            <div
-              class="box not-shown m-[0.075rem] mb-2 w-[9.525rem] text-center flex flex-col items-center justify-center"
-            >
-              <img
-                src="assets/images/descriptions/database.gif"
-                alt="Databases"
-                class="descriptive-icon w-10 h-10 mb-4"
-              />
-              <h2 class="text text-base font-medium mb-3 color-primary">
-                Databases
-              </h2>
-              <p class="info text-[0.825rem] text-gray-600">
-                Proficient in SQL and Database design.
-              </p>
-            </div>
-            <div
-              class="box not-shown m-[0.075rem] w-[9.525rem] text-center flex flex-col items-center justify-center"
-            >
-              <img
-                src="assets/images/descriptions/web.gif"
-                alt="Frontend"
-                class="descriptive-icon w-10 h-10 mb-4"
-              />
-              <h2 class="text text-base font-medium mb-3 color-primary">
-                Front-end
-              </h2>
-              <p class="info text-[0.825rem] text-gray-600">
-                Dynamic & responsive web apps with Vue.js.
-              </p>
-            </div>
-            <div
-              class="box not-shown m-[0.075rem] w-[9.525rem] text-center flex flex-col items-center justify-center"
-            >
-              <img
-                src="assets/images/descriptions/quality.gif"
-                alt="Testing"
-                class="descriptive-icon w-10 h-10 mb-4"
-              />
-              <h2 class="text text-base font-medium mb-3 color-primary">
-                Testing
-              </h2>
-              <p class="info text-[0.825rem] text-gray-600">
-                Ensuring software quality and reliability.
-              </p>
-            </div>
-          </div>
-        </section>
-
-
-        <!-- ====== PROJECTS ======-->
-        <section id="projects" class="projects relative w-full max-w-screen-lg mx-auto p-4 md:py-8 mb-6 section container container-padding-1 flex items-center justify-center flex-col">
-          <h1 class="title-info not-shown mb-14 text-center text-4xl gradient-text">
-            Highlights
-          </h1>
-          <div
-            class="title-stroke-line not-shown top-[10.5rem] md:top-[8.5rem] lg:top-[8.5rem] z-10 bg-primary absolute mb-8 w-[70%] h-[0.0325rem]"></div>
-          <span
-            class="title z-20 color-secondary bg-primary not-shown text-sm w-28 h-12 font-bold rounded-full mb-12 p-2 -border-[0.25rem] flex items-center justify-center">
-            Projects
-          </span>
-
-
-          <div class="content mt-4 w-full flex flex-col items-center gap-8 p-5">
-
-            <!-- Project Box 1-->
-            <div class="box flex flex-col lg:flex-row items-center gap-8 w-full max-w-5xl p-6 rounded-3xl shadow-sm">
-                <!-- Left Section -->
-                <div class="left flex flex-col items-center justify-center w-full lg:w-1/2">
-                  <img
-                    class="w-full max-w-[29rem] h-auto mb-6 rounded-3xl shadow-sm"
-                    src="assets/images/projects/pamietampsa.png"
-                    alt="Project"
-                  />
-                </div>
-  
-                <!-- Right Section -->
-                <div class="right flex flex-col items-start w-full lg:w-1/2 p-4">
-                  <h2 class="text-xl font-semibold mb-4">
-                    <a
-                      href="#"
-                      target="_blank"
-                      class="text-blue-600 hover:text-blue-800 flex items-center gap-2">
-                      <span>PamiętamPsa - Pet care</span>
-                      <i class="ri-links-line"></i>
+        <!--====== HEADER ======-->
+        <header id="header " class="header md:max-w-screen-md lg:max-w-screen-lg mx-auto w-full bg-transparent">
+            <nav class="nav h-14 container-padding-1 section w-full relative flex items-center justify-between">
+                <!-- Action links -->
+                <div class="nav__action__links flex items-center font-medium tracking-tight">
+                    <a href="mailto:danieladeofficial@gmail.com"
+                        class="email btn-hover color-secondary bg-primary text-xs flex items-center justify-center w-20 h-10 rounded-full mr-2 p-2">
+                        <i class="ri-mail-send-line mr-2"></i>
+                        <span>Email</span>
                     </a>
-                  </h2>
-                  <p class="text-gray-700 text-sm leading-relaxed mb-4">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Minus dolore repudiandae rem commodi libero accusantium.
-                  </p>
-                  <div
-                    class="bg-gray-300 mt-2 mb-4 w-full h-[1px] rounded-full"></div>
-                    <div class="flex items-center justify-evenly w-full gap-3">
-                      <a
-                      href="#"
-                      target="_blank"
-                      class="hover:text-blue-800 flex items-center gap-2 font-medium">
-                      <span>GitHub</span>
-                      <i class="text-base ri-github-line"></i>
+                    <a href="https://buymeacoffee.com/heisdanielade" target="_blank" id="buymeacoffee"
+                        class="buymeacoffee text-xs flex items-center justify-center w-12 h-11 font-extrabold">
+                        <span class="noth-icon">
+                            <img src="assets/images/descriptions/coffee-cup.gif" alt="Coffee" class="w-9 h-9" />
+                        </span>
                     </a>
-                                      <!-- Tech Stack -->
-                  <div class="stack flex flex-wrap justify-center gap-3">
-                      <img
-                        class="w-7 h-7"
-                        src="assets/images/icons/Spring.svg"
-                        alt="Spring"/>
-                      <img
-                        class="w-7 h-7"
-                        src="assets/images/icons/java.svg"
-                        alt="Java"/>
-                      <img
-                        class="w-7 h-7"
-                        src="assets/images/icons/tailwind-css.svg"
-                        alt="TailwindCSS"/>
-                      <img
-                        class="w-7 h-7"
-                        src="assets/images/icons/Vue.js.svg"
-                        alt="VueJs"/>
-                    </div>
-                    </div>
-  
                 </div>
-              </div>
+                <!-- Social links-->
+                <div class="nav__social__links flex">
+                    <!-- mobile -->
+                    <div class="mobile flex md:hidden lg:hidden items-center text-xl">
+                        <a href="https://www.linkedin.com/in/heisdanielade" aria-label="Visit LinkedIn profile"
+                            target="_blank"
+                            class="flex color-primary bg-secondary items-center justify-center w-[2.825rem] h-[2.825rem] mr-1 rounded-full border-[0.25rem] border-solid"><i
+                                class="ri-linkedin-box-fill"></i></a>
+                        <!-- <a href="https://github.com/heisdanielade" aria-label="Visit GitHub profile" target="_blank" class="flex color-primary bg-secondary items-center justify-center w-[2.825rem] h-[2.825rem] mr-1 rounded-full border-[0.25rem] border-solid"><i class="ri-github-line"></i></a> -->
+                        <a href="https://leetcode.com/u/heisdanielade/" aria-label="Visit Leetcode profile"
+                            target="_blank"
+                            class="flex color-primary bg-secondary items-center justify-center w-[2.825rem] h-[2.825rem] mr-1 rounded-full border-[0.25rem] border-solid">
+                            <img src="./assets/images/logos/leetcode.svg" class="w-[1.075rem] h-[1.075rem]"
+                                alt="Leetcode" />
+                        </a>
+                    </div>
+                    <!-- desktop -->
+                    <div class="desktop hidden md:flex lg:flex color-primary text-sm">
+                        <a href="https://www.linkedin.com/in/heisdanielade" aria-label="Visit LinkedIn profile"
+                            target="_blank" class="relative pb-[0.125rem] no-underline tracking-wide">LinkedIn</a>
+                        <span class="slash font-extrabold ml-2 mr-2">|</span>
+                        <a href="https://leetcode.com/u/heisdanielade/" aria-label="Visit Leetcode profile"
+                            target="_blank" class="relative pb-[0.125rem] no-underline tracking-wide">Leetcode</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
-            <!-- Project Box 2-->
-            <div class="box flex flex-col lg:flex-row items-center gap-8 w-full max-w-5xl p-6 rounded-3xl shadow-sm">
-              <!-- Left Section -->
-              <div class="left flex flex-col items-center justify-center w-full lg:w-1/2">
-                <img
-                  class="w-full max-w-[29rem] h-auto mb-6 rounded-3xl shadow-sm"
-                  src="assets/images/projects/video-chat-project.png"
-                  alt="Project"
-                />
-              </div>
+        <!--======== MAIN ========-->
+        <main class="main overflow-hidden container flex flex-col items-center w-full">
+            <!--====== HOME ======-->
+            <section id="home"
+                class="home bg-container-desktop w-full max-w-screen-lg mx-auto p-4 md:py-8 section container container-padding-1 relative flex items-center justify-center flex-col">
+                <!-- profile -->
+                <div class="profile relative w-40">
+                    <!-- home profile image -->
+                    <img class="image not-shown relative z-20 w-40 h-40 rounded-full object-cover border-[0.225rem] border-solid"
+                        src="assets/images/me/favicon.png" alt="Me" />
+                    <!-- home profile animated hand -->
+                    <span
+                        class="hand not-shown color-primary bg-transparent text-[0.775em] absolute top-8 left-[8.25rem] font-medium z-30 flex items-center justify-center rounded-full w-32 pt-4 pb-4 p-3">
+                        <img src="assets/images/me/mx-211.png" alt="Hand" class="w-20" />
+                    </span>
+                    <!-- curved arrow -->
+                    <img src="assets/svg/curved-arrow.svg" alt="Curved-arrow"
+                        class="arrow not-shown invert z-10 absolute w-20 h-20 left-[3.25rem] bottom-[-4.5rem]" />
+                </div>
+                <!-- content -->
+                <div class="content flex items-center justify-center flex-col w-[40rem] pt-2">
+                    <h1 class="info not-shown text-center text-[2.5rem] mt-20">
+                        <span class="gradient-text leading-10">I'm Daniel,<br />CS Student @UZ.</span><span
+                            class="hht stroke-text-2 hidden">xyz</span>
+                    </h1>
+                    <!-- link -->
+                    <a href="https://github.com/heisdanielade" target="_blank"
+                        class="github__link btn-hover not-shown color-secondary bg-primary flex items-center justify-center mt-9 mb-11 w-44 h-14 rounded-full">
+                        <span class="font-medium text-xs">Mój GitHub</span>
+                        <i class="ri-github-fill text-base ml-2"></i>
+                    </a>
+                </div>
+            </section>
 
-              <!-- Right Section -->
-              <div class="right flex flex-col items-start w-full lg:w-1/2 p-4">
-                <h2 class="text-xl font-semibold mb-4">
-                  <a
-                    href="#"
-                    target="_blank"
-                    class="text-blue-600 hover:text-blue-800 flex items-center gap-2">
-                    <span>Video Chat Web App</span>
-                    <i class="ri-links-line"></i>
-                  </a>
-                </h2>
-                <p class="text-gray-700 text-sm leading-relaxed mb-4">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Minus dolore repudiandae rem commodi libero accusantium.
-                </p>
+            <!--====== CAROUSEL ======-->
+            <section id="carousel"
+                class="carousel flex bg-secondary not-shown w-full max-w-screen-lg mx-auto p-4 md:py-8 containerrelative overflow-hidden items-center justify-center bg-transparent">
+                <div class="carousel-track animate-carousel flex items-center justify-evenly h-20 p-1">
+                    <img src="assets/images/logos/Spring_Framework-Logo.wine.svg" alt="Logo"
+                        class="logo object-cover w-[8.5rem] mr-16" />
+                    <img src="assets/images/logos/oracle.png" alt="Logo" class="logo object-cover w-[8.5rem] mr-16" />
+                    <img src="assets/images/logos/git-scm-ar21.svg" alt="Logo"
+                        class="logo object-cover w-[8.5rem] mr-16 h-8" />
+                    <img src="assets/images/logos/mysql-horizontal.svg" alt="Logo"
+                        class="logo object-cover w-[8.5rem] mr-16 h-8" />
+                    <img src="assets/images/logos/openai.png" alt="Logo"
+                        class="logo object-cover w-[8.5rem] mr-16 h-6" />
+                    <img src="assets/images/logos/tailwindcss-ar21.svg" alt="Logo"
+                        class="logo object-cover w-[8.5rem] mr-16 h-8" />
+                    <img src="assets/images/logos/vuejs-ar21.svg" alt="Logo"
+                        class="logo object-cover w-[8.5rem] mr-16 h-10" />
+                    <img src="assets/images/logos/perplexity.png" alt="Logo"
+                        class="logo object-cover w-[8.5rem] mr-16 h-14" />
+                    <!-- Image duplication for seamless loop -->
+                    <img src="assets/images/logos/Spring_Framework-Logo.wine.svg" alt="Logo"
+                        class="logo object-cover w-[8.5rem] mr-16" />
+                    <img src="assets/images/logos/oracle.png" alt="Logo" class="logo object-cover w-[8.5rem] mr-16" />
+                    <img src="assets/images/logos/git-scm-ar21.svg" alt="Logo"
+                        class="logo object-cover w-[8.5rem] mr-16 h-8" />
+                    <img src="assets/images/logos/mysql-horizontal.svg" alt="Logo"
+                        class="logo object-cover w-[8.5rem] mr-16 h-8" />
+                    <img src="assets/images/logos/openai.png" alt="Logo"
+                        class="logo object-cover w-[8.5rem] mr-16 h-6" />
+                    <img src="assets/images/logos/tailwindcss-ar21.svg" alt="Logo"
+                        class="logo object-cover w-[8.5rem] mr-16 h-8" />
+                    <img src="assets/images/logos/vuejs-ar21.svg" alt="Logo"
+                        class="logo object-cover w-[8.5rem] mr-16 h-10" />
+                    <img src="assets/images/logos/perplexity.png" alt="Logo"
+                        class="logo object-cover w-[8.5rem] mr-16 h-14" />
+                    <!-- Image duplication for seamless loop -->
+                    <img src="assets/images/logos/Spring_Framework-Logo.wine.svg" alt="Logo"
+                        class="logo object-cover w-[8.5rem] mr-16" />
+                    <img src="assets/images/logos/oracle.png" alt="Logo" class="logo object-cover w-[8.5rem] mr-16" />
+                    <img src="assets/images/logos/git-scm-ar21.svg" alt="Logo"
+                        class="logo object-cover w-[8.5rem] mr-16 h-8" />
+                    <img src="assets/images/logos/mysql-horizontal.svg" alt="Logo"
+                        class="logo object-cover w-[8.5rem] mr-16 h-8" />
+                    <img src="assets/images/logos/openai.png" alt="Logo"
+                        class="logo object-cover w-[8.5rem] mr-16 h-6" />
+                    <img src="assets/images/logos/tailwindcss-ar21.svg" alt="Logo"
+                        class="logo object-cover w-[8.5rem] mr-16 h-8" />
+                    <img src="assets/images/logos/vuejs-ar21.svg" alt="Logo"
+                        class="logo object-cover w-[8.5rem] mr-16 h-10" />
+                    <img src="assets/images/logos/perplexity.png" alt="Logo"
+                        class="logo object-cover w-[8.5rem] mr-16 h-14" />
+                </div>
+            </section>
+
+            <!--====== SKILLSET ======-->
+            <section id="skillset"
+                class="skillset bg-container-desktop w-full max-w-screen-lg mx-auto p-4 md:py-8 mb-12 section container container-padding-1 relative flex items-center justify-center flex-col">
+                <h1 class="title-info not-shown mb-14 text-center text-4xl gradient-text">
+                    Arsenal
+                </h1>
+
                 <div
-                  class="bg-gray-300 mt-2 mb-4 w-full h-[1px] rounded-full"></div>
-                  <div class="flex items-center justify-evenly w-full gap-3">
-                    <a
-                    href="#"
-                    target="_blank"
-                    class="hover:text-blue-800 flex items-center gap-2 font-medium">
-                    <span>GitHub</span>
-                    <i class="text-base ri-github-line"></i>
-                  </a>
-                                    <!-- Tech Stack -->
-                <div class="stack flex flex-wrap justify-center gap-3">
-                    <img
-                      class="w-7 h-7"
-                      src="assets/images/icons/Spring.svg"
-                      alt="Spring"/>
-                    <img
-                      class="w-7 h-7"
-                      src="assets/images/icons/java.svg"
-                      alt="Java"/>
-                    <img
-                      class="w-7 h-7"
-                      src="assets/images/icons/tailwind-css.svg"
-                      alt="TailwindCSS"/>
-                    <img
-                      class="w-7 h-7"
-                      src="assets/images/icons/Vue.js.svg"
-                      alt="VueJs"/>
-                  </div>
-                  </div>
+                    class="title-stroke-line not-shown top-[10.5rem] md:top-[8.5rem] lg:top-[8.5rem] z-10 bg-primary absolute mb-8 w-[70%] h-[0.0325rem]">
+                </div>
+                <span
+                    class="title z-20 color-secondary bg-primary not-shown text-sm w-28 h-12 font-bold rounded-full mb-12 p-2 -border-[0.25rem] flex items-center justify-center">
+                    Skillset
+                </span>
 
-              </div>
-            </div>
+                <div class="skill-con flex flex-wrap justify-center items-center gap-4">
+                    <div
+                        class="box not-shown m-[0.075rem] mb-2 w-[9.525rem] text-center flex flex-col items-center justify-center">
+                        <img src="assets/images/descriptions/server.gif" alt="Backend"
+                            class="descriptive-icon w-10 h-10 mb-4" />
+                        <h2 class="text text-base font-medium mb-3 color-primary">
+                            Back-end
+                        </h2>
+                        <p class="info text-[0.825rem] text-gray-600">
+                            Building reliable server-side apps with Java.
+                        </p>
+                    </div>
 
-            <!-- Project Box 3-->
-            <div class="box flex flex-col lg:flex-row items-center gap-8 w-full max-w-5xl p-6 rounded-3xl shadow-sm">
-                                <!-- Left Section -->
-                                <div class="left flex flex-col items-start w-full lg:w-1/2 p-4">
-                                    <h2 class="text-xl font-semibold mb-4">
-                                      <a
-                                        href="#"
-                                        target="_blank"
-                                        class="text-blue-600 hover:text-blue-800 flex items-center gap-2">
-                                        <span>Finance Landing Page</span>
-                                        <i class="ri-links-line"></i>
-                                      </a>
-                                    </h2>
-                                    <p class="text-gray-700 text-sm leading-relaxed mb-4">
-                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                      Minus dolore repudiandae rem commodi libero accusantium.
-                                    </p>
-                                    <div
-                                      class="bg-gray-300 mt-2 mb-4 w-full h-[1px] rounded-full"></div>
-                                      <div class="flex items-center justify-evenly w-full gap-3">
-                                        <a
-                                        href="#"
-                                        target="_blank"
-                                        class="hover:text-blue-800 flex items-center gap-2 font-medium">
-                                        <span>GitHub</span>
-                                        <i class="text-base ri-github-line"></i>
-                                      </a>
-                                                        <!-- Tech Stack -->
-                                    <div class="stack flex flex-wrap justify-center gap-3">
-                                        <img
-                                          class="w-7 h-7"
-                                          src="assets/images/icons/Vue.js.svg"
-                                          alt="VueJs"/>
-                                        <img
-                                          class="w-7 h-7"
-                                          src="assets/images/icons/tailwind-css.svg"
-                                          alt="TailwindCSS"/>
-                                        <img
-                                          class="w-7 h-7"
-                                          src="assets/images/icons/Git.svg"
-                                          alt="Git"/>
-                                      </div>
-                                      </div>
-                    
-                                  </div>
-                
-                <!-- Right Section -->
-                <div class="right flex flex-col items-center justify-center w-full lg:w-1/2">
-                  <img
-                    class="w-full max-w-[29rem] h-auto mb-6 rounded-3xl shadow-sm"
-                    src="assets/images/projects/payment-landing.png"
-                    alt="Project"
-                  />
+                    <div
+                        class="box not-shown m-[0.075rem] mb-2 w-[9.525rem] text-center flex flex-col items-center justify-center">
+                        <img src="assets/images/descriptions/database.gif" alt="Databases"
+                            class="descriptive-icon w-10 h-10 mb-4" />
+                        <h2 class="text text-base font-medium mb-3 color-primary">
+                            Databases
+                        </h2>
+                        <p class="info text-[0.825rem] text-gray-600">
+                            Proficient in SQL and Database design.
+                        </p>
+                    </div>
+                    <div
+                        class="box not-shown m-[0.075rem] w-[9.525rem] text-center flex flex-col items-center justify-center">
+                        <img src="assets/images/descriptions/web.gif" alt="Frontend"
+                            class="descriptive-icon w-10 h-10 mb-4" />
+                        <h2 class="text text-base font-medium mb-3 color-primary">
+                            Front-end
+                        </h2>
+                        <p class="info text-[0.825rem] text-gray-600">
+                            Dynamic & responsive web apps with Vue.js.
+                        </p>
+                    </div>
+                    <div
+                        class="box not-shown m-[0.075rem] w-[9.525rem] text-center flex flex-col items-center justify-center">
+                        <img src="assets/images/descriptions/quality.gif" alt="Testing"
+                            class="descriptive-icon w-10 h-10 mb-4" />
+                        <h2 class="text text-base font-medium mb-3 color-primary">
+                            Testing
+                        </h2>
+                        <p class="info text-[0.825rem] text-gray-600">
+                            Ensuring software quality and reliability.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ====== PROJECTS ======-->
+            <section id="projects"
+                class="projects relative w-full max-w-screen-lg mx-auto p-4 md:py-8 mb-6 section container container-padding-1 hidden items-center justify-center flex-col">
+                <h1 class="title-info not-shown mb-14 text-center text-4xl gradient-text">
+                    Highlights
+                </h1>
+                <div
+                    class="title-stroke-line not-shown top-[10.5rem] md:top-[8.5rem] lg:top-[8.5rem] z-10 bg-primary absolute mb-8 w-[70%] h-[0.0325rem]">
+                </div>
+                <span
+                    class="title z-20 color-secondary bg-primary not-shown text-sm w-28 h-12 font-bold rounded-full mb-12 p-2 -border-[0.25rem] flex items-center justify-center">
+                    Projects
+                </span>
+
+                <div class="content mt-4 w-full flex flex-col items-center gap-8 p-5">
+                    <!-- Project Box 1-->
+                    <div
+                        class="box not-shown flex flex-col lg:flex-row items-center gap-8 w-full max-w-5xl p-6 rounded-3xl shadow-sm">
+                        <!-- Left Section -->
+                        <div class="left flex flex-col items-center justify-center w-full lg:w-1/2">
+                            <img class="w-full max-w-[29rem] h-auto mb-6 rounded-3xl shadow-sm"
+                                src="assets/images/projects/pamietampsa.png" alt="Project" />
+                        </div>
+
+                        <!-- Right Section -->
+                        <div class="right flex flex-col items-start w-full lg:w-1/2 p-4">
+                            <h2 class="text-xl font-semibold mb-4">
+                                <a href="#" target="_blank"
+                                    class="text-blue-600 hover:text-blue-800 flex items-center gap-2">
+                                    <span>PamiętamPsa - Pet care</span>
+                                    <i class="ri-links-line"></i>
+                                </a>
+                            </h2>
+                            <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Minus dolore repudiandae rem commodi libero accusantium.
+                            </p>
+                            <div class="bg-gray-300 mt-2 mb-4 w-full h-[1px] rounded-full"></div>
+                            <div class="flex items-center justify-evenly w-full gap-3">
+                                <a href="#" target="_blank"
+                                    class="hover:text-blue-800 flex items-center gap-2 font-medium">
+                                    <span>GitHub</span>
+                                    <i class="text-base ri-github-line"></i>
+                                </a>
+                                <!-- Tech Stack -->
+                                <div class="stack flex flex-wrap justify-center gap-3">
+                                    <img class="w-7 h-7" src="assets/images/icons/Spring.svg" alt="Spring" />
+                                    <img class="w-7 h-7" src="assets/images/icons/java.svg" alt="Java" />
+                                    <img class="w-7 h-7" src="assets/images/icons/tailwind-css.svg" alt="TailwindCSS" />
+                                    <img class="w-7 h-7" src="assets/images/icons/Vue.js.svg" alt="VueJs" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Box 2-->
+                    <div
+                        class="box not-shown flex flex-col lg:flex-row items-center gap-8 w-full max-w-5xl p-6 rounded-3xl shadow-sm">
+                        <!-- Left Section -->
+                        <div class="left flex flex-col items-center justify-center w-full lg:w-1/2">
+                            <img class="w-full max-w-[29rem] h-auto mb-6 rounded-3xl shadow-sm"
+                                src="assets/images/projects/video-chat-project.png" alt="Project" />
+                        </div>
+
+                        <!-- Right Section -->
+                        <div class="right flex flex-col items-start w-full lg:w-1/2 p-4">
+                            <h2 class="text-xl font-semibold mb-4">
+                                <a href="#" target="_blank"
+                                    class="text-blue-600 hover:text-blue-800 flex items-center gap-2">
+                                    <span>Video Chat Web App</span>
+                                    <i class="ri-links-line"></i>
+                                </a>
+                            </h2>
+                            <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Minus dolore repudiandae rem commodi libero accusantium.
+                            </p>
+                            <div class="bg-gray-300 mt-2 mb-4 w-full h-[1px] rounded-full"></div>
+                            <div class="flex items-center justify-evenly w-full gap-3">
+                                <a href="#" target="_blank"
+                                    class="hover:text-blue-800 flex items-center gap-2 font-medium">
+                                    <span>GitHub</span>
+                                    <i class="text-base ri-github-line"></i>
+                                </a>
+                                <!-- Tech Stack -->
+                                <div class="stack flex flex-wrap justify-center gap-3">
+                                    <img class="w-7 h-7" src="assets/images/icons/Spring.svg" alt="Spring" />
+                                    <img class="w-7 h-7" src="assets/images/icons/java.svg" alt="Java" />
+                                    <img class="w-7 h-7" src="assets/images/icons/tailwind-css.svg" alt="TailwindCSS" />
+                                    <img class="w-7 h-7" src="assets/images/icons/Vue.js.svg" alt="VueJs" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Box 3-->
+                    <div
+                        class="box not-shown flex flex-col lg:flex-row items-center gap-8 w-full max-w-5xl p-6 rounded-3xl shadow-sm">
+                        <!-- Left Section -->
+                        <div class="left flex flex-col items-start w-full lg:w-1/2 p-4">
+                            <h2 class="text-xl font-semibold mb-4">
+                                <a href="#" target="_blank"
+                                    class="text-blue-600 hover:text-blue-800 flex items-center gap-2">
+                                    <span>Finance Landing Page</span>
+                                    <i class="ri-links-line"></i>
+                                </a>
+                            </h2>
+                            <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Minus dolore repudiandae rem commodi libero accusantium.
+                            </p>
+                            <div class="bg-gray-300 mt-2 mb-4 w-full h-[1px] rounded-full"></div>
+                            <div class="flex items-center justify-evenly w-full gap-3">
+                                <a href="#" target="_blank"
+                                    class="hover:text-blue-800 flex items-center gap-2 font-medium">
+                                    <span>GitHub</span>
+                                    <i class="text-base ri-github-line"></i>
+                                </a>
+                                <!-- Tech Stack -->
+                                <div class="stack flex flex-wrap justify-center gap-3">
+                                    <img class="w-7 h-7" src="assets/images/icons/Vue.js.svg" alt="VueJs" />
+                                    <img class="w-7 h-7" src="assets/images/icons/tailwind-css.svg" alt="TailwindCSS" />
+                                    <img class="w-7 h-7" src="assets/images/icons/Git.svg" alt="Git" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Section -->
+                        <div class="right flex flex-col items-center justify-center w-full lg:w-1/2">
+                            <img class="w-full max-w-[29rem] h-auto mb-6 rounded-3xl shadow-sm"
+                                src="assets/images/projects/payment-landing.png" alt="Project" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--====== CONTACT ======-->
+            <section id="contact"
+                class="contact w-full max-w-screen-lg mx-auto p-4 md:py-8 section container container-padding-1 mb-5">
+                <!-- image & title -->
+                <div class="heading flex items-center flex-col">
+                    <div class="image-container rounded-full flex items-center justify-center">
+                        <img src="assets/images/descriptions/talk.gif" alt="Contact" class="not-shown w-24 h-24" />
+                    </div>
+
+                    <h1 class="title not-shown mt-8 text-5xl gradient-text text-center">
+                        Have questions?<br />
+                        Let's talk
+                    </h1>
                 </div>
 
-              </div>
+                <div class="location flex items-center justify-center mt-7">
+                    <img src="assets/images/descriptions/location.gif" alt="Location" class="icon w-5 h-5 mr-1" />
+                    <span class="text-gray-500 font-medium text-[0.85rem]">Zielona Góra, Poland</span>
+                </div>
 
-          </div>
-        </section>
+                <!-- action buttons -->
+                <div class="actions not-shown flex items-center justify-center mt-8 text-xs font-medium">
+                    <a href="mailto:danieladeofficial@gmail.com" target="_blank"
+                        class="btn-hover color-secondary bg-primary flex items-center justify-center w-24 h-12 rounded-full mr-2 p-2">
+                        <i class="ri-mail-send-line mr-2"></i>
+                        <span>Email</span>
+                    </a>
+                </div>
+            </section>
 
-
-        <!--====== CONTACT ======-->
-        <section
-          id="contact"
-          class="contact w-full max-w-screen-lg mx-auto p-4 md:py-8 section container container-padding-1 mb-5"
-        >
-          <!-- image & title -->
-          <div class="heading flex items-center flex-col">
-            <div
-              class="image-container rounded-full flex items-center justify-center"
-            >
-              <img
-                src="assets/images/descriptions/talk.gif"
-                alt="Contact"
-                class="not-shown w-24 h-24"
-              />
+            <!--====== LANGUAGES ======-->
+            <div id="languages" class="languages mb-10">
+                <div class="holder not-shown w-full flex flex-wrap items-center justify-center cursor-custom">
+                    <div
+                        class="item bg-transparent color-primary flex items-center justify-evenly w-[7.5rem] p-3 m-1 rounded-full">
+                        <img class="w-6 h-6 mr-1" src="assets/images/flags/uk.png" alt="Flag" />
+                        <span class="lang relative text-xs font-semibold"> English </span>
+                    </div>
+                    <div
+                        class="item bg-transparent color-primary flex items-center justify-evenly w-[7.5rem] p-3 m-1 rounded-full">
+                        <img class="w-6 h-6 mr-1" src="assets/images/flags/9ja.png" alt="Flag" />
+                        <span class="lang relative text-xs font-semibold"> Yoruba </span>
+                    </div>
+                    <div
+                        class="item bg-transparent color-primary flex items-center justify-evenly w-[7.5rem] p-3 m-1 rounded-full">
+                        <img class="w-6 h-6 mr-1" src="assets/images/flags/poland.png" alt="Flag" />
+                        <span class="lang relative text-xs font-semibold"> Polish </span>
+                    </div>
+                </div>
             </div>
 
-            <h1 class="title not-shown mt-8 text-5xl gradient-text text-center">
-              Have questions?<br />
-              Let's talk
-            </h1>
-          </div>
+            <!--====== FOOTER ======-->
+            <footer id="footer"
+                class="footer bg-container-desktop w-full max-w-screen-lg mx-auto p-4 md:py-8 section container container-padding-1 relative flex items-center flex-col">
+                <div class="line bg-secondary mb-5 w-full h-[0.075rem]"></div>
 
-          <div class="location flex items-center justify-center mt-7">
-            <img
-              src="assets/images/descriptions/location.gif"
-              alt="Location"
-              class="icon w-5 h-5 mr-1"
-            />
-            <span class="text-gray-500 font-medium text-[0.85rem]"
-              >Zielona Góra, Poland</span
-            >
-          </div>
+                <div class="content flex items-center justify-between w-full">
+                    <div class="arr">
+                        <p class="text-xs font-medium mt-3 color-primary">
+                            &copy; <span id="year"></span>&nbsp;<span
+                                class="font-semibold md:font-medium lg:font-medium tracking-wide">heisdanielade.</span>
+                        </p>
+                    </div>
 
-          <!-- action buttons -->
-          <div
-            class="actions not-shown flex items-center justify-center mt-8 text-xs font-medium"
-          >
-            <a
-              href="mailto:danieladeofficial@gmail.com"
-              target="_blank"
-              class="btn-hover color-secondary bg-primary flex items-center justify-center w-24 h-12 rounded-full mr-2 p-2"
-            >
-              <i class="ri-mail-send-line mr-2"></i>
-              <span>Email</span>
-            </a>
-          </div>
-        </section>
-
-
-        <!--====== LANGUAGES ======-->
-        <div id="languages" class="languages mb-10">
-          <div
-            class="holder not-shown w-full flex flex-wrap items-center justify-center cursor-custom"
-          >
-            <div
-              class="item bg-transparent color-primary flex items-center justify-evenly w-[7.5rem] p-3 m-1 rounded-full"
-            >
-              <img
-                class="w-6 h-6 mr-1"
-                src="assets/images/flags/uk.png"
-                alt="Flag"
-              />
-              <span class="lang relative text-xs font-semibold"> English </span>
-            </div>
-            <div
-              class="item bg-transparent color-primary flex items-center justify-evenly w-[7.5rem] p-3 m-1 rounded-full"
-            >
-              <img
-                class="w-6 h-6 mr-1"
-                src="assets/images/flags/9ja.png"
-                alt="Flag"
-              />
-              <span class="lang relative text-xs font-semibold"> Yoruba </span>
-            </div>
-            <div
-              class="item bg-transparent color-primary flex items-center justify-evenly w-[7.5rem] p-3 m-1 rounded-full"
-            >
-              <img
-                class="w-6 h-6 mr-1"
-                src="assets/images/flags/poland.png"
-                alt="Flag"
-              />
-              <span class="lang relative text-xs font-semibold"> Polish </span>
-            </div>
-          </div>
-        </div>
-
-
-        <!--====== FOOTER ======-->
-        <footer
-          id="footer"
-          class="footer bg-container-desktop w-full max-w-screen-lg mx-auto p-4 md:py-8 section container container-padding-1 relative flex items-center flex-col"
-        >
-          <div class="line bg-secondary mb-5 w-full h-[0.075rem]"></div>
-
-          <div class="content flex items-center justify-between w-full">
-            <div class="arr">
-              <p class="text-xs font-medium mt-3 color-primary">
-                &copy; <span id="year"></span>&nbsp;<span
-                  class="font-semibold md:font-medium lg:font-medium tracking-wide"
-                  >heisdanielade.</span
-                >
-              </p>
-            </div>
-
-            <!-- social links -->
-            <div class="socials flex items-center justify-center text-xl">
-              <a
-                href="https://www.linkedin.com/in/heisdanielade"
-                data-tooltip="LinkedIn"
-                aria-label="Visit LinkedIn profile"
-                target="_blank"
-                class="tooltip color-primary flex items-center justify-center w-10 h-10 mr-1 rounded-full"
-                ><i class="ri-linkedin-box-fill"></i
-              ></a>
-              <a
-                href="https://leetcode.com/u/heisdanielade/"
-                data-tooltip="Leetcode"
-                aria-label="Visit Leetcode profile"
-                target="_blank"
-                class="tooltip color-primary flex items-center justify-center w-10 h-10 mr-1 rounded-full"
-              >
-                <img
-                  src="./assets/images/logos/leetcode.svg"
-                  class="w-[1.075rem] h-[1.075rem]"
-                  alt="Leetcode"
-                />
-              </a>
-            </div>
-          </div>
-        </footer>
-      </main>
+                    <!-- social links -->
+                    <div class="socials flex items-center justify-center text-xl">
+                        <a href="https://www.linkedin.com/in/heisdanielade" data-tooltip="LinkedIn"
+                            aria-label="Visit LinkedIn profile" target="_blank"
+                            class="tooltip color-primary flex items-center justify-center w-10 h-10 mr-1 rounded-full"><i
+                                class="ri-linkedin-box-fill"></i></a>
+                        <a href="https://leetcode.com/u/heisdanielade/" data-tooltip="Leetcode"
+                            aria-label="Visit Leetcode profile" target="_blank"
+                            class="tooltip color-primary flex items-center justify-center w-10 h-10 mr-1 rounded-full">
+                            <img src="./assets/images/logos/leetcode.svg" class="w-[1.075rem] h-[1.075rem]"
+                                alt="Leetcode" />
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </main>
     </div>
 
     <script defer src="./js/main.js"></script>
-  </body>
+</body>
+
 </html>
