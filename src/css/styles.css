@@ -19,6 +19,8 @@
   --text-color-light: hsl(0, 0%, 64%);
   --container-color: rgba(222, 222, 222, 0.441);
   --container-color-desktop: rgba(233, 233, 233, 0.921);
+
+
   /* --container-color-desktop: rgba(227, 227, 227, 0.921); */
   --info-overlay-color: rgba(123, 123, 123, 0.744);
   /* ---- fonts ---- */
@@ -350,7 +352,24 @@ button,
 .projects .content .box{
   background: var(--container-color-desktop);
 }
-
+.projects .content .box:first-child h2{
+  background: #751D77;
+  background: linear-gradient(to right, #751D77 0%, #953276 50%, #CF47C8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.projects .content .box:nth-child(2) h2{
+  background: #111362;
+  background: linear-gradient(to right, #111362 0%, #2849AC 50%, #3B7DCF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.projects .content .box:last-child h2{
+  background: #000000;
+  background: linear-gradient(to right, #000000 0%, #6F6663 50%, #E5C3C3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  
+}
 /* ============== CONTACT SECTION ============== */
 .contact .heading .image-container {
   border-top: 0.046975rem solid var(--section-border-color);
