@@ -51,13 +51,13 @@ function changeWord() {
     clearInterval(wordChangeInterval); // Stop the interval once all words have been displayed
   }
 }
-const wordChangeInterval = setInterval(changeWord, 560);
+const wordChangeInterval = setInterval(changeWord, 520);
 setTimeout(() => {
   document.getElementById("page-loader").style.opacity = "0";
   setTimeout(() => {
     document.getElementById("page-loader").style.display = "none";
   }, 600);
-}, 3250);
+}, 3200);
 
   
 // Second Page loader animation
