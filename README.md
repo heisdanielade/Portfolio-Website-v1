@@ -1,5 +1,5 @@
 # Portfolio Website
-Welcome to my portfolio website! 🌟 This site showcases my projects, skills, and a little bit about me.
+Welcome to the first version of my portfolio website! 🌟 This site showcases my skills and a little bit about me.
 
 ## Technologies Used
 
@@ -12,4 +12,4 @@ Welcome to my portfolio website! 🌟 This site showcases my projects, skills, a
 
 ## Visit My Portfolio  
 
-🌐 [heisdanielade.xyz](https://heisdanielade.xyz)
+🌐 [heisdanielade-v1.netlify.app](https://heisdanielade-v1.netlify.app)
