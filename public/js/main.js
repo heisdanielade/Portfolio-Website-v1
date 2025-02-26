@@ -23,7 +23,6 @@ const words = [
   // "Hello", 
   "Cześć", 
   "Hallo",
-  "привіт",
   "Pẹlẹ o",
 ];
 
@@ -57,7 +56,7 @@ setTimeout(() => {
   setTimeout(() => {
     document.getElementById("page-loader").style.display = "none";
   }, 600);
-}, 3200);
+}, 2600);
 
   
 // Second Page loader animation
